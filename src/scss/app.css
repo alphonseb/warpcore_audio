@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #1A3441, #000); }
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 10%;
+  padding: 5px; }
+
+li a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around; }
+
+nav ul li {
+  list-style: none;
+  position: relative; }
+
+/*# sourceMappingURL=app.css.map */
