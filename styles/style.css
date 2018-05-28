@@ -20,7 +20,9 @@ li a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  display: block;
+  padding: 10px; }
 
 nav ul {
   display: flex;
@@ -31,7 +33,9 @@ nav ul li {
   position: relative; }
 
 nav ul li a:hover {
-  text-decoration: underline;
-  background: #2CDFFF; }
+  border-bottom: #2CDFFF solid 2px; }
+
+header img {
+  height: 50px; }
 
 /*# sourceMappingURL=style.css.map */
