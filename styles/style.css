@@ -30,4 +30,7 @@ nav ul li {
   list-style: none;
   position: relative; }
 
+nav ul li a:hover {
+  background: #2CDFFF; }
+
 /*# sourceMappingURL=style.css.map */
