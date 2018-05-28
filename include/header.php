@@ -8,6 +8,7 @@
   </head>
   <body>
     <header>
+      <img src="images/warpcore.png" alt="">
       <nav>
          <ul>
            <li> <a href="#"> Accueil </a></li>
