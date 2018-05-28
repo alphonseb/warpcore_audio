@@ -70,10 +70,15 @@ main .first-screen {
   justify-content: space-between;
   position: relative; }
   main .first-screen .first-screen-left {
-    width: 40%; }
+    width: 40%;
+    position: relative; }
     main .first-screen .first-screen-left p {
       font-size: 1.3rem;
-      color: #fff; }
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   main .first-screen .first-screen-right {
     width: 60%;
     height: 70vh;
