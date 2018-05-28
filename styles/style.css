@@ -31,6 +31,7 @@ nav ul li {
   position: relative; }
 
 nav ul li a:hover {
+  text-decoration: underline;
   background: #2CDFFF; }
 
 /*# sourceMappingURL=style.css.map */
