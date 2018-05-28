@@ -8,12 +8,16 @@ body {
   background: linear-gradient(to right, #1A3441, #000); }
 
 nav {
-  background: #1A3441; }
+  width: 80%;
+  margin: 0 auto;
+  height: 10%;
+  padding: 5px; }
 
 li a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  font-size: 1.8rem; }
 
 nav ul {
   display: flex;
