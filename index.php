@@ -9,6 +9,7 @@ include "include/header.php";
           </p>
         </div>
         <div class="first-screen-right clip-img">
+          <h1>Warpcore Audio</h1>
           <img src="images/slider1.jpg" alt="Image du studio">
         </div>
       </div>

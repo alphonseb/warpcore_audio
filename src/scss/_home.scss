@@ -23,7 +23,20 @@ main .first-screen {
     position: absolute;
     bottom: 0;
     right: 0;
+    h1{
+      margin: 0;
+      color: $white;
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+      position: absolute;
+      top: -0.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
     img{
+      margin-top: 2rem;
       width: 100%;
     }
   }
