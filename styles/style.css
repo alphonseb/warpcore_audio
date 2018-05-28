@@ -27,4 +27,28 @@ nav ul li {
   list-style: none;
   position: relative; }
 
+main .first-screen {
+  margin-top: 5rem;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  main .first-screen .first-screen-left {
+    width: 40%; }
+    main .first-screen .first-screen-left p {
+      font-size: 1.3rem;
+      color: #fff; }
+  main .first-screen .first-screen-right {
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    main .first-screen .first-screen-right img {
+      width: 100%; }
+
+.clip-img {
+  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%); }
+
 /*# sourceMappingURL=style.css.map */
