@@ -1,6 +1,10 @@
+header {
+  width: 100%;
+}
+
 nav {
-  width: 80%;
-  margin: 0 auto;
+  width: 70%;
+  margin-left: 8%;
   height: 10%;
   padding: 5px;
 }
@@ -20,4 +24,15 @@ nav ul{
 nav ul li {
   list-style: none;
   position: relative;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  background: $light-blue;
+}
+
+// Image
+
+header img {
+
 }

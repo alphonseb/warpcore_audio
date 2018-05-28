@@ -7,9 +7,12 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #1A3441, #000); }
 
+header {
+  width: 100%; }
+
 nav {
-  width: 80%;
-  margin: 0 auto;
+  width: 70%;
+  margin-left: 8%;
   height: 10%;
   padding: 5px; }
 
@@ -26,6 +29,10 @@ nav ul {
 nav ul li {
   list-style: none;
   position: relative; }
+
+nav ul li a:hover {
+  text-decoration: underline;
+  background: #2CDFFF; }
 
 main .first-screen {
   margin-top: 5rem;
