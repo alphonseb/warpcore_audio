@@ -1,0 +1,19 @@
+nav {
+  background:$dark-blue;
+}
+
+li a {
+  font-family: $primary-font;
+  text-decoration: none;
+  color: $white;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+}

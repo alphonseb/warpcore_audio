@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,UAAU;;AAGxB,IAAK;EACH,MAAM,EAAE,CAAC;EACT,WAAW,ECPE,wBAAwB;EDQrC,UAAU,EAAE,wCAA6C;;AER3D,GAAI;EACF,UAAU,EDEA,OAAO;;ACCnB,IAAK;EACH,WAAW,EDLE,wBAAwB;ECMrC,eAAe,EAAE,IAAI;EACrB,KAAK,EDFC,IAAI;;ACKZ,MAAM;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;;AAG/B,SAAU;EACR,UAAU,EAAE,IAAI;EAChB,QAAQ,EAAE,QAAQ",
+"sources": ["../src/scss/_body.scss","../src/scss/_config.scss","../src/scss/_header.scss"],
+"names": [],
+"file": "style.css"
+}
