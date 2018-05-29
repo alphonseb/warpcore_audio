@@ -8,12 +8,20 @@ include "include/header.php";
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div class="first-screen-right clip-img">
+        <div class="first-screen-right">
           <h1>Warpcore Audio</h1>
-          <div class="slider">
+          <div class="slider clip-img">
             <img src="images/slider1.jpg" alt="Image du studio">
-            <img src="images/slider2.png" alt="">
-            <img src="images/slider3.png" alt="">
+            <img src="images/slider2.jpg" alt="">
+            <img src="images/slider3.jpg" alt="">
+          </div>
+          <div class="slider-bullet">
+            <div class="selected">
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
           </div>
 
         </div>

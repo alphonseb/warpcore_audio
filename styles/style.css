@@ -107,6 +107,7 @@ main .first-screen {
       left: 50%;
       transform: translate(-50%, -50%); }
   main .first-screen .first-screen-right {
+    overflow: hidden;
     width: 60%;
     height: 70vh;
     position: absolute;
@@ -125,7 +126,24 @@ main .first-screen {
       z-index: 2; }
     main .first-screen .first-screen-right img {
       margin-top: 2rem;
-      width: 100%; }
+      width: 100%;
+      transition: 1s ease-in; }
+    main .first-screen .first-screen-right .slider-bullet {
+      position: absolute;
+      bottom: -8%;
+      left: 50%;
+      z-index: 5;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between; }
+      main .first-screen .first-screen-right .slider-bullet div {
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        border: 2px solid #2CDFFF; }
+      main .first-screen .first-screen-right .slider-bullet .selected {
+        background: #2CDFFF; }
 
 .clip-img {
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%); }

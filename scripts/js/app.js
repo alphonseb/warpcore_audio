@@ -1,9 +1,22 @@
 const IMGS = document.querySelectorAll('.slider img')
-let nb = 1
+let index = 0
+let previous = 0
 
 let slider = setInterval(()=>{
-  for (let i = 0; i < IMGS.length; i++) {
-    IMGS[i].style.transform = `translate(-${nb}00%)`
+
+
+  if (index == IMGS.length - 1 || previous > index && index != 0) {
+    previous = index
+    index--
   }
-  nb++
-},1000)
+  else {
+    previous = index
+    index++
+  }
+
+  for (let i = 0; i < IMGS.length; i++) {
+    IMGS[i].style.transform = `translate(-${index}00%)`
+  }
+
+
+},3000)
