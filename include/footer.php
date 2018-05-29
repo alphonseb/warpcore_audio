@@ -1,3 +1,24 @@
+<div class="avis">
+  <h2>Ils parlent de nous!</h2>
+</div>
+
+<div class="artiste">
+  <h2>L'Artiste</h2>
+  <h1>Mathieu Germain</h1>
+  <div class="presentation">
+    <span>"Je suis ingénieur du son et compositeur, spécialisé dans la production musicale"</span>
+    <ul class="logo_social">
+      <li><img src="images/soundcloud.png" alt=""></li>
+      <li><img src="images/facebook.png" alt=""></li>
+      <li><img src="images/mail.png" alt=""></li>
+      <li><img src="images/youtube.png" alt=""></li>
+    </ul>
+  </div>
+  <div class="know_more">
+    <span>En savoir plus</span>
+  </div>
+</div>
+
 <footer>
   <div class="footer_text">
     <h2>Nous contacter</h2>
@@ -12,11 +33,11 @@
     </div>
     <div class="contact network">
       <h3>Réseaux sociaux</h3>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
+      <ul class="logo_social">
+        <li><img src="images/soundcloud.png" alt=""></li>
+        <li><img src="images/facebook.png" alt=""></li>
+        <li><img src="images/mail.png" alt=""></li>
+        <li><img src="images/youtube.png" alt=""></li>
       </ul>
     </div>
     <div class="contact adress">
