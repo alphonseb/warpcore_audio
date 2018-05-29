@@ -47,6 +47,10 @@ main .first-screen {
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
+.slider{
+  display: flex;
+}
+
 /**** avis ***/
 
 .avis{

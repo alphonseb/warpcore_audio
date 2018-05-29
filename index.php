@@ -10,7 +10,12 @@ include "include/header.php";
         </div>
         <div class="first-screen-right clip-img">
           <h1>Warpcore Audio</h1>
-          <img src="images/slider1.jpg" alt="Image du studio">
+          <div class="slider">
+            <img src="images/slider1.jpg" alt="Image du studio">
+            <img src="images/slider2.png" alt="">
+            <img src="images/slider3.png" alt="">
+          </div>
+
         </div>
       </div>
       <div class="avis">

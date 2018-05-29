@@ -26,5 +26,8 @@
       </div>
       <img class="image_footer" src="images/wave.png" alt="">
     </footer>
+    <script src="scripts/js/app.js">
+
+    </script>
   </body>
 </html>
