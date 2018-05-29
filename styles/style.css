@@ -8,34 +8,37 @@ body {
   background: linear-gradient(to right, #1A3441, #000); }
 
 header {
-  width: 100%;
-  height: 10%; }
+  width: 80%;
+  height: 10%;
+  margin: 0 auto; }
 
 nav {
-  width: 65%;
+  width: 100%;
   height: 1%;
   padding: 5px;
-  margin-left: 8%; }
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-between; }
 
 li a {
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: block;
   padding: 10px; }
 
-nav ul {
+nav .menu {
   display: flex;
+  flex-direction: row;
+  width: 60%;
   justify-content: space-around;
   padding-right: 10px; }
 
 nav ul li {
   list-style: none;
   position: relative; }
-
-nav ul li a:hover {
-  border-bottom: #2CDFFF solid 2px; }
 
 p {
   color: #fff;
@@ -45,13 +48,16 @@ p {
   text-decoration: none;
   color: #fff;
   height: 50px;
-  width: 50px;
   font-size: 1.4rem; }
 
 .language {
   height: 40px;
-  padding-left: 95%;
-  margin-top: -3%; }
+  display: flex;
+  flex-direction: row; }
+
+.language li a {
+  padding: 0;
+  padding-top: 10px; }
 
 .logo_image {
   height: 1px; }
@@ -62,6 +68,27 @@ p {
   padding-top: 1%;
   padding-left: 5%; }
 
+.underline {
+  width: 0;
+  height: 2px;
+  background: #2CDFFF; }
+
+a:hover + .underline {
+  animation: underline forwards ease-in-out .5s; }
+
+.language .lg-selected {
+  color: #2CDFFF; }
+
+.link-selected {
+  width: 100%;
+  height: 2px;
+  background: #2CDFFF; }
+
+@keyframes underline {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 main .first-screen {
   margin-top: 5rem;
   width: 100%;
