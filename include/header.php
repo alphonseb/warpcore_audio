@@ -26,8 +26,8 @@
            <li> <a href="#"> Contact </a><div class="underline"></div></li>
          </ul>
          <ul class="language">
-           <li><a href="#">FR | </a></li>
-           <li><a href="#" class="lg-selected"> EN</a></li>
+           <li><a href="#" class="lg-selected">FR | </a></li>
+           <li><a href="#"> EN</a></li>
          </ul>
       </nav>
       <!-- <div class="language">

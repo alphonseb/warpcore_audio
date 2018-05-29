@@ -13,10 +13,10 @@ header {
   margin: 0 auto; }
 
 nav {
-  width: 100%;
+  width: 95%;
   height: 1%;
   padding: 5px;
-  margin-left: 8%;
+  margin-left: 5%;
   display: flex;
   justify-content: space-between; }
 
