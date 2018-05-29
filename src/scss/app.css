@@ -62,32 +62,4 @@ main .first-screen {
 .clip-img {
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%); }
 
-footer {
-  margin: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.2em; }
-
-.footer_text {
-  margin-top: 6%;
-  color: white;
-  width: 35%; }
-  .footer_text h3 {
-    color: white; }
-  .footer_text ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row; }
-
-.contact {
-  color: #2CDFFF; }
-
-.phone {
-  padding-top: 20px; }
-
-.image_footer {
-  width: 55%;
-  height: 15%; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=app.css.map */
