@@ -13,11 +13,17 @@
       </div>
       <nav>
          <ul>
-           <li> <a href="#"> Accueil </a></li>
-           <li> <a href="#"> Professionnels </a></li>
-           <li> <a href="#"> Particuliers  </a></li>
-           <li> <a href="#"> L'artiste </a></li>
-           <li> <a href="#"> Contact </a></li>
+           <li>
+             <a href="#"> Accueil</a>
+             <div class="underline selected"></div>
+           </li>
+           <li>
+             <a href="#"> Professionnels</a>
+             <div class="underline"></div>
+           </li>
+           <li> <a href="#"> Particuliers  </a><div class="underline"></div></li>
+           <li> <a href="#"> L'artiste </a><div class="underline"></div></li>
+           <li> <a href="#"> Contact </a><div class="underline"></div></li>
          </ul>
       </nav>
       <div class="language">
