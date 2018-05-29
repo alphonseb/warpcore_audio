@@ -8,7 +8,9 @@
   </head>
   <body>
     <header>
-      <img src="images/warpcore.png" alt="logo_warpcore">
+      <div class="logo_image">
+        <img class ="logo" src="images/warpcore.png" alt="logo_warpcore">
+      </div>
       <nav>
          <ul>
            <li> <a href="#"> Accueil </a></li>
@@ -18,4 +20,7 @@
            <li> <a href="#"> Contact </a></li>
          </ul>
       </nav>
+      <div class="language">
+        <a href="#">EN | </a> <a href="#"> FR</a>
+      </div>
     </header>
