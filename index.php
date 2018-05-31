@@ -15,6 +15,9 @@ include "include/header.php";
               <img src="images/slider1.jpg" alt="Image du studio">
               <img src="images/slider2.jpg" alt="">
               <img src="images/slider3.jpg" alt="">
+              <img src="images/slider4.jpg" alt="">
+              <img src="images/slider5.jpg" alt="">
+              <img src="images/slider6.jpg" alt="">
             </div>
           </div>
           <div class="slider-bullet">
@@ -24,11 +27,17 @@ include "include/header.php";
             </div>
             <div>
             </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
           </div>
           <div class="scroll">
             <div class="scroll-line">
             </div>
-            <span>scroll</span>
+            <span class="scroll-anim">scroll</span>
           </div>
         </div>
       </div>
