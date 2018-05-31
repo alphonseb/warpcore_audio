@@ -1,6 +1,6 @@
 header {
   width: 80%;
-  height:10%;
+  height:10vh;
   margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ li a {
 nav .menu{
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   justify-content: space-around;
   padding-right: 10px;
 }
@@ -65,15 +65,16 @@ p {
 
 // Image
 
-.logo_image {
-  height : 1px;
-}
 
 .logo {
-  height: 40px;
-  width: 40px;
-  padding-top :1%;
-  padding-left: 5%;
+  background: url(../images/warpcore.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  top: 2vh;
+  position: absolute;
 }
 
 .underline{

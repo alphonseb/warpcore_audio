@@ -10,10 +10,12 @@ include "include/header.php";
         </div>
         <div class="first-screen-right">
           <h1>Warpcore Audio</h1>
-          <div class="slider clip-img">
-            <img src="images/slider1.jpg" alt="Image du studio">
-            <img src="images/slider2.jpg" alt="">
-            <img src="images/slider3.jpg" alt="">
+          <div class="slider-container clip-img">
+            <div class="slider">
+              <img src="images/slider1.jpg" alt="Image du studio">
+              <img src="images/slider2.jpg" alt="">
+              <img src="images/slider3.jpg" alt="">
+            </div>
           </div>
           <div class="slider-bullet">
             <div class="selected">
@@ -23,10 +25,14 @@ include "include/header.php";
             <div>
             </div>
           </div>
-
+          <div class="scroll">
+            <div class="scroll-line">
+            </div>
+            <span>scroll</span>
+          </div>
         </div>
       </div>
-      <div class="avis">
+      <!-- <div class="avis">
         <h2>Ils parlent de nous!</h2>
       </div>
 
@@ -44,8 +50,8 @@ include "include/header.php";
         </div>
         <div class="know_more">
           <span>En savoir plus</span>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
     </main>
 
 <?php

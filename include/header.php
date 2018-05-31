@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <title>Warpcore Audio</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="logo_image">
-        <img class ="logo" src="images/warpcore.png" alt="logo_warpcore">
+      <div class="logo">
       </div>
       <nav>
          <ul class="menu">

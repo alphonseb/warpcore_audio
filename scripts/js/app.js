@@ -1,4 +1,5 @@
 const IMGS = document.querySelectorAll('.slider img')
+const BULLETS = document.querySelectorAll('.slider-bullet div')
 let index = 0
 let previous = 0
 
@@ -18,5 +19,7 @@ let slider = setInterval(()=>{
     IMGS[i].style.transform = `translate(-${index}00%)`
   }
 
+  document.querySelector('.selected').classList.remove('selected')
+  BULLETS[index].classList.add('selected')
 
-},3000)
+},5000)
