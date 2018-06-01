@@ -2,6 +2,9 @@ $(document).ready(function(){
   const IMGS = document.querySelectorAll('.slider img')
   const BULLETS = document.querySelectorAll('.slider-bullet div')
   const SCROLL = document.querySelector('.scroll span')
+  const CAT = document.querySelectorAll('.services-categories p')
+  const DESC = document.querySelectorAll('.services-description ul')
+  const SERVICON = document.querySelectorAll('.services-description div')
 
   let index = 0
   let previous = 0
@@ -13,7 +16,7 @@ $(document).ready(function(){
       SCROLL.parentNode.addEventListener('click',
     ()=>{
       console.log('click');
-      $('html, body').animate( { scrollTop: 0 }, 1000 ); // Go
+      $('html, body').animate( { scrollTop: 0 }, 1000 );
     },false)
     }
     else {
@@ -49,6 +52,34 @@ $(document).ready(function(){
   document.querySelector('.slider').addEventListener('mouseleave',()=>{
     slider = setInterval(()=>{sliding()},5000)
   }, false)
+
+  for (let i = 0; i < CAT.length; i++) {
+    CAT[i].addEventListener('click',
+  ()=>{
+    let backPos = document.querySelector('.services')
+    if (i==1) {
+      backPos.style.backgroundPosition = 'left'
+      document.querySelector('#services-link').setAttribute('title','Vers page Particuliers')
+    }
+    else {
+      backPos.style.backgroundPosition = 'right'
+      document.querySelector('#services-link').setAttribute('title','Vers page Professionnels')
+    }
+    document.querySelector('.category-selected').classList.remove('category-selected')
+    CAT[i].classList.add('category-selected')
+    for (let j = 0; j < SERVICON.length; j++) {
+      SERVICON[j].style.transform = `translate(-${i}00%)`
+      if (DESC[j].classList.contains('description-solo')) {
+        DESC[j].style.transform = `translatex(-50%) translateY(${i}10%)`
+      }
+      else {
+        DESC[j].style.transform = `translateY(${i}10%)`
+      }
+    }
+  },false)
+  }
+
+
 
 
   function sliding(){

@@ -41,6 +41,30 @@ include "include/header.php";
           </div>
         </div>
       </div>
+      <div class="services">
+        <h2>Vous êtes</h2>
+        <div class="services-categories">
+          <p class="category-selected">Un professionnel</p>
+          <p>Un particulier</p>
+        </div>
+        <div class="services-description">
+          <div class="description-icon-people"></div>
+          <div class="description-icon-solo"></div>
+          <ul class="description-pro">
+            <li>Composition de musique publicitaire</li>
+            <li>Composition de musique de film institutionnel</li>
+            <li>Composition de virgule sonore/habillage</li>
+            <li>Enregistrement/Mixage/Mastering</li>
+          </ul>
+          <ul class="description-solo">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>consectetur adipisicing elit</li>
+            <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+            <li>Ut enim ad minim veniam, quis nostrud exercitatio</li>
+          </ul>
+        </div>
+        <a id="services-link" href="#" title="Vers page professionnel">></a>
+      </div>
       <!-- <div class="avis">
         <h2>Ils parlent de nous!</h2>
       </div>

@@ -178,7 +178,8 @@ main .first-screen {
         transform: rotate(-270deg);
         padding-bottom: 20%;
         animation: top 1.5s infinite;
-        margin-left: 25%; }
+        margin-left: 25%;
+        cursor: pointer; }
       main .first-screen .first-screen-right .scroll .scroll-line {
         position: absolute;
         top: 50%;
@@ -187,6 +188,99 @@ main .first-screen {
         height: 2px;
         background: #2CDFFF;
         animation: scrollLine 1.5s infinite; }
+
+.services {
+  background: url(../images/wave.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s ease-in; }
+  .services h2 {
+    color: #2CDFFF;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem; }
+  .services .services-categories {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 3rem; }
+    .services .services-categories p {
+      box-sizing: border-box;
+      width: 50%;
+      padding: 20px;
+      border: solid 1px #2CDFFF;
+      border-radius: 10px;
+      color: #2CDFFF;
+      text-align: center;
+      transition: all 0.2s ease-in; }
+    .services .services-categories p:hover {
+      background: #2CDFFF;
+      color: #1A3441;
+      cursor: pointer; }
+    .services .services-categories p:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .services .services-categories p:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .services .services-categories .category-selected {
+      background: #2CDFFF;
+      color: #1A3441; }
+  .services .services-description {
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    position: relative; }
+    .services .services-description .description-icon-people {
+      background: url(../images/people.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: -2rem;
+      left: 0;
+      transition: all 0.3s ease-in-out; }
+    .services .services-description .description-icon-solo {
+      background: url(../images/solo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      transition: all 0.3s ease-in-out; }
+    .services .services-description ul {
+      width: 40%;
+      margin: 0 auto;
+      margin-top: 2rem;
+      transition: all 0.3s ease-in-out; }
+      .services .services-description ul li {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+        color: #fff; }
+    .services .services-description ul.description-solo {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translatex(-50%); }
+  .services a {
+    display: block;
+    background: url(../images/plus.png);
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s; }
+  .services a:hover {
+    background: url(../images/plus-hover.png); }
 
 @keyframes scroll {
   50% {
