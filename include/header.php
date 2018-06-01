@@ -5,7 +5,7 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <title>Warpcore Audio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
   </head>
   <body>
     <header>

@@ -16,7 +16,7 @@ $(document).ready(function(){
       SCROLL.parentNode.addEventListener('click',
     ()=>{
       console.log('click');
-      $('html, body').animate( { scrollTop: 0 }, 1000 );
+      $('html, body').animate( { scrollTop: $('header').offset().top }, 1000 );
     },false)
     }
     else {
@@ -69,11 +69,11 @@ $(document).ready(function(){
     CAT[i].classList.add('category-selected')
     for (let j = 0; j < SERVICON.length; j++) {
       SERVICON[j].style.transform = `translate(-${i}00%)`
-      if (DESC[j].classList.contains('description-solo')) {
-        DESC[j].style.transform = `translatex(-50%) translateY(${i}10%)`
+      if (i == 0) {
+        DESC[j].style.transform = `translatey(0)`
       }
       else {
-        DESC[j].style.transform = `translateY(${i}10%)`
+        DESC[j].style.transform = 'translatey(115%)'
       }
     }
   },false)

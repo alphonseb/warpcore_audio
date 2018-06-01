@@ -21,26 +21,6 @@ footer{
   }
 }
 
-.logo_social{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 20%;
-  img{
-    width : 20px;
-  }
-}
-
-.presentation{
-  position: relative;
-  width : 60%;
-}
-
-.presentation .logo_social{
-  position: absolute;
-  right : 8%;
-}
 
 .contact {
   color : #2CDFFF;
