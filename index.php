@@ -65,15 +65,11 @@ include "include/header.php";
         </div>
         <a id="services-link" href="#" title="Vers page professionnel"></a>
       </div>
-      <!-- <div class="avis">
-        <h2>Ils parlent de nous!</h2>
-      </div> -->
-
       <div class="artist">
         <h2>L'Artiste</h2>
         <p class="artist-name">Matthieu Germain</p>
         <div class="artist-presentation">
-          <span>"Je suis ingénieur du son et compositeur, spécialisé dans la production musicale"</span>
+          <span class="artist-description">"Je suis ingénieur du son et compositeur, spécialisé dans la production musicale"</span>
           <ul class="logo_social">
             <li><a href="#" title="Soundcloud"><img src="images/soundcloud.png" alt=""></a></li>
             <li><a href="#" title="Facebook"><img src="images/facebook.png" alt=""></a></li>
@@ -84,12 +80,12 @@ include "include/header.php";
         <div class="artist-img-border clip-artist-img">
           <div class="artist-img-container clip-artist-img">
             <div class="clip-artist-img">
-              <img src="images/profile.jpg" alt="Matthieu Hendrix">
+              <img src="images/profile-color.png" alt="Matthieu Hendrix">
             </div>
           </div>
         </div>
-
         <a href="#" title="En savoir plus" class="know-more">En savoir plus</a>
+        <div id="frame"></div>
       </div>
     </main>
 
