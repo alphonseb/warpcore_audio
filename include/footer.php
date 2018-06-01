@@ -32,7 +32,7 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function(event) {
 				var controller = new YTV('frame', {
-					user: 'AllTrapNation'
+					playlist: 'PLl7DBpCoPyXjgzxGYGMaPU1pZ3aSVOIPr'
 				});
 			});
 		</script>
