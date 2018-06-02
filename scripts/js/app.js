@@ -5,6 +5,9 @@ $(document).ready(function(){
   const CAT = document.querySelectorAll('.services-categories p')
   const DESC = document.querySelectorAll('.services-description ul')
   const SERVICON = document.querySelectorAll('.services-description div')
+  const YTPLAYER = document.querySelector('#frame')
+
+  YTPLAYER.style.height = YTPLAYER.offsetWidth *0.7* 480/864 + 'px'
 
   let index = 0
   let previous = 0
@@ -16,7 +19,7 @@ $(document).ready(function(){
       SCROLL.parentNode.addEventListener('click',
     ()=>{
       console.log('click');
-      $('html, body').animate( { scrollTop: $('header').offset().top }, 1000 );
+      $('html, body').animate( { scrollTop: $('main').offset().top }, 1000 );
     },false)
     }
     else {

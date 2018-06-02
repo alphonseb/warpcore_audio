@@ -12,7 +12,7 @@ include "include/header.php";
         </div>
         <div class="first-screen-right">
           <div class="slider-container clip-img">
-            <div class="slider">
+            <div class="slider clip-img">
               <img src="images/slider1.jpg" alt="Image du studio">
               <img src="images/slider2.jpg" alt="">
               <img src="images/slider3.jpg" alt="">
@@ -68,11 +68,11 @@ include "include/header.php";
       </div>
       <div class="artist">
         <h2>L'Artiste</h2>
-        <p class="artist-name">Matthieu Germain</p>
+        <h3 class="artist-name">Matthieu Germain</h3>
         <div class="artist-presentation">
           <div class="quote" id="quote-left"></div>
           <div class="quote" id="quote-right"></div>
-          <p class="artist-description">"Je suis ingénieur du son et compositeur, spécialisé dans la production musicale"</p>
+          <p class="artist-description">Je suis ingénieur du son et compositeur, spécialisé dans la production musicale.</p>
           <ul class="logo-social">
             <li><a class="social-sc" href="#" title="Soundcloud"></a></li>
             <li><a class="social-fb" href="#" title="Facebook"></a></li>
@@ -88,7 +88,7 @@ include "include/header.php";
           </div>
         </div>
         <a href="#" title="En savoir plus" class="know-more">En apprendre plus</a>
-        <h2>Portfolio</h2>
+        <h4>Portfolio</h2>
         <p class="portfolio-description">Quelques unes de mes créations</p>
         <div id="frame"></div>
       </div>
@@ -102,7 +102,7 @@ include "include/header.php";
           </div>
           <div class="comments-content">
             <h3>Quentin Putaud</h3>
-            <p>Nous avons été absolument ravi de travailler avec WarpCore Audio, le travail est fait, même bien fait, et avec le sourire et la bonne humeur en prime ! Enregistrement, mixage, mastering, je dit oui, dans la langue de Molière !</p>
+            <p>Nous avons été absolument ravi de travailler avec <strong>WarpCore Audio</strong>, le travail est fait, même bien fait, et avec le sourire et la bonne humeur en prime ! Enregistrement, mixage, mastering, je dit oui, dans la langue de Molière !</p>
           </div>
           <div class="comments-content">
             <h3>Paul Grossberger</h3>

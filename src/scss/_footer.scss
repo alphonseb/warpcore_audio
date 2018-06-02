@@ -47,6 +47,7 @@ footer{
         background: url(../images/soundcloud.png);
         background-size: contain;
         background-repeat: no-repeat;
+        transition: all .2s ease-in;
       }
       .social-sc:hover{
         background: url(../images/soundcloud-hover.png);
@@ -57,6 +58,7 @@ footer{
         background: url(../images/facebook.png);
         background-size: contain;
         background-repeat: no-repeat;
+        transition: all .2s ease-in;
       }
       .social-fb:hover{
         background: url(../images/facebook-hover.png);
@@ -67,6 +69,7 @@ footer{
         background: url(../images/mail.png);
         background-size: contain;
         background-repeat: no-repeat;
+        transition: all .2s ease-in;
       }
       .social-ml:hover{
         background: url(../images/mail-hover.png);
@@ -77,6 +80,7 @@ footer{
         background: url(../images/youtube.png);
         background-size: contain;
         background-repeat: no-repeat;
+        transition: all .2s ease-in;
       }
       .social-yt:hover{
         background: url(../images/youtube-hover.png);
