@@ -14,7 +14,7 @@ header {
 
 nav {
   width: 95%;
-  height: 1%;
+  box-sizing: border-box;
   padding: 5px;
   margin-left: 5%;
   display: flex;
@@ -48,11 +48,17 @@ p {
   text-decoration: none;
   color: #fff;
   height: 50px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  transition: all .3s ease-in; }
+
+.language a:hover {
+  color: #2CDFFF; }
 
 .language {
   height: 40px;
   display: flex;
+  width: 5%;
+  justify-content: space-evenly;
   flex-direction: row; }
 
 .language li a {
@@ -105,6 +111,26 @@ main .first-screen {
   main .first-screen .first-screen-left {
     width: 40%;
     position: relative; }
+    main .first-screen .first-screen-left h1 {
+      margin: 0;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 900;
+      z-index: 2;
+      position: absolute;
+      top: -3.5rem; }
+    main .first-screen .first-screen-left h2 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: right;
+      margin: 0;
+      position: absolute;
+      top: 3.5rem;
+      left: 24%;
+      width: 100%; }
     main .first-screen .first-screen-left p {
       font-size: 1.6rem;
       line-height: 3.5vh;
@@ -115,17 +141,6 @@ main .first-screen {
   main .first-screen .first-screen-right {
     width: 59%;
     position: relative; }
-    main .first-screen .first-screen-right h1 {
-      margin: 0;
-      color: #fff;
-      text-align: center;
-      font-size: 5rem;
-      font-weight: 900;
-      z-index: 2;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      top: -3.5rem; }
     main .first-screen .first-screen-right .slider-container {
       overflow: hidden;
       height: 68vh; }
@@ -162,7 +177,7 @@ main .first-screen {
       transform: rotate(-90deg);
       transform-origin: center left;
       position: fixed;
-      right: 2%;
+      right: 1%;
       bottom: 0;
       width: 8%;
       display: flex;
@@ -178,7 +193,7 @@ main .first-screen {
         animation: scroll 1.5s infinite; }
       main .first-screen .first-screen-right .scroll .to-top {
         transform: rotate(-270deg);
-        padding-bottom: 20%;
+        padding-bottom: 10%;
         animation: top 1.5s infinite;
         margin-left: 25%;
         cursor: pointer; }
@@ -296,15 +311,15 @@ main .first-screen {
     margin-left: 50%; } }
 @keyframes top {
   50% {
-    padding-bottom: 20%; }
+    padding-bottom: 10%; }
   62% {
-    padding-bottom: 10%; }
-  75% {
     padding-bottom: 20%; }
-  87% {
+  75% {
     padding-bottom: 10%; }
+  87% {
+    padding-bottom: 20%; }
   100% {
-    padding-bottom: 20%; } }
+    padding-bottom: 10%; } }
 @keyframes scrollLine {
   0% {
     width: 40%; }
@@ -339,7 +354,7 @@ main .first-screen {
 .artist {
   margin: 0 auto;
   margin-top: 5rem;
-  width: 75%;
+  width: 80%;
   position: relative;
   background: #fff;
   padding: 0 4% 4% 4%;
@@ -353,22 +368,77 @@ main .first-screen {
     color: #1A3441;
     font-size: 3rem;
     font-weight: 900; }
-  .artist .logo_social {
+  .artist .logo-social {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 20%; }
-    .artist .logo_social img {
-      width: 30px; }
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 70%; }
+    .artist .logo-social a {
+      display: block;
+      width: 20px;
+      height: 20px; }
+    .artist .logo-social .social-sc {
+      background: url(../images/soundcloud.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-sc:hover {
+      background: url(../images/soundcloud-hover.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-fb {
+      background: url(../images/facebook.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-fb:hover {
+      background: url(../images/facebook-hover.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-ml {
+      background: url(../images/mail.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-ml:hover {
+      background: url(../images/mail-hover.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-yt {
+      background: url(../images/youtube.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .artist .logo-social .social-yt:hover {
+      background: url(../images/youtube-hover.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
   .artist .artist-presentation {
     position: relative;
-    width: 60%; }
+    width: 65%; }
+    .artist .artist-presentation .quote {
+      background: url(../images/quote.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      position: absolute; }
+    .artist .artist-presentation .quote#quote-left {
+      top: -3rem;
+      left: 0; }
+    .artist .artist-presentation .quote#quote-right {
+      bottom: 3rem;
+      right: 0;
+      transform: rotate(180deg); }
   .artist .artist-presentation .logo_social {
     position: absolute;
     right: 8%; }
-  .artist span.artist-description {
-    font-size: 1.5em; }
+  .artist .artist-description {
+    width: 100%;
+    font-size: 1.5em;
+    color: #1A3441;
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+    margin-top: 5rem; }
   .artist .artist-img-border {
     width: 25%;
     overflow: hidden;
@@ -387,12 +457,15 @@ main .first-screen {
     .artist .artist-img-container img {
       box-sizing: border-box;
       width: 100%;
-      filter: grayscale(100%);
+      filter: grayscale(100%) brightness(1.5);
       transition: all .3s ease-in; }
     .artist .artist-img-container img:hover {
-      filter: grayscale(0); }
+      filter: grayscale(0) brightness(1.5); }
   .artist .clip-artist-img {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .artist p.portfolio-description {
+    color: #1A3441;
+    text-align: center; }
   .artist #frame,
   .artist .description {
     margin: 50px auto;
@@ -443,7 +516,8 @@ main .first-screen {
     background: rgba(255, 255, 255, 0); } }
 .know-more {
   display: block;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 2rem;
   background: #1A3441;
   color: #fff;
@@ -458,29 +532,132 @@ main .first-screen {
   background: #2CDFFF;
   color: #1A3441; }
 
+.comments {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem; }
+  .comments h2 {
+    color: #2CDFFF;
+    font-size: 2rem;
+    text-align: center; }
+  .comments .comments-box {
+    width: 100%;
+    margin-top: 5rem;
+    padding-bottom: 6rem;
+    outline: solid 2px #2CDFFF;
+    position: relative; }
+    .comments .comments-box .comments-fb {
+      background: url(../images/facebook.png);
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translate(-50%); }
+    .comments .comments-box a {
+      display: block;
+      text-decoration: none;
+      background: #1A3441;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      font-size: 1.4rem;
+      font-weight: 600;
+      bottom: -1.7rem;
+      left: 70%;
+      outline: solid 3px #2CDFFF;
+      padding: 1rem 3rem;
+      transition: all 0.3s ease-in-out; }
+    .comments .comments-box a:hover {
+      background: #2CDFFF;
+      color: #1A3441; }
+    .comments .comments-box .comments-content {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 4rem;
+      color: #fff; }
+      .comments .comments-box .comments-content p {
+        font-size: 1.3rem;
+        line-height: 1.8rem; }
+
 /**** footer ***/
 footer {
-  margin: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.2em; }
-
-.footer_text {
-  margin-top: 6%;
-  color: white;
-  width: 35%; }
-  .footer_text h3 {
-    color: white; }
-
-.contact {
-  color: #2CDFFF; }
-
-.phone {
-  padding-top: 20px; }
-
-.image_footer {
-  width: 55%;
-  height: 15%; }
+  width: 100%;
+  margin-top: 20rem;
+  margin-bottom: 3rem;
+  background: url(../images/wave.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain; }
+  footer .footer-container {
+    width: 80%;
+    margin: 0 auto; }
+    footer .footer-container .footer-content {
+      width: 40%; }
+      footer .footer-container .footer-content h2 {
+        color: #fff;
+        font-size: 1.8rem; }
+      footer .footer-container .footer-content .contact-description {
+        font-size: 1.4rem; }
+      footer .footer-container .footer-content h3 {
+        color: #fff;
+        font-size: 1.6rem;
+        margin-top: 2.5rem; }
+      footer .footer-container .footer-content h3 + p {
+        font-size: 1.4rem;
+        color: #2CDFFF; }
+    footer .footer-container .logo-social {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 50%;
+      padding: 0; }
+      footer .footer-container .logo-social a {
+        width: 30px;
+        height: 30px; }
+      footer .footer-container .logo-social .social-sc {
+        background: url(../images/soundcloud.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-sc:hover {
+        background: url(../images/soundcloud-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-fb {
+        background: url(../images/facebook.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-fb:hover {
+        background: url(../images/facebook-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-ml {
+        background: url(../images/mail.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-ml:hover {
+        background: url(../images/mail-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-yt {
+        background: url(../images/youtube.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      footer .footer-container .logo-social .social-yt:hover {
+        background: url(../images/youtube-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat; }
+    footer .footer-container .legal {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 5rem;
+      color: #fff; }
+      footer .footer-container .legal a {
+        text-decoration: none;
+        color: #fff; }
+      footer .footer-container .legal a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,12 +4,13 @@ include "include/header.php";
     <main>
       <div class="first-screen">
         <div class="first-screen-left">
+          <h1>Warpcore Audio</h1>
+          <h2>Production musicale en Île-de-France</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
         <div class="first-screen-right">
-          <h1>Warpcore Audio</h1>
           <div class="slider-container clip-img">
             <div class="slider">
               <img src="images/slider1.jpg" alt="Image du studio">
@@ -69,12 +70,14 @@ include "include/header.php";
         <h2>L'Artiste</h2>
         <p class="artist-name">Matthieu Germain</p>
         <div class="artist-presentation">
-          <span class="artist-description">"Je suis ingénieur du son et compositeur, spécialisé dans la production musicale"</span>
-          <ul class="logo_social">
-            <li><a href="#" title="Soundcloud"><img src="images/soundcloud.png" alt=""></a></li>
-            <li><a href="#" title="Facebook"><img src="images/facebook.png" alt=""></a></li>
-            <li><a href="#" title="Mail"><img src="images/mail.png" alt=""></a></li>
-            <li><a href="#" title="YouTube"><img src="images/youtube.png" alt=""></a></li>
+          <div class="quote" id="quote-left"></div>
+          <div class="quote" id="quote-right"></div>
+          <p class="artist-description">"Je suis ingénieur du son et compositeur, spécialisé dans la production musicale"</p>
+          <ul class="logo-social">
+            <li><a class="social-sc" href="#" title="Soundcloud"></a></li>
+            <li><a class="social-fb" href="#" title="Facebook"></a></li>
+            <li><a class="social-ml" href="#" title="Mail"></a></li>
+            <li><a class="social-yt" href="#" title="YouTube"></a></li>
           </ul>
         </div>
         <div class="artist-img-border clip-artist-img">
@@ -84,8 +87,29 @@ include "include/header.php";
             </div>
           </div>
         </div>
-        <a href="#" title="En savoir plus" class="know-more">En savoir plus</a>
+        <a href="#" title="En savoir plus" class="know-more">En apprendre plus</a>
+        <h2>Portfolio</h2>
+        <p class="portfolio-description">Quelques unes de mes créations</p>
         <div id="frame"></div>
+      </div>
+      <div class="comments">
+        <h2>Ils parlent de nous !</h2>
+        <div class="comments-box">
+          <div class="comments-fb"></div>
+          <div class="comments-content">
+            <h3>Thomas Vallas</h3>
+            <p>Super accueil, ambiance plus que sympa, on apprécie l'investissement et le plaisir de faire du bon boulot ... et sans secret, dans ces conditions le taff est propre, ça sonne, on en redemande. On recommande, on remercie, on est content, on y retourne. Très satisfait !</p>
+          </div>
+          <div class="comments-content">
+            <h3>Quentin Putaud</h3>
+            <p>Nous avons été absolument ravi de travailler avec WarpCore Audio, le travail est fait, même bien fait, et avec le sourire et la bonne humeur en prime ! Enregistrement, mixage, mastering, je dit oui, dans la langue de Molière !</p>
+          </div>
+          <div class="comments-content">
+            <h3>Paul Grossberger</h3>
+            <p>Travail efficace et rapide, toujours à l'écoute et prêt à donner de bons conseils. C'est la première fois que nous travaillons avec vous et surement pas la dernière ! Un grand merci !</p>
+          </div>
+          <a href="#" title="Avis Facebook">Donnez votre avis !</a>
+        </div>
       </div>
     </main>
 

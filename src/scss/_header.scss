@@ -6,7 +6,7 @@ header {
 
 nav {
   width: 95%;
-  height: 1%;
+  box-sizing: border-box;
   padding: 5px;
   margin-left: 5%;
   display: flex;
@@ -50,11 +50,18 @@ p {
   color: $white;
   height: 50px;
   font-size: 1.4rem;
+  transition: all .3s ease-in;
+}
+
+.language a:hover{
+  color: $light-blue;
 }
 
 .language {
   height: 40px;
   display: flex;
+  width: 5%;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 

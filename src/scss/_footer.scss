@@ -3,34 +3,99 @@
 /**** footer ***/
 
 footer{
-  margin : 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.2em;
-}
-
-.footer_text {
-  margin-top: 6%;
-  color: white;
-  width: 35%;
-
-
-  h3{
-    color : white;
+  width: 100%;
+  margin-top: 20rem;
+  margin-bottom: 3rem;
+  background: url(../images/wave.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  .footer-container{
+    width: 80%;
+    margin: 0 auto;
+    .footer-content{
+      width: 40%;
+      h2{
+        color: $white;
+        font-size: 1.8rem;
+      }
+      .contact-description{
+        font-size: 1.4rem;
+      }
+      h3{
+        color: $white;
+        font-size: 1.6rem;
+        margin-top: 2.5rem;
+      }
+      h3+p{
+        font-size: 1.4rem;
+        color: $light-blue;
+      }
+    }
+    .logo-social{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 50%;
+      padding: 0;
+      a{
+        width: 30px;
+        height: 30px;
+      }
+      .social-sc{
+        background: url(../images/soundcloud.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-sc:hover{
+        background: url(../images/soundcloud-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-fb{
+        background: url(../images/facebook.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-fb:hover{
+        background: url(../images/facebook-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-ml{
+        background: url(../images/mail.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-ml:hover{
+        background: url(../images/mail-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-yt{
+        background: url(../images/youtube.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .social-yt:hover{
+        background: url(../images/youtube-hover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .legal{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 5rem;
+      color: $white;
+      a{
+        text-decoration: none;
+        color: $white;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
   }
-}
-
-
-.contact {
-  color : #2CDFFF;
-}
-
-.phone{
-  padding-top: 20px;
-}
-
-.image_footer{
-  width: 55%;
-  height: 15%;
 }
