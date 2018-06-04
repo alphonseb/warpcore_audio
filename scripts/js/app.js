@@ -71,15 +71,39 @@ $(document).ready(function(){
     document.querySelector('.category-selected').classList.remove('category-selected')
     CAT[i].classList.add('category-selected')
     for (let j = 0; j < SERVICON.length; j++) {
-      SERVICON[j].style.transform = `translate(-${i}00%)`
-      if (i == 0) {
-        DESC[j].style.transform = `translatey(0)`
+      if (window.innerWidth < 900) {
+        SERVICON[j].style.transform = `translate(-${2*i}00%)`
       }
       else {
-        DESC[j].style.transform = 'translatey(115%)'
+        SERVICON[j].style.transform = `translate(-${i}00%)`
       }
     }
+    if (i == 0) {
+      DESC[0].style.transform = `translatey(0)`
+      DESC[1].style.bottom = '100%'
+    }
+    else {
+      DESC[0].style.transform = 'translatey(115%)'
+      DESC[1].style.bottom = '0'
+    }
   },false)
+  }
+
+  //REMOVE CLIP PATH FOR mobile
+
+  const CLIP = document.querySelectorAll('.clip-img')
+  if (window.innerWidth < 900) {
+    for (let i = 0; i < CLIP.length; i++) {
+      CLIP[i].classList.remove('clip-img')
+    }
+  }
+
+  //Responsive YT YTPLAYER
+
+  if (window.innerWidth < 900){
+    let ytMobile = document.createElement('div')
+    ytMobile.innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLl7DBpCoPyXjgzxGYGMaPU1pZ3aSVOIPr' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen='' style='width: 100%;'></iframe>"
+    YTPLAYER = YTPLAYER.parentNode.replaceChild(ytMobile,YTPLAYER)
   }
 
 

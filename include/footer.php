@@ -27,10 +27,9 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/js/app.js"></script>
-    <script src="scripts/js/header.js">
-
-    </script>
+    <script src="scripts/js/header.js"></script>
     <script type="text/javascript" src="scripts/js/ytv.js"></script>
+    <script src="scripts/js/hamburger"></script>
 		<script>
 			document.addEventListener("DOMContentLoaded", function(event) {
 				var controller = new YTV('frame', {

@@ -1,0 +1,100 @@
+.hamburger-container{
+  width: $containerWidth;
+  height: $containerHeight;
+  position: relative;
+}
+
+.steak, .top-bun, .bottom-bun{
+  width: 100%;
+  margin: 0 auto;
+  height: $layerHeight;
+  background: $layerColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.top-bun{
+  top: 0;
+}
+
+.bottom-bun{
+  top: $containerHeight ;
+}
+
+.before {
+  animation: before 1s ease forwards;
+}
+
+.after {
+  animation: after 1s ease forwards;
+}
+
+.before-reverse{
+  animation: before_reverse 1s ease forwards;
+}
+
+.after-reverse{
+  animation: after_reverse 1s ease forwards ;
+}
+
+
+
+
+
+
+
+@keyframes before {
+  0%{
+    transform: translateX(-50%) translateY(-50%);
+  }
+  50%{
+    transform: translateX(-50%) translateY($containerHeight/2 - $layerHeight/2);
+  }
+  100%{
+    transform: translateX(-50%) translateY($containerHeight/2 - $layerHeight/2) rotate(-135deg);
+  }
+}
+
+@keyframes after {
+  0%{
+    transform: translateX(-50%) translateY(-50%);
+  }
+  50%{
+    transform: translateX(-50%) translateY(-$containerHeight/2 - $layerHeight/2);
+  }
+  100%{
+    transform: translateX(-50%) translateY(-$containerHeight/2 - $layerHeight/2) rotate(135deg);
+  }
+}
+
+@keyframes before_reverse {
+  0%{
+    transform: translateX(-50%) translateY($containerHeight/2 - $layerHeight/2) rotate(-135deg);
+  }
+  100%{
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+}
+
+@keyframes after_reverse {
+  0%{
+    transform: translateX(-50%) translateY(-$containerHeight/2 - $layerHeight/2) rotate(135deg);
+  }
+  100%{
+    transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+  }
+}
+
+@keyframes open {
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{width: 100%;}
+}
+
+@keyframes close {
+  0%{width: 100%;}
+  100%{width: 0;}
+}

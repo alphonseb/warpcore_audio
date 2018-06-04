@@ -10,11 +10,17 @@ footer{
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  @media screen and (max-width: 900px){
+    margin-top: 10rem;
+  }
   .footer-container{
     width: 80%;
     margin: 0 auto;
     .footer-content{
       width: 40%;
+      @media screen and (max-width: 900px){
+        width: 80%;
+      }
       h2{
         color: $white;
         font-size: 1.8rem;

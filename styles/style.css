@@ -1,3 +1,73 @@
+.hamburger-container {
+  width: 50px;
+  height: 25px;
+  position: relative; }
+
+.steak, .top-bun, .bottom-bun {
+  width: 100%;
+  margin: 0 auto;
+  height: 5px;
+  background: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%) translateY(-50%); }
+
+.top-bun {
+  top: 0; }
+
+.bottom-bun {
+  top: 25px; }
+
+.before {
+  animation: before 1s ease forwards; }
+
+.after {
+  animation: after 1s ease forwards; }
+
+.before-reverse {
+  animation: before_reverse 1s ease forwards; }
+
+.after-reverse {
+  animation: after_reverse 1s ease forwards; }
+
+@keyframes before {
+  0% {
+    transform: translateX(-50%) translateY(-50%); }
+  50% {
+    transform: translateX(-50%) translateY(10px); }
+  100% {
+    transform: translateX(-50%) translateY(10px) rotate(-135deg); } }
+@keyframes after {
+  0% {
+    transform: translateX(-50%) translateY(-50%); }
+  50% {
+    transform: translateX(-50%) translateY(-15px); }
+  100% {
+    transform: translateX(-50%) translateY(-15px) rotate(135deg); } }
+@keyframes before_reverse {
+  0% {
+    transform: translateX(-50%) translateY(10px) rotate(-135deg); }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg); } }
+@keyframes after_reverse {
+  0% {
+    transform: translateX(-50%) translateY(-15px) rotate(135deg); }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(-180deg); } }
+@keyframes open {
+  0% {
+    width: 0; }
+  50% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+@keyframes close {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0; } }
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -11,9 +81,29 @@ body {
   width: 80%;
   height: 10vh;
   margin: 0 auto; }
+  @media screen and (max-width: 900px) {
+    .header-container {
+      height: auto; } }
 
 header {
   transition: background-color .3s linear; }
+
+.header-mobile {
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem auto;
+  align-items: center;
+  display: none; }
+  .header-mobile h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center; }
+  .header-mobile .hamburger-container div {
+    background: #2CDFFF; }
+  @media screen and (max-width: 900px) {
+    .header-mobile {
+      display: flex; } }
 
 .header-fixed {
   position: fixed;
@@ -25,6 +115,8 @@ header {
   z-index: 999; }
   .header-fixed li a {
     color: #1A3441; }
+  .header-fixed .title-mobile {
+    color: #1A3441; }
 
 .header-fixed + main {
   padding-top: 2rem; }
@@ -35,7 +127,19 @@ nav {
   padding: 5px;
   margin-left: 5%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition: all .5s ease-in-out; }
+  @media screen and (max-width: 900px) {
+    nav {
+      flex-direction: column;
+      transform: translatey(-200%);
+      display: none; } }
+
+nav.nav-mobile-display {
+  display: flex; }
+
+nav.nav-mobile-transform {
+  transform: translate(0); }
 
 li a {
   font-family: "Montserrat", sans-serif;
@@ -45,6 +149,9 @@ li a {
   font-size: 1.5rem;
   display: block;
   padding: 10px; }
+  @media screen and (max-width: 900px) {
+    li a {
+      text-align: center; } }
 
 nav .menu {
   display: flex;
@@ -52,6 +159,9 @@ nav .menu {
   width: 70%;
   justify-content: space-around;
   padding-right: 10px; }
+  @media screen and (max-width: 900px) {
+    nav .menu {
+      flex-direction: column; } }
 
 nav ul li {
   list-style: none;
@@ -77,20 +187,29 @@ p {
   width: 5%;
   justify-content: space-evenly;
   flex-direction: row; }
+  @media screen and (max-width: 900px) {
+    .language {
+      padding: 0;
+      margin: 0 auto; } }
 
 .language li a {
   padding: 0;
   padding-top: 10px; }
 
-.logo {
+.logo, .logo-mobile {
   background: url(../images/warpcore.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 50px;
-  width: 50px;
+  width: 50px; }
+
+.logo {
   top: 2vh;
   position: absolute; }
+  @media screen and (max-width: 900px) {
+    .logo {
+      display: none; } }
 
 .underline {
   width: 0;
@@ -125,9 +244,16 @@ main .first-screen {
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat; }
+  @media screen and (max-width: 900px) {
+    main .first-screen {
+      flex-direction: column;
+      height: auto; } }
   main .first-screen .first-screen-left {
     width: 40%;
     position: relative; }
+    @media screen and (max-width: 900px) {
+      main .first-screen .first-screen-left {
+        width: 100%; } }
     main .first-screen .first-screen-left h1 {
       margin: 0;
       width: 100%;
@@ -138,6 +264,9 @@ main .first-screen {
       z-index: 2;
       position: absolute;
       top: -3.5rem; }
+      @media screen and (max-width: 900px) {
+        main .first-screen .first-screen-left h1 {
+          position: relative; } }
     main .first-screen .first-screen-left h2 {
       color: #fff;
       font-size: 3rem;
@@ -148,6 +277,10 @@ main .first-screen {
       top: 3.5rem;
       left: 20%;
       width: 100%; }
+      @media screen and (max-width: 900px) {
+        main .first-screen .first-screen-left h2 {
+          position: static;
+          text-align: center; } }
     main .first-screen .first-screen-left p {
       font-size: 1.6rem;
       line-height: 2rem;
@@ -156,12 +289,25 @@ main .first-screen {
       top: 15vh;
       left: 27%;
       width: 65%; }
+      @media screen and (max-width: 900px) {
+        main .first-screen .first-screen-left p {
+          position: static;
+          text-align: center;
+          width: 90%;
+          margin: 1rem auto; } }
   main .first-screen .first-screen-right {
     width: 59%;
     position: relative; }
+    @media screen and (max-width: 900px) {
+      main .first-screen .first-screen-right {
+        width: 100%;
+        margin-top: 3rem; } }
     main .first-screen .first-screen-right .slider-container {
       overflow: hidden;
       height: 68vh; }
+      @media screen and (max-width: 900px) {
+        main .first-screen .first-screen-right .slider-container {
+          height: auto; } }
     main .first-screen .first-screen-right .slider {
       position: absolute;
       top: -4rem;
@@ -170,16 +316,23 @@ main .first-screen {
       width: 1000px;
       max-width: 1000px;
       overflow: hidden; }
+      @media screen and (max-width: 900px) {
+        main .first-screen .first-screen-right .slider {
+          position: static;
+          width: 100%; } }
       main .first-screen .first-screen-right .slider img {
         transition: all 1s ease-in-out;
         position: relative;
         z-index: 0;
         width: 100%;
         filter: grayscale(100%); }
+        @media screen and (max-width: 900px) {
+          main .first-screen .first-screen-right .slider img {
+            height: 100%; } }
       main .first-screen .first-screen-right .slider img:hover {
         filter: grayscale(0); }
     main .first-screen .first-screen-right .slider-bullet {
-      width: 15%;
+      width: 35%;
       margin: 2rem auto;
       display: flex;
       justify-content: space-between; }
@@ -231,6 +384,9 @@ main .first-screen {
   background-repeat: no-repeat;
   -webkit-transition: background-position 0.3s ease-in;
   margin-top: 10rem; }
+  @media screen and (max-width: 900px) {
+    .services {
+      margin-top: 5rem; } }
   .services h2 {
     color: #2CDFFF;
     width: 30%;
@@ -242,6 +398,11 @@ main .first-screen {
     width: 40%;
     margin: 0 auto;
     margin-top: 3rem; }
+    @media screen and (max-width: 900px) {
+      .services .services-categories {
+        flex-direction: column;
+        width: 90%;
+        align-items: center; } }
     .services .services-categories p {
       box-sizing: border-box;
       width: 50%;
@@ -251,16 +412,20 @@ main .first-screen {
       color: #2CDFFF;
       text-align: center;
       transition: all 0.2s ease-in; }
+      @media screen and (max-width: 900px) {
+        .services .services-categories p {
+          width: 70%; } }
     .services .services-categories p:hover {
       background: #2CDFFF;
       color: #1A3441;
       cursor: pointer; }
-    .services .services-categories p:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
-    .services .services-categories p:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
+    @media screen and (min-width: 900px) {
+      .services .services-categories p:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+      .services .services-categories p:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; } }
     .services .services-categories .category-selected {
       background: #2CDFFF;
       color: #1A3441; }
@@ -270,6 +435,9 @@ main .first-screen {
     margin: 0 auto;
     margin-top: 4rem;
     position: relative; }
+    @media screen and (max-width: 900px) {
+      .services .services-description {
+        width: 90%; } }
     .services .services-description .description-icon-people {
       background: url(../images/people.png);
       background-repeat: no-repeat;
@@ -280,6 +448,10 @@ main .first-screen {
       top: -2rem;
       left: 0;
       transition: all 0.3s ease-in-out; }
+      @media screen and (max-width: 900px) {
+        .services .services-description .description-icon-people {
+          position: static;
+          margin: 0 auto; } }
     .services .services-description .description-icon-solo {
       background: url(../images/solo.png);
       background-repeat: no-repeat;
@@ -295,13 +467,17 @@ main .first-screen {
       margin: 0 auto;
       margin-top: 2rem;
       transition: all 0.3s ease-in-out; }
+      @media screen and (max-width: 900px) {
+        .services .services-description ul {
+          width: 90%;
+          padding: 0; } }
       .services .services-description ul li {
         margin-bottom: 1.5rem;
         font-size: 1.6rem;
         color: #fff; }
     .services .services-description ul.description-solo {
       position: absolute;
-      top: -100%;
+      bottom: 100%;
       left: 25.5%; }
   .services a {
     display: block;
@@ -369,6 +545,9 @@ main .first-screen {
     color: #1A3441;
     font-size: 3rem;
     font-weight: 900; }
+    @media screen and (max-width: 900px) {
+      .artist h3.artist-name {
+        text-align: center; } }
   .artist .logo-social {
     list-style: none;
     display: flex;
@@ -377,6 +556,9 @@ main .first-screen {
     width: 100%;
     box-sizing: border-box;
     padding-left: 70%; }
+    @media screen and (max-width: 900px) {
+      .artist .logo-social {
+        padding: 0; } }
     .artist .logo-social a {
       display: block;
       width: 20px;
@@ -420,6 +602,10 @@ main .first-screen {
   .artist .artist-presentation {
     position: relative;
     width: 70%; }
+    @media screen and (max-width: 900px) {
+      .artist .artist-presentation {
+        width: 90%;
+        margin: 0 auto; } }
     .artist .artist-presentation .quote {
       background: url(../images/quote.png);
       background-size: contain;
@@ -531,6 +717,10 @@ main .first-screen {
   font-size: 1.5rem;
   font-weight: 600;
   transition: all 0.3s ease-in-out; }
+  @media screen and (max-width: 900px) {
+    .know-more {
+      width: 50%;
+      margin: 2rem auto; } }
 
 .know-more:hover {
   background: #2CDFFF;
@@ -573,6 +763,12 @@ main .first-screen {
       outline: solid 3px #2CDFFF;
       padding: 1rem 3rem;
       transition: all 0.3s ease-in-out; }
+      @media screen and (max-width: 900px) {
+        .comments .comments-box a {
+          left: 50%;
+          transform: translate(-50%);
+          width: 60%;
+          text-align: center; } }
     .comments .comments-box a:hover {
       background: #2CDFFF;
       color: #1A3441; }
@@ -594,11 +790,17 @@ footer {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain; }
+  @media screen and (max-width: 900px) {
+    footer {
+      margin-top: 10rem; } }
   footer .footer-container {
     width: 80%;
     margin: 0 auto; }
     footer .footer-container .footer-content {
       width: 40%; }
+      @media screen and (max-width: 900px) {
+        footer .footer-container .footer-content {
+          width: 80%; } }
       footer .footer-container .footer-content h2 {
         color: #fff;
         font-size: 1.8rem; }
