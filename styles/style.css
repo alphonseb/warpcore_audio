@@ -83,7 +83,8 @@ body {
   margin: 0 auto; }
   @media screen and (max-width: 900px) {
     .header-container {
-      height: auto; } }
+      height: auto;
+      width: 90%; } }
 
 header {
   transition: background-color .3s linear; }
@@ -864,6 +865,11 @@ footer {
       font-size: 1.1rem;
       margin-top: 5rem;
       color: #fff; }
+      @media screen and (max-width: 900px) {
+        footer .footer-container .legal {
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 5rem; } }
       footer .footer-container .legal a {
         text-decoration: none;
         color: #fff; }

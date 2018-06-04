@@ -5,9 +5,9 @@ $(document).ready(function(){
   const CAT = document.querySelectorAll('.services-categories p')
   const DESC = document.querySelectorAll('.services-description ul')
   const SERVICON = document.querySelectorAll('.services-description div')
-  const YTPLAYER = document.querySelector('#frame')
+  let ytPlayer = document.querySelector('#frame')
 
-  YTPLAYER.style.height = YTPLAYER.offsetWidth *0.7* 480/864 + 'px'
+  ytPlayer.style.height = ytPlayer.offsetWidth *0.7* 480/864 + 'px'
 
   let index = 0
   let previous = 0
@@ -98,12 +98,12 @@ $(document).ready(function(){
     }
   }
 
-  //Responsive YT YTPLAYER
+  //Responsive YT ytPlayer
 
   if (window.innerWidth < 900){
     let ytMobile = document.createElement('div')
     ytMobile.innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/videoseries?list=PLl7DBpCoPyXjgzxGYGMaPU1pZ3aSVOIPr' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen='' style='width: 100%;'></iframe>"
-    YTPLAYER = YTPLAYER.parentNode.replaceChild(ytMobile,YTPLAYER)
+    ytPlayer = ytPlayer.parentNode.replaceChild(ytMobile,ytPlayer)
   }
 
 

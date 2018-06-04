@@ -99,6 +99,11 @@ footer{
       font-size: 1.1rem;
       margin-top: 5rem;
       color: $white;
+      @media screen and (max-width: 900px){
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5rem;
+      }
       a{
         text-decoration: none;
         color: $white;
