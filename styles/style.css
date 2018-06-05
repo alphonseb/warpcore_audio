@@ -1,12 +1,12 @@
 .hamburger-container {
-  width: 50px;
-  height: 25px;
+  width: 45px;
+  height: 20px;
   position: relative; }
 
 .steak, .top-bun, .bottom-bun {
   width: 100%;
   margin: 0 auto;
-  height: 5px;
+  height: 4px;
   background: green;
   position: absolute;
   top: 50%;
@@ -18,7 +18,7 @@
   top: 0; }
 
 .bottom-bun {
-  top: 25px; }
+  top: 20px; }
 
 .before {
   animation: before 1s ease forwards; }
@@ -36,24 +36,24 @@
   0% {
     transform: translateX(-50%) translateY(-50%); }
   50% {
-    transform: translateX(-50%) translateY(10px); }
+    transform: translateX(-50%) translateY(8px); }
   100% {
-    transform: translateX(-50%) translateY(10px) rotate(-135deg); } }
+    transform: translateX(-50%) translateY(8px) rotate(-135deg); } }
 @keyframes after {
   0% {
     transform: translateX(-50%) translateY(-50%); }
   50% {
-    transform: translateX(-50%) translateY(-15px); }
+    transform: translateX(-50%) translateY(-12px); }
   100% {
-    transform: translateX(-50%) translateY(-15px) rotate(135deg); } }
+    transform: translateX(-50%) translateY(-12px) rotate(135deg); } }
 @keyframes before_reverse {
   0% {
-    transform: translateX(-50%) translateY(10px) rotate(-135deg); }
+    transform: translateX(-50%) translateY(8px) rotate(-135deg); }
   100% {
     transform: translateX(-50%) translateY(-50%) rotate(180deg); } }
 @keyframes after_reverse {
   0% {
-    transform: translateX(-50%) translateY(-15px) rotate(135deg); }
+    transform: translateX(-50%) translateY(-12px) rotate(135deg); }
   100% {
     transform: translateX(-50%) translateY(-50%) rotate(-180deg); } }
 @keyframes open {
@@ -97,7 +97,7 @@ header {
   display: none; }
   .header-mobile h2 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     text-align: center; }
   .header-mobile .hamburger-container div {
@@ -204,6 +204,10 @@ p {
   background-position: center;
   height: 50px;
   width: 50px; }
+
+.logo-mobile {
+  height: 45px;
+  height: 45px; }
 
 .logo {
   top: 2vh;
