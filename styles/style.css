@@ -217,4 +217,11 @@ footer {
   width: 55%;
   height: 15%; }
 
+h1 {
+  color: red; }
+
+.professional_icon {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+
 /*# sourceMappingURL=style.css.map */
