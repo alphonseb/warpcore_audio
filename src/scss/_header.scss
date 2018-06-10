@@ -1,16 +1,77 @@
-header {
+.header-container {
   width: 80%;
-  height:10%;
+  height:10vh;
   margin: 0 auto;
+  @media screen and (max-width: 900px){
+    height: auto;
+    width: 90%;
+  }
+}
+
+header{
+  transition: background-color .3s linear;
+}
+
+.header-mobile{
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem auto;
+  align-items: center;
+  display: none;
+  h2{
+    margin: 0;
+    font-size: 3rem;
+    color: $white;
+    text-align: center;
+  }
+  .hamburger-container div{
+    background: $light-blue;
+  }
+  @media screen and (max-width: 900px){
+    display: flex;
+  }
+}
+
+.header-fixed{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+  background-color: $white;
+  width: 100%;
+  z-index: 999;
+  li a{
+    color: $dark-blue;
+  }
+  .title-mobile{
+    color: $dark-blue;
+  }
+}
+
+.header-fixed + main{
+  padding-top: 2rem;
 }
 
 nav {
-  width: 100%;
-  height: 1%;
+  width: 95%;
+  box-sizing: border-box;
   padding: 5px;
-  margin-left: 8%;
+  margin-left: 5%;
   display: flex;
   justify-content: space-between;
+  transition: all .5s ease-in-out;
+  @media screen and (max-width: 900px){
+    flex-direction: column;
+    transform: translatey(-200%);
+    display: none;
+  }
+}
+
+nav.nav-mobile-display{
+  display: flex;
+}
+nav.nav-mobile-transform{
+  transform: translate(0);
 }
 
 li a {
@@ -21,14 +82,20 @@ li a {
   font-size: 1.5rem;
   display: block;
   padding:10px;
+  @media screen and (max-width: 900px){
+    text-align: center;
+  }
 }
 
 nav .menu{
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   justify-content: space-around;
   padding-right: 10px;
+  @media screen and (max-width: 900px){
+    flex-direction: column;
+  }
 }
 
 nav ul li {
@@ -50,12 +117,23 @@ p {
   color: $white;
   height: 50px;
   font-size: 1.4rem;
+  transition: all .3s ease-in;
+}
+
+.language a:hover{
+  color: $light-blue;
 }
 
 .language {
   height: 40px;
   display: flex;
+  width: 5%;
+  justify-content: space-evenly;
   flex-direction: row;
+  @media screen and (max-width: 900px){
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .language li a {
@@ -65,15 +143,27 @@ p {
 
 // Image
 
-.logo_image {
-  height : 1px;
+
+.logo, .logo-mobile {
+  background: url(../images/warpcore.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  width: 50px;
 }
 
-.logo {
-  height: 40px;
-  width: 40px;
-  padding-top :1%;
-  padding-left: 5%;
+.logo-mobile{
+  height: 45px;
+  height: 45px;
+}
+
+.logo{
+  top: 2vh;
+  position: absolute;
+  @media screen and (max-width: 900px){
+    display: none;
+  }
 }
 
 .underline{
