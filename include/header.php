@@ -9,7 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
     <link href="styles/ytv.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
-      ::selection{background: #2CDFFF;}
+      ::selection{background: #2CDFFF; color: #FFF;}
+      ::placeholder{
+        color: #FFF;
+        opacity: 0.5;
+      }
     </style>
   </head>
   <body>
@@ -41,7 +45,7 @@
                <div class="underline"></div>
              </li>
              <li> <a href="#"> Particuliers  </a><div class="underline"></div></li>
-             <li> <a href="#"> L'artiste </a><div class="underline"></div></li>
+             <li> <a href="#"> A propos </a><div class="underline"></div></li>
              <li> <a href="#"> Contact </a><div class="underline"></div></li>
            </ul>
            <ul class="language">

@@ -286,16 +286,16 @@ main .first-screen {
         main .first-screen .first-screen-left h2 {
           position: static;
           text-align: center; } }
-    main .first-screen .first-screen-left p {
+    main .first-screen .first-screen-left div.home-description {
       font-size: 1.6rem;
-      line-height: 2rem;
+      line-height: 2.5rem;
       color: #fff;
       position: absolute;
       top: 15vh;
       left: 27%;
       width: 65%; }
       @media screen and (max-width: 900px) {
-        main .first-screen .first-screen-left p {
+        main .first-screen .first-screen-left div.home-description {
           position: static;
           text-align: center;
           width: 90%;
@@ -886,5 +886,58 @@ h1 {
 .professional_icon {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto; }
+  .contact-container h1 {
+    font-size: 2.5rem;
+    color: #2CDFFF;
+    text-align: center; }
+  .contact-container .contact-form-container {
+    width: 80%;
+    margin: 0 auto; }
+    .contact-container .contact-form-container .contact-form {
+      display: flex;
+      flex-direction: column; }
+      .contact-container .contact-form-container .contact-form label {
+        color: #2CDFFF;
+        font-size: 1.5rem;
+        padding: 2rem;
+        padding-left: 0;
+        margin-top: 1rem; }
+      .contact-container .contact-form-container .contact-form .contact-form-names {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .contact-container .contact-form-container .contact-form .contact-form-names div {
+          width: 48%;
+          display: flex;
+          flex-direction: column; }
+      .contact-container .contact-form-container .contact-form input, .contact-container .contact-form-container .contact-form textarea {
+        background: none;
+        color: #fff;
+        border: solid 1px #2CDFFF;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 1rem;
+        font-family: "Montserrat", sans-serif; }
+      .contact-container .contact-form-container .contact-form textarea {
+        resize: none; }
+      .contact-container .contact-form-container .contact-form input:focus {
+        border: solid 1px #1A3441; }
+      .contact-container .contact-form-container .contact-form input.submit {
+        border: solid 1.5px #2CDFFF;
+        width: 15%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        padding: 1.5rem 1rem;
+        transition: all .3s ease-in-out;
+        font-weight: 600;
+        cursor: pointer; }
+      .contact-container .contact-form-container .contact-form input.submit:hover {
+        background: #2CDFFF;
+        color: #1A3441; }
 
 /*# sourceMappingURL=style.css.map */

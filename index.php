@@ -6,9 +6,14 @@ include "include/header.php";
         <div class="first-screen-left">
           <h1>Warpcore Audio</h1>
           <h2>Production musicale en Île-de-France</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <div class="home-description">
+            <p>
+              WarpCore Audio est une entreprise spécialisée dans la production musicale. Nous proposons tous services musicaux, de la composition au mastering, tant pour les entreprises que pour les artistes.
+            </p>
+            <p>
+              Vous pouvez également nous contacter afin d’avoir un retour professionnel sur votre travail. Nous proposons enfin des prestations live sur demande.
+            </p>
+          </div>  
         </div>
         <div class="first-screen-right">
           <div class="slider-container clip-img">
