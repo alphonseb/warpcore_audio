@@ -168,10 +168,6 @@ nav ul li {
   list-style: none;
   position: relative; }
 
-p {
-  color: #fff;
-  font-size: 1.6rem; }
-
 .language a {
   text-decoration: none;
   color: #fff;
@@ -798,6 +794,8 @@ footer {
   @media screen and (max-width: 900px) {
     footer {
       margin-top: 10rem; } }
+  footer p {
+    color: #fff; }
   footer .footer-container {
     width: 80%;
     margin: 0 auto; }
@@ -880,46 +878,87 @@ footer {
       footer .footer-container .legal a:hover {
         text-decoration: underline; }
 
+.professional_main {
+  color: #1A3441; }
+
+.professional_info {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+  height: 5%; }
+  .professional_info ul {
+    color: #2CDFFF;
+    height: 30%;
+    margin-top: 10rem; }
+    .professional_info ul li {
+      list-style: none;
+      font-size: 1.5rem;
+      margin-top: 20px; }
+
 .professional_icon {
   overflow: hidden;
   background: #1A3441;
   margin: 1.5% auto;
+  margin-top: 5%;
   width: 250px;
+  height: 250px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
   .professional_icon img {
     box-sizing: border-box;
-    width: 100%;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative; }
+  .professional_icon h2 {
+    position: absolute;
+    top: 30%; }
+
+.description_line {
+  color: #2CDFFF;
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.6rem; }
 
 .form-container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   background-color: white;
-  padding: 0 3% 3% 3%;
+  padding: 0 5% 5% 5%;
   box-sizing: border-box; }
   .form-container h3 {
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 600;
     padding: 5%; }
 
-.quotation_form .text_zone {
+.quotation_form {
   width: 80%;
-  margin: auto;
-  margin-bottom: 3%; }
-  .quotation_form .text_zone input {
+  margin: auto; }
+  .quotation_form .text_zone {
+    margin-bottom: 3%; }
+    .quotation_form .text_zone input {
+      border-radius: 5px;
+      border: solid 1px #D6D6D6;
+      height: 30px;
+      padding-left: 2%; }
+    .quotation_form .text_zone div {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3%; }
+      .quotation_form .text_zone div p {
+        margin-bottom: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.3rem; }
+    .quotation_form .text_zone .description_input {
+      height: 300px; }
+  .quotation_form .choice_list {
+    width: 40%;
+    height: 40px;
     border-radius: 5px;
-    border: solid 1px #D6D6D6;
-    height: 30px; }
-  .quotation_form .text_zone div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%; }
-    .quotation_form .text_zone div span {
-      margin-bottom: 1%;
-      text-transform: uppercase; }
-  .quotation_form .text_zone .description_input {
-    height: 300px; }
+    padding-left: 20px;
+    margin-top: 3rem; }
 
 .contact-container {
   width: 80%;

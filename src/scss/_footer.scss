@@ -13,6 +13,9 @@ footer{
   @media screen and (max-width: 900px){
     margin-top: 10rem;
   }
+  p{
+    color : $white;
+  }
   .footer-container{
     width: 80%;
     margin: 0 auto;
