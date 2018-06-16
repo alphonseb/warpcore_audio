@@ -1,4 +1,5 @@
 <?php
+$current = 'professional';
 include "include/header.php";
 ?>
 

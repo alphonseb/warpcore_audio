@@ -23,7 +23,11 @@
         </div>
         <p class="legal">Copyright Warpcore Audio 2018 - <a href="#" title="Mentions légales">Mentions légales</a></p>
       </div>
-
+      <div class="scroll">
+        <div class="scroll-line">
+        </div>
+        <span class="scroll-anim">scroll</span>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/js/app.js"></script>

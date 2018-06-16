@@ -1,4 +1,6 @@
-<?php include "include/header.php" ?>
+<?php
+  $current = 'contact';
+ include "include/header.php"; ?>
     <main>
       <div class="contact-container">
         <h1>Contactez-moi facilement !</h1>

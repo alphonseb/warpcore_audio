@@ -349,38 +349,6 @@ main .first-screen {
         border: 2px solid #2CDFFF; }
       main .first-screen .first-screen-right .slider-bullet .selected {
         background: #2CDFFF; }
-    main .first-screen .first-screen-right .scroll {
-      transform: rotate(-90deg);
-      transform-origin: center left;
-      position: fixed;
-      right: 1%;
-      bottom: 0;
-      width: 8%;
-      display: flex;
-      justify-content: space-between; }
-      main .first-screen .first-screen-right .scroll span {
-        margin-left: 50%;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: bold;
-        transition: all 0.5s ease-in-out; }
-      main .first-screen .first-screen-right .scroll .scroll-anim {
-        animation: scroll 1.5s infinite; }
-      main .first-screen .first-screen-right .scroll .to-top {
-        transform: rotate(-270deg);
-        padding-bottom: 10%;
-        animation: top 1.5s infinite;
-        margin-left: 25%;
-        cursor: pointer; }
-      main .first-screen .first-screen-right .scroll .scroll-line {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        height: 2px;
-        background: #2CDFFF;
-        animation: scrollLine 1.5s infinite; }
 
 .services {
   background: url(../images/wave.png);
@@ -548,7 +516,7 @@ main .first-screen {
     font-size: 2rem; }
   .artist h3.artist-name {
     color: #1A3441;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900; }
     @media screen and (max-width: 900px) {
       .artist h3.artist-name {
@@ -628,7 +596,7 @@ main .first-screen {
   .artist .artist-presentation .logo_social {
     position: absolute;
     right: 8%; }
-  .artist .artist-description {
+  .artist p.artist-description {
     width: 100%;
     font-size: 1.5em;
     color: #1A3441;
@@ -785,6 +753,39 @@ main .first-screen {
       .comments .comments-box .comments-content p {
         font-size: 1.3rem;
         line-height: 1.8rem; }
+
+.scroll {
+  transform: rotate(-90deg);
+  transform-origin: center left;
+  position: fixed;
+  right: 1%;
+  bottom: 0;
+  width: 8%;
+  display: flex;
+  justify-content: space-between; }
+  .scroll span {
+    margin-left: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out; }
+  .scroll .scroll-anim {
+    animation: scroll 1.5s infinite; }
+  .scroll .to-top {
+    transform: rotate(-270deg);
+    padding-bottom: 10%;
+    animation: top 1.5s infinite;
+    margin-left: 25%;
+    cursor: pointer; }
+  .scroll .scroll-line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 2px;
+    background: #2CDFFF;
+    animation: scrollLine 1.5s infinite; }
 
 /**** footer ***/
 footer {

@@ -1,4 +1,40 @@
-
+.scroll{
+  transform: rotate(-90deg);
+  transform-origin: center left;
+  position: fixed;
+  right: 1%;
+  bottom: 0;
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  span{
+    margin-left: 50%;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .scroll-anim{
+    animation: scroll 1.5s infinite;
+  }
+  .to-top{
+    transform: rotate(-270deg);
+    padding-bottom: 10%;
+    animation: top 1.5s infinite;
+    margin-left: 25%;
+    cursor: pointer;
+  }
+  .scroll-line{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 2px;
+    background: $light-blue;
+    animation: scrollLine 1.5s infinite;
+  }
+}
 
 /**** footer ***/
 

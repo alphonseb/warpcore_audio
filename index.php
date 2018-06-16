@@ -1,4 +1,5 @@
 <?php
+$current = 'home';
 include "include/header.php";
 ?>
     <main>
@@ -13,7 +14,7 @@ include "include/header.php";
             <p>
               Vous pouvez également nous contacter afin d’avoir un retour professionnel sur votre travail. Nous proposons enfin des prestations live sur demande.
             </p>
-          </div>  
+          </div>
         </div>
         <div class="first-screen-right">
           <div class="slider-container clip-img">
@@ -39,11 +40,6 @@ include "include/header.php";
             </div>
             <div>
             </div>
-          </div>
-          <div class="scroll">
-            <div class="scroll-line">
-            </div>
-            <span class="scroll-anim">scroll</span>
           </div>
         </div>
       </div>
@@ -72,8 +68,8 @@ include "include/header.php";
         <a id="services-link" href="#" title="Vers page professionnel"></a>
       </div>
       <div class="artist">
-        <h2>L'Artiste</h2>
-        <h3 class="artist-name">Matthieu Germain</h3>
+        <h2>WarpCore Audio</h2>
+        <h3 class="artist-name">Matthieu Germain, fondateur</h3>
         <div class="artist-presentation">
           <div class="quote" id="quote-left"></div>
           <div class="quote" id="quote-right"></div>
@@ -94,7 +90,7 @@ include "include/header.php";
         </div>
         <a href="#" title="En savoir plus" class="know-more">En apprendre plus</a>
         <h4>Portfolio</h2>
-        <p class="portfolio-description">Quelques unes de mes créations</p>
+        <p class="portfolio-description">Quelques unes de nos réalisations</p>
         <div id="frame"></div>
       </div>
       <div class="comments">

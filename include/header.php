@@ -37,16 +37,16 @@
         <nav>
            <ul class="menu">
              <li>
-               <a href="#"> Accueil</a>
-               <div class="underline link-selected"></div>
+               <a href="index.php"> Accueil</a>
+               <div class="underline <?php if($current == 'home'){echo 'link-selected';}?>"></div>
              </li>
              <li>
-               <a href="#"> Professionnels</a>
-               <div class="underline"></div>
+               <a href="professional.php"> Professionnels</a>
+               <div class="underline <?php if($current == 'professional'){echo 'link-selected';}?>"></div>
              </li>
-             <li> <a href="#"> Particuliers  </a><div class="underline"></div></li>
-             <li> <a href="#"> A propos </a><div class="underline"></div></li>
-             <li> <a href="#"> Contact </a><div class="underline"></div></li>
+             <li> <a href="particular.php"> Particuliers  </a><div class="underline <?php if($current == 'particular'){echo 'link-selected';}?>"></div></li>
+             <li> <a href="about.php"> A propos </a><div class="underline <?php if($current == 'about'){echo 'link-selected';}?>"></div></li>
+             <li> <a href="contact.php"> Contact </a><div class="underline <?php if($current == 'contact'){echo 'link-selected';}?>"></div></li>
            </ul>
            <ul class="language">
              <li><a href="#" class="lg-selected">FR</a></li>
