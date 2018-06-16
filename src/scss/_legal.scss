@@ -1,0 +1,26 @@
+.legal-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  color: $white;
+  text-align: center;
+  a{
+    display: block;
+    padding: 2rem;
+    outline: solid 3px $light-blue;
+    background: $dark-blue;
+    color: $white;
+    text-decoration: none;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  a:hover{
+    background: $light-blue;
+    color: $dark-blue;
+  }
+}

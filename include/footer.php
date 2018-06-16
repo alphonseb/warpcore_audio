@@ -21,7 +21,7 @@
             </ul>
           </div>
         </div>
-        <p class="legal">Copyright Warpcore Audio 2018 - <a href="#" title="Mentions légales">Mentions légales</a></p>
+        <p class="legal">Copyright Warpcore Audio 2018 - <a href="legal.php" title="Mentions légales">Mentions légales</a></p>
       </div>
       <div class="scroll">
         <div class="scroll-line">

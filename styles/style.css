@@ -370,7 +370,7 @@ main .first-screen {
     color: #2CDFFF;
     width: 30%;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 3rem;
     text-align: center;
     font-size: 2.5rem; }
   .services .services-categories {
@@ -720,7 +720,7 @@ main .first-screen {
   padding: 2rem;
   background: #1A3441;
   color: #fff;
-  width: 17%;
+  width: 15%;
   text-decoration: none;
   text-align: center;
   font-size: 1.5rem;
@@ -762,15 +762,16 @@ main .first-screen {
       display: block;
       text-decoration: none;
       background: #1A3441;
-      text-transform: uppercase;
       color: #fff;
       position: absolute;
       font-size: 1.4rem;
       font-weight: 600;
-      bottom: -1.7rem;
+      bottom: -2.8rem;
       left: 70%;
+      width: 15%;
+      text-align: center;
       outline: solid 3px #2CDFFF;
-      padding: 1rem 3rem;
+      padding: 2rem;
       transition: all 0.3s ease-in-out; }
       @media screen and (max-width: 900px) {
         .comments .comments-box a {
@@ -1085,5 +1086,29 @@ footer {
       .contact-container .contact-form-container .contact-form input.submit:hover {
         background: #2CDFFF;
         color: #1A3441; }
+
+.legal-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  color: #fff;
+  text-align: center; }
+  .legal-container a {
+    display: block;
+    padding: 2rem;
+    outline: solid 3px #2CDFFF;
+    background: #1A3441;
+    color: #fff;
+    text-decoration: none;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600; }
+  .legal-container a:hover {
+    background: #2CDFFF;
+    color: #1A3441; }
 
 /*# sourceMappingURL=style.css.map */
