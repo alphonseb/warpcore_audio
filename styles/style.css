@@ -77,6 +77,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #1A3441, #000); }
 
+p {
+  font-size: 1.6rem; }
+
 .header-container {
   width: 80%;
   height: 10vh;
@@ -260,8 +263,8 @@ main .first-screen {
       width: 100%;
       color: #fff;
       text-align: center;
-      font-size: 5rem;
-      font-weight: 900;
+      font-size: 4.5rem;
+      font-weight: 800;
       z-index: 2;
       position: absolute;
       top: -3.5rem; }
@@ -625,6 +628,7 @@ main .first-screen {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
   .artist p.portfolio-description {
     color: #1A3441;
+    font-size: 1.5rem;
     text-align: center; }
   .artist #frame,
   .artist .description {

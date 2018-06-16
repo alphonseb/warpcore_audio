@@ -25,8 +25,8 @@ main .first-screen {
       width: 100%;
       color: $white;
       text-align: center;
-      font-size: 5rem;
-      font-weight: 900;
+      font-size: 4.5rem;
+      font-weight: 800;
       z-index: 2;
       position: absolute;
       top: -3.5rem;
@@ -482,6 +482,7 @@ main .first-screen {
 
   p.portfolio-description{
     color: $dark-blue;
+    font-size: 1.5rem;
     text-align: center;
   }
 
