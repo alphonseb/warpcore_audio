@@ -7,6 +7,10 @@ $(document).ready(function(){
 
   const SCROLL = document.querySelector('.scroll span')
 
+  if (window.innerWidth < 900) {
+    SCROLL.parentNode.style.display = 'none'
+  }
+
   window.addEventListener('scroll',()=>{
     if (window.scrollY + window.innerHeight > document.body.clientHeight) {
       SCROLL.innerHTML = 'BACK TO TOP'
@@ -22,6 +26,7 @@ $(document).ready(function(){
       SCROLL.classList.remove('to-top')
     }
   },false)
+
 
   /**** HOME PAGE ***/
 

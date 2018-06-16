@@ -9,10 +9,10 @@ include "include/header.php";
           <h2>Production musicale en Île-de-France</h2>
           <div class="home-description">
             <p>
-              <strong>WarpCore Audio</strong> est une entreprise spécialisée dans la production musicale.
+              <strong>WarpCore Audio</strong> est une entreprise spécialisée dans la <strong>production musicale</strong>.
             </p>
             <p>
-              Nous proposons tous services musicaux, de la <em>composition</em> au <em>mastering</em>, tant pour les entreprises que pour les artistes.
+              Nous proposons tous types de services musicaux, de la <em>composition</em> au <em>mastering</em>, tant pour les entreprises que pour les artistes.
             </p>
             <p>
               Vous pouvez nous <strong><a href="#services-anchor" title="Devis">contacter</a></strong> afin d’avoir un retour professionnel sur votre travail.
@@ -101,6 +101,7 @@ include "include/header.php";
         <h4>Portfolio</h2>
         <p class="portfolio-description">Quelques unes de nos réalisations</p>
         <div id="frame"></div>
+        <a class="yt-sub" href="https://www.youtube.com/channel/UCIxdBIc7hXWeFTzvMzwctnA?sub_confirmation=1" target="_blank" title="YouTube">Nous suivre sur YouTube</a>
       </div>
       <div class="comments">
         <h2>Ils parlent de nous !</h2>
@@ -118,7 +119,7 @@ include "include/header.php";
             <h3>Paul Grossberger</h3>
             <p>Travail efficace et rapide, toujours à l'écoute et prêt à donner de bons conseils. C'est la première fois que nous travaillons avec vous et surement pas la dernière ! Un grand merci !</p>
           </div>
-          <a href="#" title="Avis Facebook">Donnez votre avis !</a>
+          <a href="https://www.facebook.com/pg/WarpCoreAudio/reviews/?ref=page_internal" target="_blank" title="Avis Facebook">Donnez votre avis !</a>
         </div>
       </div>
     </main>

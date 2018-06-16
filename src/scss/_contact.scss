@@ -33,7 +33,6 @@
         background: none;
         color: $white;
         border: solid 1px $light-blue;
-        border-radius: 5px;
         box-sizing: border-box;
         padding: 1rem;
         font-family: $primary-font;
@@ -47,7 +46,7 @@
         border: solid 1px $dark-blue;
       }
       input.submit{
-        border: solid 1.5px $light-blue;
+        border: solid 3px $light-blue;
         width: 15%;
         margin: 0 auto;
         margin-top: 3rem;
@@ -56,6 +55,9 @@
         transition: all .3s ease-in-out;
         font-weight: 600;
         cursor: pointer;
+        @media screen and (max-width: 900px){
+          width: 50%;
+        }
       }
       input.submit:hover{
         background: $light-blue;

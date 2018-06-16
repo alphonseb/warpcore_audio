@@ -5,11 +5,11 @@
           <p class="contact-description">Nous sommes joignables 7 jours sur 7. Utilisez notre <strong><a href="contact.php" title="Fomulaire de contact">formulaire de contact</a></strong> ou bien un autre moyen ci-dessous.</p>
           <div>
             <h3>Email</h3>
-            <p>contact@warpcore-audio.fr</p>
+            <p><a href="mailto:contact@warpcore-audio.fr" title="Mail">contact@warpcore-audio.fr</a></p>
           </div>
           <div>
             <h3>Téléphone</h3>
-            <p>+33 6 34 53 23 43</p>
+            <p><a href="tel:+33634532343" title="Téléphone">+33 6 34 53 23 43</a></p>
           </div>
           <div>
             <h3>Réseaux sociaux</h3>

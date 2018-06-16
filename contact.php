@@ -3,7 +3,7 @@
  include "include/header.php"; ?>
     <main>
       <div class="contact-container">
-        <h1>Contactez-moi facilement !</h1>
+        <h1>Contactez-nous facilement !</h1>
         <div class="contact-form-container">
           <form class="contact-form" action="" method="post">
             <div class="contact-form-names">

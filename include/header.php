@@ -22,8 +22,7 @@
         <div class="logo">
         </div>
         <div class="header-mobile">
-          <div class="logo-mobile">
-          </div>
+          <a href="index.php" title="Page d'accueil"><div class="logo-mobile"></div></a>
           <h2 class="title-mobile">WarpCore Audio</h2>
           <div class="hamburger-container">
             <div class="top-bun">
