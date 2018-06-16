@@ -42,10 +42,10 @@ include "include/header.php";
                 <option value="Mixage3">Arrangement</option>
               </select>
               <div class="musical_sample_container">
-                <p>envoyer un extrait musical</p>
+                <p>envoyer un extrait musicale</p>
                 <div class="">
-                  <img src="" alt="">
-                  <p></p>
+                  <img src="images/upload.png" alt="upload_icon">
+                  <p>test</p>
                 </div>
               </div>
             </div>
