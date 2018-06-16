@@ -160,7 +160,7 @@ li a {
 nav .menu {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 75%;
   justify-content: space-around;
   padding-right: 10px; }
   @media screen and (max-width: 900px) {
@@ -1257,7 +1257,7 @@ footer {
     .about-container div.buttons a.button {
       display: block;
       padding: 2rem;
-      width: 40%;
+      width: 43%;
       outline: solid 3px #2CDFFF;
       background: #1A3441;
       color: #fff;

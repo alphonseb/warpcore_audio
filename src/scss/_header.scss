@@ -92,7 +92,7 @@ li a {
 nav .menu{
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 75%;
   justify-content: space-around;
   padding-right: 10px;
   @media screen and (max-width: 900px){
@@ -105,9 +105,6 @@ nav ul li {
   position: relative;
 }
 
-// nav ul li a:hover {
-//   border-bottom: $light-blue solid 2px;
-// }
 
 .language a {
   text-decoration: none;
