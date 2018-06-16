@@ -90,7 +90,7 @@ p {
       width: 90%; } }
 
 header {
-  transition: background-color .3s linear; }
+  transition: background-color .5s linear; }
 
 .header-mobile {
   justify-content: space-between;
@@ -293,6 +293,11 @@ main .first-screen {
       top: 15vh;
       left: 27%;
       width: 65%; }
+      main .first-screen .first-screen-left div.home-description em {
+        color: #2CDFFF; }
+      main .first-screen .first-screen-left div.home-description a {
+        text-decoration: none;
+        color: #2CDFFF; }
       @media screen and (max-width: 900px) {
         main .first-screen .first-screen-left div.home-description {
           position: static;
@@ -325,7 +330,7 @@ main .first-screen {
           position: static;
           width: 100%; } }
       main .first-screen .first-screen-right .slider img {
-        transition: all 1s ease-in-out;
+        transition: all .5s linear;
         position: relative;
         z-index: 0;
         width: 100%;
@@ -349,13 +354,15 @@ main .first-screen {
       main .first-screen .first-screen-right .slider-bullet .selected {
         background: #2CDFFF; }
 
+#services-anchor {
+  height: 16vh; }
+
 .services {
   background: url(../images/wave.png);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-transition: background-position 0.3s ease-in;
-  margin-top: 10rem; }
+  -webkit-transition: background-position 0.3s ease-in; }
   @media screen and (max-width: 900px) {
     .services {
       margin-top: 5rem; } }
@@ -363,6 +370,7 @@ main .first-screen {
     color: #2CDFFF;
     width: 30%;
     margin: 0 auto;
+    margin-top: 1rem;
     text-align: center;
     font-size: 2.5rem; }
   .services .services-categories {
@@ -380,7 +388,6 @@ main .first-screen {
       width: 50%;
       padding: 20px;
       border: solid 1px #2CDFFF;
-      border-radius: 10px;
       color: #2CDFFF;
       text-align: center;
       transition: all 0.2s ease-in; }
@@ -453,16 +460,21 @@ main .first-screen {
       left: 25.5%; }
   .services a {
     display: block;
-    background: url(../images/plus.png);
-    width: 50px;
-    height: 50px;
     margin: 0 auto;
+    padding: 2rem;
+    width: 15%;
+    text-decoration: none;
+    background: #1A3441;
+    outline: solid 3px #2CDFFF;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
     margin-top: 3rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.3s; }
+    transition: all 0.5s; }
   .services a:hover {
-    background: url(../images/plus-hover.png); }
+    background: #2CDFFF;
+    color: #1A3441; }
 
 @keyframes scroll {
   50% {
@@ -679,12 +691,13 @@ main .first-screen {
     background: rgba(255, 255, 255, 0); } }
 .know-more {
   display: block;
+  outline: solid 3px #2CDFFF;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 2rem;
   background: #1A3441;
   color: #fff;
-  width: 15%;
+  width: 17%;
   text-decoration: none;
   text-align: center;
   font-size: 1.5rem;
@@ -805,7 +818,7 @@ footer {
     width: 80%;
     margin: 0 auto; }
     footer .footer-container .footer-content {
-      width: 40%; }
+      width: 35%; }
       @media screen and (max-width: 900px) {
         footer .footer-container .footer-content {
           width: 80%; } }
@@ -813,7 +826,11 @@ footer {
         color: #fff;
         font-size: 1.8rem; }
       footer .footer-container .footer-content .contact-description {
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        line-height: 2rem; }
+        footer .footer-container .footer-content .contact-description a {
+          text-decoration: none;
+          color: #2CDFFF; }
       footer .footer-container .footer-content h3 {
         color: #fff;
         font-size: 1.6rem;

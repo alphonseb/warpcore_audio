@@ -57,6 +57,13 @@ main .first-screen {
       top: 15vh;
       left: 27%;
       width: 65%;
+      em{
+        color: $light-blue;
+      }
+      a{
+        text-decoration: none;
+        color: $light-blue;
+      }
       @media screen and (max-width: 900px){
         position: static;
         text-align: center;
@@ -92,7 +99,7 @@ main .first-screen {
         width: 100%;
       }
       img{
-        transition: all 1s ease-in-out;
+        transition: all .5s linear;
         position: relative;
         z-index: 0;
         width: 100%;
@@ -124,16 +131,18 @@ main .first-screen {
       }
     }
   }
-
 }
 
+#services-anchor{
+  height: 16vh;
+}
 .services {
   background: url(../images/wave.png);
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transition: background-position 0.3s ease-in;
-  margin-top: 10rem;
+  // margin-top: 10rem;
   @media screen and (max-width: 900px){
     margin-top: 5rem;
   }
@@ -141,6 +150,7 @@ main .first-screen {
     color: $light-blue;
     width: 30%;
     margin: 0 auto;
+    margin-top: 1rem;
     text-align: center;
     font-size: 2.5rem;
   }
@@ -159,7 +169,6 @@ main .first-screen {
       width: 50%;
       padding: 20px;
       border: solid 1px $light-blue;
-      border-radius: 10px;
       color: $light-blue;
       text-align: center;
       transition: all 0.2s ease-in;
@@ -245,17 +254,22 @@ main .first-screen {
   }
   a{
     display: block;
-    background: url(../images/plus.png);
-    width: 50px;
-    height: 50px;
     margin: 0 auto;
+    padding: 2rem;
+    width: 15%;
+    text-decoration: none;
+    background: $dark-blue;
+    outline: solid 3px $light-blue;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
     margin-top: 3rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.3s;
+    transition: all 0.5s;
   }
   a:hover{
-    background: url(../images/plus-hover.png);
+    background: $light-blue;
+    color: $dark-blue;
   }
 }
 
@@ -536,12 +550,13 @@ main .first-screen {
 
 .know-more{
   display: block;
+  outline: solid 3px $light-blue;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 2rem;
   background: $dark-blue;
   color: $white;
-  width: 15%;
+  width: 17%;
   text-decoration: none;
   text-align: center;
   font-size: 1.5rem;

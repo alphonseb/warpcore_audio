@@ -2,14 +2,14 @@
       <div class="footer-container">
         <div class="footer-content">
           <h2>Nous contacter</h2>
-          <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <div>
-            <h3>Téléphone</h3>
-            <p>+33 6 34 53 23 43</p>
-          </div>
+          <p class="contact-description">Nous sommes joignables 7 jours sur 7. Utilisez notre <strong><a href="contact.php" title="Fomulaire de contact">formulaire de contact</a></strong> ou bien un autre moyen ci-dessous.</p>
           <div>
             <h3>Email</h3>
             <p>contact@warpcore-audio.fr</p>
+          </div>
+          <div>
+            <h3>Téléphone</h3>
+            <p>+33 6 34 53 23 43</p>
           </div>
           <div>
             <h3>Réseaux sociaux</h3>

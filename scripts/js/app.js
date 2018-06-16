@@ -98,10 +98,12 @@ $(document).ready(function(){
       if (i==1) {
         backPos.style.backgroundPosition = 'left'
         document.querySelector('#services-link').setAttribute('title','Vers page Particuliers')
+        document.querySelector('#services-link').setAttribute('href','particular.php')
       }
       else {
         backPos.style.backgroundPosition = 'right'
         document.querySelector('#services-link').setAttribute('title','Vers page Professionnels')
+        document.querySelector('#services-link').setAttribute('href','professional.php')
       }
       document.querySelector('.category-selected').classList.remove('category-selected')
       CAT[i].classList.add('category-selected')

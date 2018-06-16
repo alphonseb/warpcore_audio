@@ -5,17 +5,17 @@ include "include/header.php";
     <main>
       <div class="first-screen">
         <div class="first-screen-left">
-          <h1>Warpcore Audio</h1>
+          <h1>WarpCore Audio</h1>
           <h2>Production musicale en Île-de-France</h2>
           <div class="home-description">
             <p>
-              WarpCore Audio est une entreprise spécialisée dans la production musicale.
+              <strong>WarpCore Audio</strong> est une entreprise spécialisée dans la production musicale.
             </p>
             <p>
-              Nous proposons tous services musicaux, de la composition au mastering, tant pour les entreprises que pour les artistes.
+              Nous proposons tous services musicaux, de la <em>composition</em> au <em>mastering</em>, tant pour les entreprises que pour les artistes.
             </p>
             <p>
-              Vous pouvez nous contacter afin d’avoir un retour professionnel sur votre travail.
+              Vous pouvez nous <strong><a href="#services-anchor" title="Devis">contacter</a></strong> afin d’avoir un retour professionnel sur votre travail.
             </p>
             <p>
               Nous proposons aussi des prestations live sur demande.
@@ -49,6 +49,9 @@ include "include/header.php";
           </div>
         </div>
       </div>
+      <div id="services-anchor">
+
+      </div>
       <div class="services">
         <h2>Vous êtes</h2>
         <div class="services-categories">
@@ -71,7 +74,7 @@ include "include/header.php";
             <li>Arrangement</li>
           </ul>
         </div>
-        <a id="services-link" href="#" title="Vers page professionnel"></a>
+        <a id="services-link" href="professional.php" title="Vers page professionnel">Demander un devis</a>
       </div>
       <div class="artist">
         <h2>WarpCore Audio</h2>
