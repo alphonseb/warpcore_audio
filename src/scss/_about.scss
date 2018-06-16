@@ -1,0 +1,193 @@
+.about-container{
+  width: 80%;
+  margin: 0 auto;
+  color: $white;
+  h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .about-history{
+    box-sizing: border-box;
+    width: 100%;
+    background: $white;
+    color: $dark-blue;
+    padding: 1% 4%;
+    h2{
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .history-content{
+      position: relative;
+      margin-bottom: 4rem;
+      p{
+        width: 75%;
+        line-height: 2.3rem;
+        @media screen and (max-width: 900px){
+          text-align: center;
+          width: 100%;
+        }
+        a{
+          text-decoration: none;
+          color: $light-blue;
+          transition: all .3s ease-in-out;
+        }
+        a:hover{
+          color: $dark-blue;
+        }
+      }
+      .artist-img-border{
+        width: 30%;
+        overflow: hidden;
+        background: $light-blue;
+        position: absolute;
+        top: -5rem;
+        left: 80%;
+        @media screen and (max-width: 900px){
+          position: static;
+          margin: 0 auto;
+        }
+      }
+      .artist-img-container{
+        overflow: hidden;
+        width: 97%;
+        background: $dark-blue;
+        margin: 1.5% auto;
+        div{
+          width: 90%;
+          margin: 5% auto;
+        }
+        img{
+          box-sizing: border-box;
+          width: 100%;
+          transition: all .3s ease-in;
+        }
+      }
+
+      .clip-artist-img{
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      }
+    }
+  }
+  .about-location{
+    margin-top: 5rem;
+    width: 100%;
+    background: $white;
+    color: $dark-blue;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    h2{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    ul{
+      padding: 0;
+      font-size: 1.6rem;
+      li{
+        margin-top: 3rem;
+      }
+      .location-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 900px){
+          flex-direction: column-reverse;
+        }
+        iframe{
+          width: 50%;
+          @media screen and (max-width: 900px){
+            width: 100%;
+            margin: 2rem 0 3rem 0;
+          }
+        }
+        .location-info{
+          width: 42%;
+          @media screen and (max-width: 900px){
+            width: 100%;
+            text-align: center;
+
+          }
+          img{
+            width: 100%;
+          }
+          & > a{
+            display: block;
+            width: 40%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+            text-transform: none;
+            padding: 2rem;
+            outline: solid 3px $light-blue;
+            text-decoration: none;
+            background: $dark-blue;
+            color: $white;
+            font-weight: 600;
+            font-size: 1.5rem;
+            transition: all .3s ease-in-out;
+          }
+          & >a:hover{
+            background: $light-blue;
+            color: $dark-blue;
+          }
+          .equipment{
+            position: fixed;
+            padding: 2% 4%;
+            height: 60vh;
+            top: 15vh;
+            left: 50%;
+            transform: translate(-50%) scale(0);
+            width: 30%;
+            overflow: scroll;
+            overflow-x: hidden;
+            outline: solid 10px $dark-blue;
+            background: $white;
+            color: $dark-blue;
+            transition: all .3s ease-in;
+            @media screen and (max-width: 900px){
+              width: 70%;
+            }
+            h4{
+              text-align: center;
+            }
+            ul{
+              padding: 0;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.buttons{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 5rem;
+    @media screen and (max-width: 900px){
+      flex-direction: column;
+      width: 100%;
+    }
+    a.button{
+      display: block;
+      padding: 2rem;
+      width: 40%;
+      outline: solid 3px $light-blue;
+      background: $dark-blue;
+      color: $white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      transition: all .3s ease-in-out;
+      @media screen and (max-width: 900px){
+        margin: 2rem auto;
+      }
+    }
+    .button:hover{
+      color: $dark-blue;
+      background: $light-blue;
+    }
+  }
+
+}

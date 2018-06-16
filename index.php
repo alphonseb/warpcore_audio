@@ -18,6 +18,9 @@ include "include/header.php";
               Vous pouvez nous <strong><a href="#services-anchor" title="Devis">contacter</a></strong> afin d’avoir un retour professionnel sur votre travail.
             </p>
             <p>
+              Nous travaillons dans deux <strong><a href="about.php#location" title="Studios">studios</a></strong> situés à <strong>Paris</strong> et dans l'<strong>Essonne</strong>.
+            </p>
+            <p>
               Nous proposons aussi des prestations live sur demande.
             </p>
           </div>
@@ -97,7 +100,7 @@ include "include/header.php";
             </div>
           </div>
         </div>
-        <a href="#" title="En savoir plus" class="know-more">En apprendre plus</a>
+        <a href="about.php" title="En savoir plus" class="know-more">En apprendre plus</a>
         <h4>Portfolio</h2>
         <p class="portfolio-description">Quelques unes de nos réalisations</p>
         <div id="frame"></div>

@@ -159,6 +159,49 @@ $(document).ready(function(){
   }
 
 
+    // Equipment liste
+
+    const equipmentLinks = document.querySelectorAll('.location-content div a')
+    const equipmentLists = document.querySelectorAll('.location-content div .equipment')
+    
+    if (equipmentLinks !== null && equipmentLists !== null) {
+      for (let i = 0; i < equipmentLinks.length; i++) {
+        equipmentLinks[i].addEventListener(
+          'click',
+        (e)=>{
+          e.preventDefault()
+          equipmentLists[i].style.transform = 'translate(-50%) scale(1)'
+        },
+      false)
+      }
+      window.addEventListener(
+        'click',
+        ()=>{
+          for(let i = 0; i < equipmentLists.length; i++){
+            equipmentLists[i].style.transform = 'translate(-50%) scale(0)'
+          }
+        },
+        false)
+      for (let i = 0; i < equipmentLists.length; i++) {
+        equipmentLists[i].addEventListener(
+          'click',
+          (e)=>{
+            e.stopPropagation()
+          },
+          false
+        )
+        equipmentLinks[i].addEventListener(
+          'click',
+          (e)=>{
+            e.stopPropagation()
+          },
+          false
+        )
+      }
+    }
+
+
+
 
 
 
