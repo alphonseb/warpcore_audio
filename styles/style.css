@@ -1072,6 +1072,7 @@ footer {
         border: solid 1px #1A3441; }
       .contact-container .contact-form-container .contact-form input.submit {
         border: solid 3px #2CDFFF;
+        background: #1A3441;
         width: 15%;
         margin: 0 auto;
         margin-top: 3rem;

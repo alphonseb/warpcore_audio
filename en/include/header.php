@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Warpcore Audio</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
-    <link href="styles/ytv.css" type="text/css" rel="stylesheet" />
+    <link href="../styles/ytv.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
       ::selection{background: #2CDFFF; color: #FFF;}
       ::placeholder{
@@ -48,34 +48,34 @@
              <li> <a href="contact.php"> Contact </a><div class="underline <?php if($current == 'contact'){echo 'link-selected';}?>"></div></li>
            </ul>
            <ul class="language">
-             <li><a href="#" class="lg-selected">FR</a></li>
              <li><a
                <?php
               switch ($current) {
                 case 'home':
-                  echo "href='en/index.php'";
+                  echo "href='../index.php'";
                   break;
                 case 'professional':
-                  echo "href='en/professionnal.php'";
+                  echo "href='../professionnal.php'";
                   break;
                 case 'particular':
-                  echo "href='en/particular.php'";
+                  echo "href='../particular.php'";
                   break;
                 case 'about':
-                  echo "href='en/about.php'";
+                  echo "href='../about.php'";
                   break;
                 case 'contact':
-                  echo "href='en/particular.php'";
+                  echo "href='../particular.php'";
                   break;
                 case 'legal':
-                  echo "href='en/legal.php'";
+                  echo "href='../legal.php'";
                   break;
                 default:
-                  echo "href='en/index.php'";
+                  echo "href='../index.php'";
                   break;
               }
                 ?>
-               title="English version">EN</a></li>
+              title="Version française" >FR</a></li>
+             <li><a href="#" class="lg-selected">EN</a></li>
            </ul>
         </nav>
       </div>
