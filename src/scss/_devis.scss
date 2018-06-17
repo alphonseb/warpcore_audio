@@ -237,6 +237,8 @@
         label:hover{
           background: url(../images/upload-hover.png);
           background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
           cursor: pointer;
         }
         input{
@@ -267,7 +269,7 @@
     font-weight: 600;
     cursor: pointer;
     @media screen and (max-width: 900px){
-      width: 50%;  
+      width: 50%;
     }
   }
   .submit_button:hover{

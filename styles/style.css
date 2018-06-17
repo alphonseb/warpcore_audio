@@ -165,7 +165,9 @@ nav .menu {
   padding-right: 10px; }
   @media screen and (max-width: 900px) {
     nav .menu {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 0;
+      margin: 0 auto; } }
 
 nav ul li {
   list-style: none;
@@ -190,7 +192,8 @@ nav ul li {
   @media screen and (max-width: 900px) {
     .language {
       padding: 0;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      width: 10%; } }
 
 .language li a {
   padding: 0;
@@ -429,8 +432,10 @@ main .first-screen {
       transition: all 0.3s ease-in-out; }
       @media screen and (max-width: 900px) {
         .services .services-description .description-icon-people {
-          position: static;
+          position: relative;
           margin: 0 auto; } }
+    .services .services-description .description-icon-0-responsive {
+      left: -100%; }
     .services .services-description .description-icon-solo {
       background: url(../images/solo.png);
       background-repeat: no-repeat;
@@ -441,12 +446,19 @@ main .first-screen {
       top: 0;
       left: 100%;
       transition: all 0.3s ease-in-out; }
+    .services .services-description .description-icon-1-responsive {
+      left: 50%;
+      transform: translate(-50%); }
     .services .services-description ul {
       width: 45%;
       margin: 0 auto;
       margin-top: 2rem;
       transition: all 0.3s ease-in-out; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 900px) and (min-width: 400px) {
+        .services .services-description ul {
+          width: 50%;
+          padding: 0; } }
+      @media screen and (max-width: 400px) {
         .services .services-description ul {
           width: 90%;
           padding: 0; } }
@@ -624,6 +636,10 @@ main .first-screen {
     position: absolute;
     top: -5rem;
     left: 80%; }
+    @media screen and (max-width: 900px) {
+      .artist .artist-img-border {
+        position: static;
+        margin: 0 auto; } }
   .artist .artist-img-container {
     overflow: hidden;
     width: 97%;
@@ -1127,6 +1143,8 @@ footer {
         .devis_main .form_bottom .musical_sample_container .file_input label:hover {
           background: url(../images/upload-hover.png);
           background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
           cursor: pointer; }
         .devis_main .form_bottom .musical_sample_container .file_input input {
           display: none;

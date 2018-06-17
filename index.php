@@ -82,6 +82,13 @@ include "include/header.php";
       <div class="artist">
         <h2>WarpCore Audio</h2>
         <h3 class="artist-name">Matthieu Germain, fondateur</h3>
+        <div class="artist-img-border clip-artist-img">
+          <div class="artist-img-container clip-artist-img">
+            <div class="clip-artist-img">
+              <img src="images/profile-color.png" alt="Matthieu Hendrix">
+            </div>
+          </div>
+        </div>
         <div class="artist-presentation">
           <div class="quote" id="quote-left"></div>
           <div class="quote" id="quote-right"></div>
@@ -92,13 +99,6 @@ include "include/header.php";
             <li><a class="social-ml" href="#" title="Mail"></a></li>
             <li><a class="social-yt" href="#" title="YouTube"></a></li>
           </ul>
-        </div>
-        <div class="artist-img-border clip-artist-img">
-          <div class="artist-img-container clip-artist-img">
-            <div class="clip-artist-img">
-              <img src="images/profile-color.png" alt="Matthieu Hendrix">
-            </div>
-          </div>
         </div>
         <a href="about.php" title="En savoir plus" class="know-more">En apprendre plus</a>
         <h4>Portfolio</h2>

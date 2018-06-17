@@ -216,9 +216,12 @@ main .first-screen {
       left: 0;
       transition: all 0.3s ease-in-out;
       @media screen and (max-width: 900px){
-        position: static;
+        position: relative;
         margin: 0 auto;
       }
+    }
+    .description-icon-0-responsive{
+      left: -100%;
     }
     .description-icon-solo{
       background: url(../images/solo.png);
@@ -231,12 +234,20 @@ main .first-screen {
       left: 100%;
       transition: all 0.3s ease-in-out;
     }
+    .description-icon-1-responsive{
+      left: 50%;
+      transform: translate(-50%);
+    }
     ul{
       width: 45%;
       margin: 0 auto;
       margin-top: 2rem;
       transition: all 0.3s ease-in-out;
-      @media screen and (max-width: 900px){
+      @media screen and (max-width: 900px) and (min-width: 400px){
+        width: 50%;
+        padding: 0;
+      }
+      @media screen and (max-width: 400px){
         width: 90%;
         padding: 0;
       }
@@ -472,6 +483,10 @@ main .first-screen {
     position: absolute;
     top: -5rem;
     left: 80%;
+    @media screen and (max-width: 900px){
+      position: static;
+      margin: 0 auto;
+    }
   }
   .artist-img-container{
     overflow: hidden;

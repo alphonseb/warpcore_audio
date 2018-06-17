@@ -114,7 +114,7 @@ $(document).ready(function(){
       CAT[i].classList.add('category-selected')
       for (let j = 0; j < SERVICON.length; j++) {
         if (window.innerWidth < 900) {
-          SERVICON[j].style.transform = `translate(-${2*i}00%)`
+          SERVICON[j].classList.toggle(`description-icon-${j}-responsive`)
         }
         else {
           SERVICON[j].style.transform = `translate(-${i}00%)`
