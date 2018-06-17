@@ -18,7 +18,7 @@ $(document).ready(function(){
       SCROLL.parentNode.addEventListener('click',
     ()=>{
       console.log('click');
-      $('html, body').animate( { scrollTop: $('main').offset().top }, 1000 );
+      $('html, body').stop(true,false).animate( { scrollTop: $('main').offset().top }, 1000 );
     },false)
     }
     else {
