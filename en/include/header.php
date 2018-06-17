@@ -55,7 +55,7 @@
                   echo "href='../index.php'";
                   break;
                 case 'professional':
-                  echo "href='../professionnal.php'";
+                  echo "href='../professional.php'";
                   break;
                 case 'particular':
                   echo "href='../particular.php'";
@@ -64,7 +64,7 @@
                   echo "href='../about.php'";
                   break;
                 case 'contact':
-                  echo "href='../particular.php'";
+                  echo "href='../contact.php'";
                   break;
                 case 'legal':
                   echo "href='../legal.php'";

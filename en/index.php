@@ -1,6 +1,6 @@
 <?php
 $current = 'home';
-include "/include/header.php";
+include "include/header.php";
 ?>
     <main>
       <div class="first-screen">
