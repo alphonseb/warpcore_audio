@@ -209,7 +209,20 @@ $(document).ready(function(){
     }
 
 
+        //File name display
 
+    let fileInput = document.querySelector('#file')
+    let fileName = document.querySelector('#fileName')
+
+    if (fileInput !== null && fileName !== null) {
+      fileInput.addEventListener(
+        'change',
+        ()=>{
+          fileName.innerHTML = fileInput.files.item(0).name
+        },
+        false
+      )
+    }
 
 
 

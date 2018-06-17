@@ -929,108 +929,182 @@ footer {
       footer .footer-container .legal a:hover {
         text-decoration: underline; }
 
-.professional_main {
-  color: #1A3441; }
-
-.professional_info {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  margin: auto;
-  height: 5%; }
-  .professional_info ul {
-    color: #2CDFFF;
-    height: 30%;
-    margin-top: 10rem; }
-    .professional_info ul li {
-      list-style: none;
-      font-size: 1.5rem;
-      margin-top: 20px; }
-
-.professional_icon {
-  overflow: hidden;
-  background: #1A3441;
-  margin: 1.5% auto;
-  margin-top: 5%;
-  width: 250px;
-  height: 250px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
-  .professional_icon img {
-    box-sizing: border-box;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    position: relative; }
-  .professional_icon h2 {
-    position: absolute;
-    top: 30%; }
-
-.description_line {
-  color: #2CDFFF;
-  width: 70%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 1.6rem; }
-
-.form-container {
-  width: 80%;
-  margin: auto;
-  background-color: white;
-  padding: 0 5% 5% 5%;
-  box-sizing: border-box; }
-  .form-container h3 {
+.devis_main {
+  color: #2CDFFF; }
+  .devis_main h1 {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 5%; }
-
-.quotation_form {
-  width: 80%;
-  margin: auto; }
-  .quotation_form .text_zone {
-    margin-bottom: 3%; }
-    .quotation_form .text_zone input {
-      border-radius: 5px;
-      border: solid 1px #D6D6D6;
-      height: 30px;
-      padding-left: 2%; }
-    .quotation_form .text_zone div {
+    font-size: 3rem; }
+  .devis_main .devis_info {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    height: 5%; }
+    .devis_main .devis_info ul {
+      color: #fff;
+      height: 30%;
+      margin-top: 7.5rem;
+      width: 50%; }
+      .devis_main .devis_info ul li {
+        font-size: 1.5rem;
+        margin-top: 20px; }
+  .devis_main .devis_icon_container {
+    width: 250px;
+    height: 250px;
+    background: #2CDFFF;
+    margin: 1.5% auto;
+    margin-top: 5%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .devis_main .devis_icon_background {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #1A3441;
+    padding: 2rem;
+    margin: 1.5% auto;
+    width: 96%;
+    height: 97%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  .devis_main .particular_icon {
+    background: url(../images/solo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 95%;
+    margin: 1.5% auto;
+    background-position: center; }
+  .devis_main .professionnal_icon {
+    background: url(../images/people.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95%;
+    margin: 1.5% auto;
+    background-position: center; }
+  .devis_main .description {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80%; }
+  .devis_main .description_line {
+    box-sizing: border-box;
+    color: #fff;
+    width: 70%;
+    line-height: 2rem;
+    margin: 2rem auto;
+    font-size: 1.6rem; }
+  .devis_main .form-container {
+    color: #1A3441;
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: #fff;
+    padding: 0 5% 5% 5%;
+    box-sizing: border-box; }
+    .devis_main .form-container h3 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 5%; }
+  .devis_main .quotation_form {
+    width: 80%;
+    margin: auto; }
+    .devis_main .quotation_form .text_zone {
+      margin-bottom: 3%; }
+      .devis_main .quotation_form .text_zone div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%; }
+        .devis_main .quotation_form .text_zone div label {
+          margin-bottom: 1.6rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1.3rem; }
+          .devis_main .quotation_form .text_zone div label span {
+            color: #FF7E7E; }
+      .devis_main .quotation_form .text_zone div.particular_name {
+        flex-direction: row;
+        justify-content: space-between; }
+        .devis_main .quotation_form .text_zone div.particular_name .name_container {
+          flex-direction: column;
+          width: 48%; }
+      .devis_main .quotation_form .text_zone input, .devis_main .quotation_form .text_zone textarea {
+        background: none;
+        color: #1A3441;
+        border: solid 1px #1A3441;
+        box-sizing: border-box;
+        padding: 1rem;
+        font-family: "Montserrat", sans-serif; }
+      .devis_main .quotation_form .text_zone textarea {
+        resize: none; }
+  .devis_main .form_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .devis_main .form_bottom .services_type {
       display: flex;
       flex-direction: column;
-      margin-top: 3%; }
-      .quotation_form .text_zone div p {
+      width: 50%; }
+      .devis_main .form_bottom .services_type label {
         margin-bottom: 1.6rem;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.3rem; }
-    .quotation_form .text_zone .description_input {
-      height: 300px; }
-  .quotation_form .choice_list {
-    width: 40%;
-    height: 40px;
-    border-radius: 5px;
-    padding-left: 20px;
-    margin-top: 3rem; }
-
-.form_bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .form_bottom .musical_sample_container {
-    margin-top: 1.5rem;
-    width: 25%; }
-    .form_bottom .musical_sample_container img {
-      width: 15%;
-      height: 15%;
-      margin-right: 5%; }
-    .form_bottom .musical_sample_container div {
+    .devis_main .form_bottom select {
+      color: #1A3441;
+      border: solid 1px #1A3441;
+      border-radius: 0;
+      font-family: "Montserrat", sans-serif;
+      height: fit-content;
+      padding: 1em;
+      width: 70%; }
+    .devis_main .form_bottom .musical_sample_container {
+      width: 40%;
       display: flex;
-      flex-direction: row;
-      font-size: 1.3rem; }
-
-.musical_sample_container > p {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  font-weight: 600; }
+      flex-direction: column; }
+      .devis_main .form_bottom .musical_sample_container p {
+        margin-top: 0;
+        margin-bottom: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.3rem; }
+      .devis_main .form_bottom .musical_sample_container .file_input {
+        display: flex;
+        flex-direction: row;
+        width: 100%; }
+        .devis_main .form_bottom .musical_sample_container .file_input label {
+          width: 50px;
+          height: 50px;
+          background: url(../images/upload.png);
+          background-size: contain;
+          transition: all .3s ease-in; }
+        .devis_main .form_bottom .musical_sample_container .file_input label:hover {
+          background: url(../images/upload-hover.png);
+          background-size: contain;
+          cursor: pointer; }
+        .devis_main .form_bottom .musical_sample_container .file_input input {
+          display: none;
+          background: #1A3441;
+          color: #fff;
+          font-family: "Montserrat", sans-serif; }
+        .devis_main .form_bottom .musical_sample_container .file_input #fileName {
+          margin: auto;
+          margin-left: 1rem;
+          text-transform: none; }
+  .devis_main .submit_button {
+    display: block;
+    border: solid 3px #2CDFFF;
+    background: #1A3441;
+    color: #fff;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    padding: 1.5rem 1rem;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    cursor: pointer; }
+  .devis_main .submit_button:hover {
+    background: #2CDFFF;
+    color: #1A3441; }
 
 .contact-container {
   width: 80%;
@@ -1068,7 +1142,7 @@ footer {
         font-family: "Montserrat", sans-serif; }
       .contact-container .contact-form-container .contact-form textarea {
         resize: none; }
-      .contact-container .contact-form-container .contact-form input:focus {
+      .contact-container .contact-form-container .contact-form input:active, .contact-container .contact-form-container .contact-form textarea:active {
         border: solid 1px #1A3441; }
       .contact-container .contact-form-container .contact-form input.submit {
         border: solid 3px #2CDFFF;
@@ -1118,7 +1192,8 @@ footer {
   color: #fff; }
   .about-container h1 {
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+    color: #2CDFFF; }
   .about-container .about-history {
     box-sizing: border-box;
     width: 100%;

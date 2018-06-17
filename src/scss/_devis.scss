@@ -1,0 +1,224 @@
+.devis_main{
+  color : $light-blue;
+  h1{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .devis_info{
+    display: flex;
+    flex-direction: row;
+    width : 50%;
+    margin : auto;
+    height: 5%;
+    ul{
+      color : $white;
+      height: 30%;
+      margin-top: 7.5rem;
+      width: 50%;
+      li{
+        font-size: 1.5rem;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .devis_icon_container{
+    width: 250px;
+    height: 250px;
+    background: $light-blue;
+    margin : 1.5% auto;
+    margin-top: 5%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  .devis_icon_background{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: $dark-blue;
+    padding: 2rem;
+    margin: 1.5% auto;
+    width : 96%;
+    height: 97%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  .particular_icon{
+
+    background: url(../images/solo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 95%;
+    margin: 1.5% auto;
+    background-position: center;
+  }
+
+  .professionnal_icon{
+
+    background: url(../images/people.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95%;
+    margin: 1.5% auto;
+    background-position: center;
+  }
+
+  .description{
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80%;
+
+  }
+
+  .description_line{
+    box-sizing: border-box;
+    color : $white;
+    width : 70%;
+    line-height: 2rem;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+  }
+
+
+  .form-container{
+    color: $dark-blue;
+    width : 80%;
+    margin : auto;
+    margin-top: 5rem;
+    background-color: $white;
+    padding : 0 5% 5% 5%;
+    box-sizing: border-box;
+    h3{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 5%;
+    }
+  }
+
+  .quotation_form{
+    width: 80%;
+    margin: auto;
+    .text_zone{
+      margin-bottom: 3%;
+      div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        label{
+          margin-bottom: 1.6rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1.3rem;
+          span{
+            color: $red;
+          }
+        }
+      }
+      div.particular_name{
+        flex-direction: row;
+        justify-content: space-between;
+        .name_container{
+          flex-direction: column;
+          width: 48%;
+        }
+      }
+      input, textarea{
+        background: none;
+        color: $dark-blue;
+        border: solid 1px $dark-blue;
+        box-sizing: border-box;
+        padding: 1rem;
+        font-family: $primary-font;
+      }
+      textarea{
+        resize: none;
+      }
+    }
+  }
+
+  .form_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .services_type{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      label{
+        margin-bottom: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+    }
+    select{
+      color: $dark-blue;
+      border: solid 1px $dark-blue;
+      border-radius: 0;
+      font-family: $primary-font;
+      height: fit-content;
+      padding: 1em;
+      width: 70%;
+    }
+    .musical_sample_container{
+      width : 40%;
+      display: flex;
+      flex-direction: column;
+      p{
+        margin-top: 0;
+        margin-bottom: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      .file_input{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        label{
+          width: 50px;
+          height: 50px;
+          background: url(../images/upload.png);
+          background-size: contain;
+          transition: all .3s ease-in;
+        }
+        label:hover{
+          background: url(../images/upload-hover.png);
+          background-size: contain;
+          cursor: pointer;
+        }
+        input{
+          display: none;
+          background: $dark-blue;
+          color: $white;
+          font-family: $primary-font;
+        }
+        #fileName{
+          margin: auto;
+          margin-left: 1rem;
+          text-transform: none;
+        }
+      }
+    }
+  }
+  .submit_button{
+    display: block;
+    border: solid 3px $light-blue;
+    background: $dark-blue;
+    color: $white;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    padding: 1.5rem 1rem;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .submit_button:hover{
+    background: $light-blue;
+    color: $dark-blue;
+  }
+}

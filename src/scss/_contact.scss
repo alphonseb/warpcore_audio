@@ -42,7 +42,7 @@
         resize: none;
       }
 
-      input:focus{
+      input:active, textarea:active{
         border: solid 1px $dark-blue;
       }
       input.submit{
