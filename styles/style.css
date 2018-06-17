@@ -140,7 +140,8 @@ nav {
       display: none; } }
 
 nav.nav-mobile-display {
-  display: flex; }
+  display: flex;
+  margin: 0 auto; }
 
 nav.nav-mobile-transform {
   transform: translate(0); }
@@ -193,7 +194,7 @@ nav ul li {
     .language {
       padding: 0;
       margin: 0 auto;
-      width: 10%; } }
+      width: 20%; } }
 
 .language li a {
   padding: 0;
@@ -723,7 +724,8 @@ main .first-screen {
     text-align: center; }
     @media screen and (max-width: 900px) {
       .artist a.yt-sub {
-        width: 50%; } }
+        width: 50%;
+        margin-top: 2rem; } }
   .artist a.yt-sub:hover {
     background: #2CDFFF;
     color: #1A3441; }
@@ -986,12 +988,16 @@ footer {
       @media screen and (max-width: 900px) {
         .devis_main .devis_info ul {
           margin-top: 0;
+          padding: 0;
           text-align: center;
           width: 100%;
           box-sizing: border-box; } }
       .devis_main .devis_info ul li {
         font-size: 1.6rem;
         margin-top: 20px; }
+        @media screen and (max-width: 900px) {
+          .devis_main .devis_info ul li {
+            list-style: none; } }
   .devis_main .devis_icon_container {
     width: 250px;
     height: 250px;
@@ -1236,8 +1242,12 @@ footer {
   margin: 0 auto;
   margin-top: 5rem;
   color: #fff;
-  text-align: center; }
-  .legal-container a {
+  background: url(../images/wave.png);
+  background-repeat: no-repeat;
+  background-position: right; }
+  .legal-container h1 {
+    font-size: 3rem; }
+  .legal-container a#back {
     display: block;
     padding: 2rem;
     outline: solid 3px #2CDFFF;
@@ -1251,14 +1261,30 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600; }
-  .legal-container a:hover {
+    @media screen and (max-width: 900px) {
+      .legal-container a#back {
+        width: 40%; } }
+  .legal-container a#back:hover {
     background: #2CDFFF;
     color: #1A3441; }
+  .legal-container h2 {
+    margin-top: 3rem;
+    font-size: 2.5rem; }
+  .legal-container p {
+    line-height: 2.5rem; }
+    .legal-container p a {
+      text-decoration: none;
+      color: #2CDFFF; }
+    .legal-container p a:hover {
+      text-decoration: underline; }
 
 .about-container {
   width: 80%;
   margin: 0 auto;
   color: #fff; }
+  @media screen and (max-width: 900px) {
+    .about-container {
+      width: 95%; } }
   .about-container h1 {
     text-align: center;
     font-size: 3rem;

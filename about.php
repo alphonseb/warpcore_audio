@@ -65,7 +65,7 @@ include "include/header.php";
             </li>
             <li>
               <h3>Studio des Petites Ecuries</h3>
-              <p>29 rue des Petites Ecuries - 75010 Paris</p>
+              <p>Cour des Petites Ecuries - 75010 Paris</p>
               <div class="location-content">
                 <div class="location-info">
                   <img src="images/slider2.jpg" alt="Studio des Petites Ecuries">
@@ -118,7 +118,7 @@ include "include/header.php";
                     </ul>
                   </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.103644548381!2d2.351296312016095!3d48.8733247951129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4959157fba47cf52!2sStudio+H.B.S!5e0!3m2!1sfr!2sfr!4v1529173142596" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.0737180438382!2d2.352023176583268!3d48.87253058908786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e13ead291d5%3A0x98ade56ab015ee72!2sCour+des+Petites+%C3%89curies%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1529263222292" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
             </li>
           </ul>
