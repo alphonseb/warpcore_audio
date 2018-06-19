@@ -3,6 +3,8 @@ $current = 'about';
 include "include/header.php";
 ?>
     <main>
+      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      </video>
       <div class="about-container">
         <h1>A propos de WarpCore Audio</h1>
         <div class="about-history">
@@ -16,13 +18,11 @@ include "include/header.php";
               </div>
             </div>
             <p>
-              Issu d’un métissage, j’ai été plongé dès le plus jeune âge dans un éclectisme musical fort. En effet, ma mère ayant été danseuse traditionnelle antillaise et mon père ingénieur du son d’une formation reggae, il ne manquait plus que l’enseignement de ma soeur, professeur de danse Hip-Hop, pour forger mon intérêt musical. Plus tard je me suis intéressé au rock, puis ai été guitariste et chanteur d’un groupe de métal pendant 6 ans. Mon intérêt pour le Jazz et la musique savante s’est manifesté plus tard.
-            </p>
-            <p>
               Diplômé de l’<strong>ISTS</strong> (Groupe ESRA) avec la mention “Major de Promotion : Section Musique Enregistrement” en 2017, j’ai travaillé dès ma deuxième année d’étude dans plusieurs studios. Ces diverses expériences m’ont permis d’acquérir un socle solide de connaissances, de techniques et un sens du relationnel que l’on ne nous transmet pas lors des études. Après celles-ci j’ai continué à travailler pour des studios et ai accompagné plusieurs projets en tant qu’ingénieur, compositeur ou réalisateur artistique. Après cela, j’ai décidé de me lancer dans l’entrepreneuriat et ai fondé <strong>WarpCore Audio</strong>.
             </p>
-            <p>Vous pouvez découvrir mes compositions personnelles en vous rendant sur ma page <strong><a href="#" title="Soundcloud" target="_blank">Soundcloud</a></strong>.</p>
-
+            <p>
+              Issu d’un métissage, j’ai été plongé dès le plus jeune âge dans un éclectisme musical fort. En effet, ma mère ayant été danseuse traditionnelle antillaise et mon père ingénieur du son d’une formation reggae, il ne manquait plus que l’enseignement de ma soeur, professeur de danse Hip-Hop, pour forger mon intérêt musical. Plus tard je me suis intéressé au rock, puis ai été guitariste et chanteur d’un groupe de métal pendant 6 ans. Mon intérêt pour le Jazz et la musique savante s’est manifesté plus tard.
+            </p>
           </div>
 
         </div>

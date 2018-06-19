@@ -35,7 +35,7 @@
     <script src="scripts/js/hamburger"></script>
     <?php
     if ($current == 'home') {
-      echo "<script type='text/javascript' src='scripts/js/ytv.js'></script>";
+      echo "<script src='scripts/js/ytv.js'></script>";
       echo "
       <script>
         document.addEventListener('DOMContentLoaded', function(event) {

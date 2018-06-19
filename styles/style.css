@@ -71,6 +71,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 55%; } }
 
 body {
   margin: 0;
@@ -79,6 +82,14 @@ body {
 
 p {
   font-size: 1.6rem; }
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -500; }
 
 .header-container {
   width: 80%;
@@ -224,6 +235,9 @@ nav ul li {
   height: 2px;
   background: #2CDFFF; }
 
+.underline-back {
+  animation: underlineBack forwards ease-in-out .5s; }
+
 a:hover + .underline {
   animation: underline forwards ease-in-out .5s; }
 
@@ -240,6 +254,11 @@ a:hover + .underline {
     width: 0; }
   to {
     width: 100%; } }
+@keyframes underlineBack {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
 main .first-screen {
   box-sizing: border-box;
   margin-top: 10vh;
@@ -247,11 +266,7 @@ main .first-screen {
   height: 80vh;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  background: url(../images/wave.png);
-  background-position: left;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  position: relative; }
   @media screen and (max-width: 900px) {
     main .first-screen {
       flex-direction: column;
@@ -334,7 +349,7 @@ main .first-screen {
           position: static;
           width: 100%; } }
       main .first-screen .first-screen-right .slider img {
-        transition: all .5s linear;
+        transition: all .5s ease-in-out;
         position: relative;
         z-index: 0;
         width: 100%;
@@ -361,136 +376,130 @@ main .first-screen {
 #services-anchor {
   height: 16vh; }
 
-.services {
-  background: url(../images/wave.png);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-transition: background-position 0.3s ease-in; }
+@media screen and (max-width: 900px) {
+  .services {
+    margin-top: 5rem; } }
+.services h2 {
+  color: #2CDFFF;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2.5rem; }
+.services .services-categories {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 3rem; }
   @media screen and (max-width: 900px) {
-    .services {
-      margin-top: 5rem; } }
-  .services h2 {
+    .services .services-categories {
+      flex-direction: column;
+      width: 90%;
+      align-items: center; } }
+  .services .services-categories p {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+    border: solid 1px #2CDFFF;
     color: #2CDFFF;
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 3rem;
     text-align: center;
-    font-size: 2.5rem; }
-  .services .services-categories {
-    display: flex;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 3rem; }
+    transition: all 0.2s ease-in; }
     @media screen and (max-width: 900px) {
-      .services .services-categories {
-        flex-direction: column;
-        width: 90%;
-        align-items: center; } }
-    .services .services-categories p {
-      box-sizing: border-box;
-      width: 50%;
-      padding: 20px;
-      border: solid 1px #2CDFFF;
-      color: #2CDFFF;
-      text-align: center;
-      transition: all 0.2s ease-in; }
-      @media screen and (max-width: 900px) {
-        .services .services-categories p {
-          width: 70%; } }
-    .services .services-categories p:hover {
-      background: #2CDFFF;
-      color: #1A3441;
-      cursor: pointer; }
-    @media screen and (min-width: 900px) {
-      .services .services-categories p:first-child {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0; }
-      .services .services-categories p:last-child {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0; } }
-    .services .services-categories .category-selected {
-      background: #2CDFFF;
-      color: #1A3441; }
-  .services .services-description {
-    overflow: hidden;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    position: relative; }
-    @media screen and (max-width: 900px) {
-      .services .services-description {
-        width: 90%; } }
-    .services .services-description .description-icon-people {
-      background: url(../images/people.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      top: -2rem;
-      left: 0;
-      transition: all 0.3s ease-in-out; }
-      @media screen and (max-width: 900px) {
-        .services .services-description .description-icon-people {
-          position: relative;
-          margin: 0 auto; } }
-    .services .services-description .description-icon-0-responsive {
-      left: -100%; }
-    .services .services-description .description-icon-solo {
-      background: url(../images/solo.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 110px;
-      height: 110px;
-      position: absolute;
-      top: 0;
-      left: 100%;
-      transition: all 0.3s ease-in-out; }
-    .services .services-description .description-icon-1-responsive {
-      left: 50%;
-      transform: translate(-50%); }
-    .services .services-description ul {
-      width: 45%;
-      margin: 0 auto;
-      margin-top: 2rem;
-      transition: all 0.3s ease-in-out; }
-      @media screen and (max-width: 900px) and (min-width: 400px) {
-        .services .services-description ul {
-          width: 50%;
-          padding: 0; } }
-      @media screen and (max-width: 400px) {
-        .services .services-description ul {
-          width: 90%;
-          padding: 0; } }
-      .services .services-description ul li {
-        margin-bottom: 1.5rem;
-        font-size: 1.6rem;
-        color: #fff; }
-    .services .services-description ul.description-solo {
-      position: absolute;
-      bottom: 100%;
-      left: 25.5%; }
-  .services a {
-    display: block;
-    margin: 0 auto;
-    padding: 2rem;
-    width: 15%;
-    text-decoration: none;
-    background: #1A3441;
-    outline: solid 3px #2CDFFF;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 3rem;
-    transition: all 0.5s; }
-    @media screen and (max-width: 900px) {
-      .services a {
-        width: 50%; } }
-  .services a:hover {
+      .services .services-categories p {
+        width: 70%; } }
+  .services .services-categories p:hover {
+    background: #2CDFFF;
+    color: #1A3441;
+    cursor: pointer; }
+  @media screen and (min-width: 900px) {
+    .services .services-categories p:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .services .services-categories p:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; } }
+  .services .services-categories .category-selected {
     background: #2CDFFF;
     color: #1A3441; }
+.services .services-description {
+  overflow: hidden;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative; }
+  @media screen and (max-width: 900px) {
+    .services .services-description {
+      width: 90%; } }
+  .services .services-description .description-icon-people {
+    background: url(../images/people.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    transition: all 0.3s ease-in-out; }
+    @media screen and (max-width: 900px) {
+      .services .services-description .description-icon-people {
+        position: relative;
+        margin: 0 auto; } }
+  .services .services-description .description-icon-0-responsive {
+    left: -100%; }
+  .services .services-description .description-icon-solo {
+    background: url(../images/solo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: all 0.3s ease-in-out; }
+  .services .services-description .description-icon-1-responsive {
+    left: 50%;
+    transform: translate(-50%); }
+  .services .services-description ul {
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out; }
+    @media screen and (max-width: 900px) and (min-width: 400px) {
+      .services .services-description ul {
+        width: 50%;
+        padding: 0; } }
+    @media screen and (max-width: 400px) {
+      .services .services-description ul {
+        width: 90%;
+        padding: 0; } }
+    .services .services-description ul li {
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+      color: #fff; }
+  .services .services-description ul.description-solo {
+    position: absolute;
+    bottom: 100%;
+    left: 25.5%; }
+.services a {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 15%;
+  text-decoration: none;
+  background: #1A3441;
+  outline: solid 3px #2CDFFF;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 3rem;
+  transition: all 0.5s; }
+  @media screen and (max-width: 900px) {
+    .services a {
+      width: 50%; } }
+.services a:hover {
+  background: #2CDFFF;
+  color: #1A3441; }
 
 @keyframes scroll {
   50% {
@@ -846,11 +855,7 @@ main .first-screen {
 footer {
   width: 100%;
   margin-top: 20rem;
-  margin-bottom: 3rem;
-  background: url(../images/wave.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain; }
+  margin-bottom: 3rem; }
   @media screen and (max-width: 900px) {
     footer {
       margin-top: 10rem; } }
@@ -950,20 +955,12 @@ footer {
 .devis_main {
   color: #2CDFFF; }
   .devis_main .devis_background_particular {
-    width: 100%;
-    background: url(../images/wave.png);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat; }
+    width: 100%; }
     @media screen and (max-width: 900px) {
       .devis_main .devis_background_particular {
         background-position: center; } }
   .devis_main .devis_background_professional {
-    width: 100%;
-    background: url(../images/wave.png);
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat; }
+    width: 100%; }
     @media screen and (max-width: 900px) {
       .devis_main .devis_background_professional {
         background-position: center; } }
@@ -1415,6 +1412,9 @@ footer {
             .about-container .about-location ul .location-content .location-info .equipment ul {
               padding: 0;
               font-size: 1.6rem; }
+              @media screen and (max-width: 900px) {
+                .about-container .about-location ul .location-content .location-info .equipment ul li {
+                  list-style: none; } }
   .about-container div.buttons {
     display: flex;
     width: 60%;

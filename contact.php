@@ -2,6 +2,8 @@
   $current = 'contact';
  include "include/header.php"; ?>
     <main>
+      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      </video>
       <div class="contact-container">
         <h1>Contactez-nous facilement !</h1>
         <div class="contact-form-container">

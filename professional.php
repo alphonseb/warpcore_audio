@@ -4,7 +4,9 @@ include "include/header.php";
 ?>
 
     <main class="devis_main">
-      <h1>Professionnels</h1>
+      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      </video>
+      <h1>Entreprises</h1>
       <div class="devis_background_professional">
         <div class="devis_info">
           <div class="devis_icon_container">
@@ -31,19 +33,53 @@ include "include/header.php";
       </div>
       <div class="form-container">
         <h3>Demande de devis pour une entreprise</h3>
-        <form class="quotation_form">
+        <form id="form" action="scripts/php/professionalForm.php" method="post" class="quotation_form">
           <div class="text_zone">
             <div class="name_container">
-              <label for="companyName">Nom de la société<span> *</span></label>
-              <input id="companyName" type="text" name="companyName">
+              <label for="companyName">Nom de la société<span> *</span>
+                <?php
+                 if (isset($_GET['name']) && $_GET['name']==NULL){
+                    echo "<span>Veuillez rentrer votre nom</span>";
+                 }
+                ?>
+              </label>
+              <input
+              <?php
+              if (isset($_GET['name']) && $_GET['name']!=NULL) {
+                echo "value='".$_GET['name']."'";
+              }
+               ?>
+              id="companyName" type="text" name="companyName">
             </div>
             <div class="email_container">
-              <label for="email">Adresse Email<span> *</span></label>
-              <input id="email" type="email" name="email">
+              <label for="email">Adresse Email<span> *</span>
+                <?php
+                 if (isset($_GET['mail']) && $_GET['mail']==NULL){
+                    echo "<span>Veuillez rentrer votre adresse email</span>";
+                 }
+                ?>
+              </label>
+              <input id="email" type="email" name="email" value="
+              <?php
+              if (isset($_GET['mail']) && $_GET['mail']!=NULL) {
+                echo $_GET['mail'];
+              }
+               ?>
+              ">
             </div>
             <div class="description_container">
-              <label for="description">explication du projet<span> *</span></label>
-              <textarea id="description" name="description" rows="8" cols="80"></textarea>
+              <label for="description">explication du projet<span> *</span>
+                <?php
+                 if (isset($_GET['message']) && $_GET['message']==NULL){
+                    echo "<span>Veuillez détailler votre projet</span>";
+                 }
+                ?>
+              </label>
+              <textarea id="description" name="description" rows="8" cols="80"><?php
+                if (isset($_GET['message']) && $_GET['message']!=NULL) {
+                  echo $_GET['message'];
+                }
+                 ?></textarea>
             </div>
           </div>
           <div class="form_bottom">
@@ -66,7 +102,7 @@ include "include/header.php";
               </div>
             </div>
           </div>
-          <input class="submit_button" type="submit" name="formSubmit" value="Envoyer">
+          <input class="submit_button" type="submit" name="submit" value="Envoyer">
         </form>
       </div>
     </main>

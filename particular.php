@@ -4,7 +4,9 @@ include "include/header.php";
 ?>
 
     <main class="devis_main">
-      <h1>Particuliers</h1>
+      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      </video>
+      <h1>Artistes</h1>
       <div class="devis_background_particular">
         <div class="devis_info">
           <div class="devis_icon_container">

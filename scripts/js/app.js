@@ -1,6 +1,22 @@
 $(document).ready(function(){
 
+  //header link anim
 
+  const HEADERLINKS = document.querySelectorAll('.menu > li > a')
+  const HEADERUNDER = document.querySelectorAll('.menu > li > div')
+
+  for (let i = 0; i < HEADERLINKS.length; i++) {
+    HEADERLINKS[i].addEventListener(
+      'mouseleave',
+      ()=>{
+        if (!HEADERUNDER[i].classList.contains('link-selected')) {
+        HEADERUNDER[i].classList.add('underline-back')          
+        }
+      },
+
+      false
+    )
+  }
 
 
 // Scrol animation

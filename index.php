@@ -3,6 +3,8 @@ $current = 'home';
 include "include/header.php";
 ?>
     <main>
+      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      </video>
       <div class="first-screen">
         <div class="first-screen-left">
           <h1>WarpCore Audio</h1>
@@ -101,7 +103,7 @@ include "include/header.php";
           </ul>
         </div>
         <a href="about.php" title="En savoir plus" class="know-more">En apprendre plus</a>
-        <h4>Portfolio</h2>
+        <h4>Portfolio</h4>
         <p class="portfolio-description">Quelques unes de nos réalisations</p>
         <div id="frame"></div>
         <a class="yt-sub" href="https://www.youtube.com/channel/UCIxdBIc7hXWeFTzvMzwctnA?sub_confirmation=1" target="_blank" title="YouTube">Nous suivre sur YouTube</a>

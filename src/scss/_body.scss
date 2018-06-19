@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @media screen and (max-width: 500px){
+    font-size: 55%;
+  }
 }
 
 body {
@@ -11,4 +14,13 @@ body {
 
 p{
   font-size: 1.6rem;
+}
+
+video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -500;
 }

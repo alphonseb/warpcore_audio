@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
     <title>Warpcore Audio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
     <link href="styles/ytv.css" type="text/css" rel="stylesheet" />
-    <style type="text/css">
+    <style>
       ::selection{background: #2CDFFF; color: #FFF;}
       ::placeholder{
         color: #FFF;
@@ -40,10 +40,10 @@
                <div class="underline <?php if($current == 'home'){echo 'link-selected';}?>"></div>
              </li>
              <li>
-               <a href="professional.php"> Professionnels</a>
+               <a href="professional.php"> Entreprises</a>
                <div class="underline <?php if($current == 'professional'){echo 'link-selected';}?>"></div>
              </li>
-             <li> <a href="particular.php"> Particuliers  </a><div class="underline <?php if($current == 'particular'){echo 'link-selected';}?>"></div></li>
+             <li> <a href="particular.php"> Artistes  </a><div class="underline <?php if($current == 'particular'){echo 'link-selected';}?>"></div></li>
              <li> <a href="about.php"> A propos </a><div class="underline <?php if($current == 'about'){echo 'link-selected';}?>"></div></li>
              <li> <a href="contact.php"> Contact </a><div class="underline <?php if($current == 'contact'){echo 'link-selected';}?>"></div></li>
            </ul>

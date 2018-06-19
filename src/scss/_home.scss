@@ -6,10 +6,10 @@ main .first-screen {
   display: flex;
   justify-content: space-between;
   position: relative;
-  background: url(../images/wave.png);
-  background-position: left;
-  background-size: contain;
-  background-repeat: no-repeat;
+  // background: url(../images/wave.png);
+  // background-position: left;
+  // background-size: contain;
+  // background-repeat: no-repeat;
   @media screen and (max-width: 900px){
     flex-direction: column;
     height: auto;
@@ -99,7 +99,7 @@ main .first-screen {
         width: 100%;
       }
       img{
-        transition: all .5s linear;
+        transition: all .5s ease-in-out;
         position: relative;
         z-index: 0;
         width: 100%;
@@ -137,11 +137,11 @@ main .first-screen {
   height: 16vh;
 }
 .services {
-  background: url(../images/wave.png);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  -webkit-transition: background-position 0.3s ease-in;
+  // background: url(../images/wave.png);
+  // background-position: right;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // -webkit-transition: background-position 0.3s ease-in;
   // margin-top: 10rem;
   @media screen and (max-width: 900px){
     margin-top: 5rem;

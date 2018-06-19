@@ -4,6 +4,8 @@ include "include/header.php";
   ?>
 
     <main>
+      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      </video>
       <div class="legal-container">
         <h1>Mentions légales</h1>
         <h2>WarpCore Audio</h2>
@@ -61,7 +63,7 @@ include "include/header.php";
         </p>
         <h2>Hébergeur</h2>
         <p>OVH</p>
-        <p>https://www.ovh.com</p>
+        <p><a href="https://www.ovh.com" title="OVH">https://www.ovh.com</a></p>
         <p>hosting@ml.ovh.net</p>
         <h2>Conditions de service</h2>
         <p>

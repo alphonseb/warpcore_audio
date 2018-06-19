@@ -2,20 +2,12 @@
   color : $light-blue;
   .devis_background_particular{
     width: 100%;
-    background: url(../images/wave.png);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
     @media screen and (max-width: 900px){
       background-position: center;
     }
   }
   .devis_background_professional{
     width: 100%;
-    background: url(../images/wave.png);
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;
     @media screen and (max-width: 900px){
       background-position: center;
     }

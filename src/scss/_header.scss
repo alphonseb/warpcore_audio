@@ -170,6 +170,10 @@ nav ul li {
   background: $light-blue;
 }
 
+.underline-back{
+  animation: underlineBack forwards ease-in-out .5s;
+}
+
 a:hover+.underline{
   animation: underline forwards ease-in-out .5s;
 }
@@ -188,4 +192,9 @@ a:hover+.underline{
 @keyframes underline {
   from{width: 0;};
   to{width: 100%;};
+}
+
+@keyframes underlineBack{
+  from{width: 100%;};
+  to{width: 0;};
 }
