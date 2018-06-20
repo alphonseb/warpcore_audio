@@ -1,20 +1,21 @@
 <?php
 if (isset($_POST['submit'])) {
-  $companyName = $_POST['companyName'];
+  $lastName = $_POST['last'];
+  $firstName = $_POST['first'];
   $email = $_POST['email'];
   $message = nl2br(htmlspecialchars($_POST['description']));
   $serviceType = $_POST['serviceType'];
 
-  $subject = "Demande de devis pour ".$companyName." : ".$serviceType;
+  $subject = "Demande de devis pour ".$firstName." ".$lastName." : ".$serviceType;
 
-  $header = "From: \"".$companyName."\"<".$email.">\"\n";
+  $header = "From: \"".$firstName." ".$lastName."\"<".$email.">\"\n";
   $header .= "Reply-To: ".$email."\n";
   $header .= "Content-Type: text/html; charset=\"utf-8\"";
 
   $mailContent.= "<p>".$message."</p>";
 
-  if($companyName == NULL || $email==NULL || $message==NULL){
-    header("Location: ../../professional.php?name=".$companyName."&mail=".$email."&message=".$message."&type=".$serviceType."#anchor");
+  if($lastName == NULL || $firstName == NULL || $email==NULL || $message==NULL){
+    header("Location: ../../particular.php?last=".$lastName."&first=".$firstName."&mail=".$email."&message=".$message."&type=".$serviceType."#anchor");
   }
   else if(!empty($_FILES['sampleFile']['name'])){
     $file = $_FILES['sampleFile'];
@@ -34,10 +35,10 @@ if (isset($_POST['submit'])) {
 
           $mailContent.= "<p>Le client a inclus un fichier audio : <a href='http://alphonsebouy.fr/warpcore-audio/hendrix/uploads/".$fileNameNew."' title='fichier'>voir le fichier</a></p>";
           if(mail('contact@alphonsebouy.fr', $subject, $mailContent, $header) && move_uploaded_file($fileTmpName, $fileDestination)){
-            header("Location: ../../professional.php?uploadsuccess#bottom-anchor");
+            header("Location: ../../particular.php?uploadsuccess#bottom-anchor");
           }
           else{
-            header("Location: ../../professional.php?uploadfailure#bottom-anchor");
+            header("Location: ../../particular.php?uploadfailure#bottom-anchor");
           }
           exit();
         }
@@ -52,15 +53,15 @@ if (isset($_POST['submit'])) {
     else {
       $error = "Seuls les fichiers audio sont autorisés";
     }
-    header("Location: ../../professional.php?error=".$error."#bottom-anchor");
+    header("Location: ../../particular.php?error=".$error."#bottom-anchor");
   }
   else {
-    $mailContent .= "<p>Le client n'a pas inclu de fichier audio.</p>";
+    $mailContent .= "<p>Le client n'a pas inclus de fichier audio.</p>";
     if (mail('contact@alphonsebouy.fr',$subject, $mailContent, $header)) {
-      header("Location: ../../professional.php?mailsent#bottom-anchor");
+      header("Location: ../../particular.php?mailsent#bottom-anchor");
     }
     else {
-      header("Location: ../../professional.php?mailnotsent#bottom-anchor");
+      header("Location: ../../partiular.php?mailnotsent#bottom-anchor");
     }
   }
 

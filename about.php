@@ -18,10 +18,13 @@ include "include/header.php";
               </div>
             </div>
             <p>
-              Diplômé de l’<strong>ISTS</strong> (Groupe ESRA) avec la mention “Major de Promotion : Section Musique Enregistrement” en 2017, j’ai travaillé dès ma deuxième année d’étude dans plusieurs studios. Ces diverses expériences m’ont permis d’acquérir un socle solide de connaissances, de techniques et un sens du relationnel que l’on ne nous transmet pas lors des études. Après celles-ci j’ai continué à travailler pour des studios et ai accompagné plusieurs projets en tant qu’ingénieur, compositeur ou réalisateur artistique. Après cela, j’ai décidé de me lancer dans l’entrepreneuriat et ai fondé <strong>WarpCore Audio</strong>.
+              Je suis un ingénieur du son et compositeur spécialisé dans la production musicale. Diplômé de l’<strong>ISTS</strong> (Groupe ESRA) avec la mention “Major de Promotion : Section Musique Enregistrement”, j’ai travaillé dès ma deuxième année d’étude dans plusieurs studios. Ces diverses expériences m’ont permis d’acquérir un socle solide de connaissances, de techniques et un sens du relationnel que l’on ne nous transmet pas lors des études. Une fois diplômé j’ai continué à travailler pour des studios et à accompagné plusieurs projets en tant qu’ingénieur, compositeur ou réalisateur artistique. Par la suite, j’ai décidé de me lancer dans l’entrepreneuriat en fondant la micro-entreprise au nom commercial <strong>WarpCore Audio</strong>.
             </p>
             <p>
-              Issu d’un métissage, j’ai été plongé dès le plus jeune âge dans un éclectisme musical fort. En effet, ma mère ayant été danseuse traditionnelle antillaise et mon père ingénieur du son d’une formation reggae, il ne manquait plus que l’enseignement de ma soeur, professeur de danse Hip-Hop, pour forger mon intérêt musical. Plus tard je me suis intéressé au rock, puis ai été guitariste et chanteur d’un groupe de métal pendant 6 ans. Mon intérêt pour le Jazz et la musique savante s’est manifesté plus tard.
+              Issus d’un métissage, j’ai été plongé dès le plus jeune âge dans un éclectisme musical fort. En effet, ma mère ayant été danseuse traditionnelle antillaise et mon père ingénieur du son d’une formation reggae, il ne manquait plus que l’enseignement de ma soeur, professeur de danse Hip-Hop, pour forger mon intérêt musical. Plus tard je me suis intéressé au rock en devenant guitariste et chanteur d’un groupe de metal pendant 6 ans. Mon intérêt pour le Jazz et la musique savante s’est manifesté plus tard.
+            </p>
+            <p>
+              Vous pouvez découvrir mes compositions personnelles sur mon <strong><a href="https://soundcloud.com/majin7" title="Soundcloud">Soundcloud</a></strong>.
             </p>
           </div>
 

@@ -24,10 +24,10 @@ include "include/header.php";
         </div>
         <div class="description">
           <p class="description_line">
-            Pour votre entreprise <strong>WarpCore Audio</strong> propose des serices de composition sur-mesure accompagnés, ou non, de mixage et de mastering.
+            Pour votre entreprise <strong>WarpCore Audio</strong> propose des services de composition sur-mesure accompagnés, ou non, de mixage et de mastering.
           </p>
           <p id="anchor" class="description_line">
-            N'hésiter pas à nous demander un devis et à inclure un extrait musical !
+            N'hésitez pas à nous demander un devis et à inclure un extrait musical !
           </p>
         </div>
       </div>
@@ -86,12 +86,13 @@ include "include/header.php";
             <div class="services_type">
               <label for="serviceType">Prestation demandée <span>*</span> </label>
               <select id="serviceType" required class="choice_list" name="serviceType">
-                <option value=""></option>
-                <option>Mixage</option>
+                <option value="">Choisissez une prestation</option>
                 <option>Enregistrement studio</option>
+                <option>Mixage</option>
                 <option>Mastering</option>
                 <option>Composition</option>
                 <option>Arrangement</option>
+                <option>Autre</option>
               </select>
             </div>
             <div class="musical_sample_container">
@@ -106,7 +107,7 @@ include "include/header.php";
           <input class="submit_button" type="submit" name="submit" value="Envoyer">
           <?php
           if (isset($_GET['error'])) {
-            echo "<p classs='error'>".$_GET['error']."</p>";
+            echo "<p class='error'>".$_GET['error']."</p>";
           }
           elseif (isset($_GET['uploadfailure']) || isset($_GET['mailnotsent'])) {
             echo "<p class='error'>Problème dans l'envoi du formulaire. Veuillez réessayer.</p>";

@@ -2,6 +2,7 @@
   transform: rotate(-90deg);
   transform-origin: center left;
   position: fixed;
+  z-index: 1;
   right: 1%;
   bottom: 0;
   width: 8%;
@@ -42,10 +43,6 @@ footer{
   width: 100%;
   margin-top: 20rem;
   margin-bottom: 3rem;
-  // background: url(../images/wave.png);
-  // background-repeat: no-repeat;
-  // background-position: right;
-  // background-size: contain;
   @media screen and (max-width: 900px){
     margin-top: 10rem;
   }
@@ -122,14 +119,14 @@ footer{
         background-size: contain;
         background-repeat: no-repeat;
       }
-      .social-ml{
-        background: url(../images/mail.png);
+      .social-ln{
+        background: url(../images/linkedin.png);
         background-size: contain;
         background-repeat: no-repeat;
         transition: all .2s ease-in;
       }
-      .social-ml:hover{
-        background: url(../images/mail-hover.png);
+      .social-ln:hover{
+        background: url(../images/linkedin-hover.png);
         background-size: contain;
         background-repeat: no-repeat;
       }

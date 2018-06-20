@@ -18,6 +18,9 @@
         padding: 2rem;
         padding-left: 0;
         margin-top: 1rem;
+        span{
+          color: $red;
+        }
       }
       .contact-form-names{
         display: flex;
@@ -63,6 +66,13 @@
       input.submit:hover{
         background: $light-blue;
         color: $dark-blue;
+      }
+      .submit+p{
+        text-align: center;
+        color: $light-blue;
+      }
+      .submit+p.error{
+        color: $red;
       }
     }
   }

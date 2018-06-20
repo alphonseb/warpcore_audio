@@ -14,10 +14,10 @@
           <div>
             <h3>Réseaux sociaux</h3>
             <ul class="logo-social">
-              <li><a class="social-sc" href="#" title="Soundcloud"></a></li>
-              <li><a class="social-fb" href="#" title="Facebook"></a></li>
-              <li><a class="social-ml" href="#" title="Mail"></a></li>
-              <li><a class="social-yt" href="#" title="YouTube"></a></li>
+              <li><a class="social-ln" target="_blank" href="https://www.linkedin.com/in/matthieu-germain-b37963123/" title="LinkedIn"></a></li>
+              <li><a class="social-fb" target="_blank" href="https://www.facebook.com/WarpCoreAudio/" title="Facebook"></a></li>
+              <li><a class="social-yt" target="_blank" href="https://www.youtube.com/channel/UCIxdBIc7hXWeFTzvMzwctnA" title="YouTube"></a></li>
+              <li><a class="social-sc" target="_blank" href="https://soundcloud.com/majin7" title="Soundcloud"></a></li>
             </ul>
           </div>
         </div>

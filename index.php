@@ -14,16 +14,16 @@ include "include/header.php";
               <strong>WarpCore Audio</strong> est une entreprise spécialisée dans la <strong>production musicale</strong>.
             </p>
             <p>
-              Nous proposons tous types de services musicaux, de la <em>composition</em> au <em>mastering</em>, tant pour les entreprises que pour les artistes.
+              Nous accompagnons les entreprises et les artistes sur tous types de services musicaux, de la <em>composition</em> au <em>mastering</em>.
             </p>
             <p>
               Vous pouvez nous <strong><a href="#services-anchor" title="Devis">contacter</a></strong> afin d’avoir un retour professionnel sur votre travail.
             </p>
             <p>
-              Nous travaillons dans deux <strong><a href="about.php#location" title="Studios">studios</a></strong> situés à <strong>Paris</strong> et dans l'<strong>Essonne</strong>.
+              Nous proposons également des prestations live sur demande.
             </p>
             <p>
-              Nous proposons aussi des prestations live sur demande.
+              Nous travaillons dans deux <strong><a href="about.php#location" title="Studios">studios</a></strong> situés à <strong>Paris</strong> et dans l'<strong>Essonne</strong>.
             </p>
           </div>
         </div>
@@ -73,8 +73,8 @@ include "include/header.php";
             <li>Enregistrement/Mixage/Mastering</li>
           </ul>
           <ul class="description-solo">
-            <li>Mixage</li>
-            <li>Mastering</li>
+            <li>Enregistrement</li>
+            <li>Mixage/Mastering</li>
             <li>Composition</li>
             <li>Arrangement</li>
           </ul>
@@ -96,10 +96,10 @@ include "include/header.php";
           <div class="quote" id="quote-right"></div>
           <p class="artist-description">Je suis ingénieur du son et compositeur, spécialisé dans la production musicale.</p>
           <ul class="logo-social">
-            <li><a class="social-sc" href="#" title="Soundcloud"></a></li>
-            <li><a class="social-fb" href="#" title="Facebook"></a></li>
-            <li><a class="social-ml" href="#" title="Mail"></a></li>
-            <li><a class="social-yt" href="#" title="YouTube"></a></li>
+            <li><a class="social-ln" target="_blank" href="https://www.linkedin.com/in/matthieu-germain-b37963123/" title="LinkedIn"></a></li>
+            <li><a class="social-fb" target="_blank" href="https://www.facebook.com/WarpCoreAudio/" title="Facebook"></a></li>
+            <li><a class="social-yt" target="_blank" href="https://www.youtube.com/channel/UCIxdBIc7hXWeFTzvMzwctnA" title="YouTube"></a></li>
+            <li><a class="social-sc" target="_blank" href="https://soundcloud.com/majin7" title="Soundcloud"></a></li>
           </ul>
         </div>
         <a href="about.php" title="En savoir plus" class="know-more">En apprendre plus</a>

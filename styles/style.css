@@ -1,5 +1,5 @@
 .hamburger-container {
-  width: 45px;
+  width: 30px;
   height: 20px;
   position: relative; }
 
@@ -114,6 +114,9 @@ header {
     font-size: 3rem;
     color: #fff;
     text-align: center; }
+    @media screen and (max-width: 900px) {
+      .header-mobile h2 {
+        font-size: 2.5rem; } }
   .header-mobile .hamburger-container div {
     background: #2CDFFF; }
   @media screen and (max-width: 900px) {
@@ -220,8 +223,7 @@ nav ul li {
   width: 50px; }
 
 .logo-mobile {
-  height: 45px;
-  height: 45px; }
+  height: 35px; }
 
 .logo {
   top: 2vh;
@@ -294,12 +296,12 @@ main .first-screen {
       color: #fff;
       font-size: 3rem;
       font-weight: 600;
-      text-align: right;
       margin: 0;
       position: absolute;
       top: 3.5rem;
       left: 20%;
-      width: 100%; }
+      width: 105%;
+      text-align: right; }
       @media screen and (max-width: 900px) {
         main .first-screen .first-screen-left h2 {
           position: static;
@@ -590,13 +592,13 @@ main .first-screen {
       background: url(../images/facebook-hover.png);
       background-size: contain;
       background-repeat: no-repeat; }
-    .artist .logo-social .social-ml {
-      background: url(../images/mail.png);
+    .artist .logo-social .social-ln {
+      background: url(../images/linkedin.png);
       background-size: contain;
       background-repeat: no-repeat;
       transition: all .2s ease-in; }
-    .artist .logo-social .social-ml:hover {
-      background: url(../images/mail-hover.png);
+    .artist .logo-social .social-ln:hover {
+      background: url(../images/linkedin-hover.png);
       background-size: contain;
       background-repeat: no-repeat; }
     .artist .logo-social .social-yt {
@@ -644,6 +646,7 @@ main .first-screen {
     overflow: hidden;
     background: #2CDFFF;
     position: absolute;
+    z-index: 2;
     top: -5rem;
     left: 80%; }
     @media screen and (max-width: 900px) {
@@ -822,6 +825,7 @@ main .first-screen {
   transform: rotate(-90deg);
   transform-origin: center left;
   position: fixed;
+  z-index: 1;
   right: 1%;
   bottom: 0;
   width: 8%;
@@ -918,13 +922,13 @@ footer {
         background: url(../images/facebook-hover.png);
         background-size: contain;
         background-repeat: no-repeat; }
-      footer .footer-container .logo-social .social-ml {
-        background: url(../images/mail.png);
+      footer .footer-container .logo-social .social-ln {
+        background: url(../images/linkedin.png);
         background-size: contain;
         background-repeat: no-repeat;
         transition: all .2s ease-in; }
-      footer .footer-container .logo-social .social-ml:hover {
-        background: url(../images/mail-hover.png);
+      footer .footer-container .logo-social .social-ln:hover {
+        background: url(../images/linkedin-hover.png);
         background-size: contain;
         background-repeat: no-repeat; }
       footer .footer-container .logo-social .social-yt {
@@ -1204,6 +1208,8 @@ footer {
         padding: 2rem;
         padding-left: 0;
         margin-top: 1rem; }
+        .contact-container .contact-form-container .contact-form label span {
+          color: #FF7E7E; }
       .contact-container .contact-form-container .contact-form .contact-form-names {
         display: flex;
         flex-direction: row;
@@ -1240,6 +1246,11 @@ footer {
       .contact-container .contact-form-container .contact-form input.submit:hover {
         background: #2CDFFF;
         color: #1A3441; }
+      .contact-container .contact-form-container .contact-form .submit + p {
+        text-align: center;
+        color: #2CDFFF; }
+      .contact-container .contact-form-container .contact-form .submit + p.error {
+        color: #FF7E7E; }
 
 .legal-container {
   width: 80%;
