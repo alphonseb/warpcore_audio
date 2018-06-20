@@ -188,6 +188,9 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.3rem;
+        span{
+          color: $red;
+        }
       }
     }
     select{
@@ -271,5 +274,12 @@
   .submit_button:hover{
     background: $light-blue;
     color: $dark-blue;
+  }
+  .submit_button+p{
+    text-align: center;
+    color: $light-blue;
+  }
+  .submit_button+p.error{
+    color: $red;
   }
 }

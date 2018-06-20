@@ -1106,6 +1106,8 @@ footer {
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.3rem; }
+        .devis_main .form_bottom .services_type label span {
+          color: #FF7E7E; }
     .devis_main .form_bottom select {
       -webkit-appearance: none;
       background: url(../images/arrow.png);
@@ -1177,6 +1179,11 @@ footer {
   .devis_main .submit_button:hover {
     background: #2CDFFF;
     color: #1A3441; }
+  .devis_main .submit_button + p {
+    text-align: center;
+    color: #2CDFFF; }
+  .devis_main .submit_button + p.error {
+    color: #FF7E7E; }
 
 .contact-container {
   width: 80%;

@@ -26,14 +26,14 @@ include "include/header.php";
           <p class="description_line">
             Pour votre entreprise <strong>WarpCore Audio</strong> propose des serices de composition sur-mesure accompagnés, ou non, de mixage et de mastering.
           </p>
-          <p class="description_line">
-            N'hésiter pas à nous demander un devis !
+          <p id="anchor" class="description_line">
+            N'hésiter pas à nous demander un devis et à inclure un extrait musical !
           </p>
         </div>
       </div>
       <div class="form-container">
         <h3>Demande de devis pour une entreprise</h3>
-        <form id="form" action="scripts/php/professionalForm.php" method="post" class="quotation_form">
+        <form action="scripts/php/professionalForm.php" method="post" enctype="multipart/form-data" class="quotation_form">
           <div class="text_zone">
             <div class="name_container">
               <label for="companyName">Nom de la société<span> *</span>
@@ -82,10 +82,11 @@ include "include/header.php";
                  ?></textarea>
             </div>
           </div>
-          <div class="form_bottom">
+          <div id="bottom-anchor" class="form_bottom">
             <div class="services_type">
-              <label for="serviceType">Prestation demandée</label>
+              <label for="serviceType">Prestation demandée <span>*</span> </label>
               <select id="serviceType" required class="choice_list" name="serviceType">
+                <option value=""></option>
                 <option>Mixage</option>
                 <option>Enregistrement studio</option>
                 <option>Mastering</option>
@@ -97,12 +98,27 @@ include "include/header.php";
               <p>Envoyer un extrait musical</p>
               <div class="file_input">
                 <label for="file"></label>
-                <input accept=".wav, .mp3, .flac" id="file" type="file" name="sampleFile" value="">
+                <input accept=".wav, .mp3, .flac" id="file" type="file" name="sampleFile">
                 <p id="fileName">Choisissez un fichier</p>
               </div>
             </div>
           </div>
           <input class="submit_button" type="submit" name="submit" value="Envoyer">
+          <?php
+          if (isset($_GET['error'])) {
+            echo "<p classs='error'>".$_GET['error']."</p>";
+          }
+          elseif (isset($_GET['uploadfailure']) || isset($_GET['mailnotsent'])) {
+            echo "<p class='error'>Problème dans l'envoi du formulaire. Veuillez réessayer.</p>";
+          }
+          else if (isset($_GET['uploadsuccess'])) {
+            echo "<p>Fichier et formulaire envoyés!</p>";
+          }
+          elseif (isset($_GET['mailsent'])){
+            echo "<p>Formulaire envoyé !</p>";
+          }
+
+          ?>
         </form>
       </div>
     </main>

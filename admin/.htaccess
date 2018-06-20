@@ -1,4 +1,0 @@
-AuthName "Secure content. Please login"
-AuthType Basic
-AuthUserFile "C:\wamp64\www\alphonsebouy\heticdev\admin\.htpasswd"
-Require valid-user

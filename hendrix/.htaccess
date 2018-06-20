@@ -1,0 +1,4 @@
+AuthName "Secure content. Please login"
+AuthType Basic
+AuthUserFile "/home/alphonseqv/www/warpcore-audio/hendrix/.htpasswd"
+Require valid-user
