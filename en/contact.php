@@ -3,22 +3,22 @@
  include "include/header.php"; ?>
     <main>
       <div class="contact-container">
-        <h1>Contactez-nous facilement !</h1>
+        <h1>Contact us easily !</h1>
         <div class="contact-form-container">
           <form class="contact-form" action="" method="post">
             <div class="contact-form-names">
               <div>
-                <label for="lastName">Nom</label>
+                <label for="lastName">Last name</label>
                 <input type="text" name="lastName" placeholder="Dupont">
               </div>
               <div>
-                <label for="firstName">Prénom</label>
+                <label for="firstName">First Name</label>
                 <input type="text" name="firstName" placeholder="Jean">
               </div>
             </div>
-            <label for="email">Adresse E-Mail</label>
+            <label for="email">E-Mail adress</label>
             <input type="email" name="email" placeholder="jean.dupont@fai.fr">
-            <label for="subject">Objet</label>
+            <label for="subject">Purpose</label>
             <input type="text" name="subject" placeholder="L'objet de mon message">
             <label for="message">Message</label>
             <textarea name="message" rows="8" cols="80" placeholder="Mon message ici"></textarea>

@@ -4,9 +4,9 @@ include "include/header.php";
 ?>
     <main>
       <div class="about-container">
-        <h1>A propos de WarpCore Audio</h1>
+        <h1>About WarpCore Audio</h1>
         <div class="about-history">
-          <h2>L'histoire de Matthieu Germain, fondateur</h2>
+          <h2>The story of Matthieu Germain, founder</h2>
           <div class="history-content">
             <div class="artist-img-border clip-artist-img">
               <div class="artist-img-container clip-artist-img">
@@ -16,31 +16,32 @@ include "include/header.php";
               </div>
             </div>
             <p>
-              Issu d’un métissage, j’ai été plongé dès le plus jeune âge dans un éclectisme musical fort. En effet, ma mère ayant été danseuse traditionnelle antillaise et mon père ingénieur du son d’une formation reggae, il ne manquait plus que l’enseignement de ma soeur, professeur de danse Hip-Hop, pour forger mon intérêt musical. Plus tard je me suis intéressé au rock, puis ai été guitariste et chanteur d’un groupe de métal pendant 6 ans. Mon intérêt pour le Jazz et la musique savante s’est manifesté plus tard.
+              Born from a crossbreeding, I was immersed from a very young age in a strong musical eclecticism. Indeed, as my mother was a traditional Caribbean dancer and my father was a sound engineer with a reggae background, all I needed was the teaching of my sister, a hip-hop dance teacher, to forge my musical interest. Later I became interested in rock, then was guitarist and singer of a metal band for 6 years. My interest in jazz and scholarly music came later.
+
             </p>
             <p>
-              Diplômé de l’<strong>ISTS</strong> (Groupe ESRA) avec la mention “Major de Promotion : Section Musique Enregistrement” en 2017, j’ai travaillé dès ma deuxième année d’étude dans plusieurs studios. Ces diverses expériences m’ont permis d’acquérir un socle solide de connaissances, de techniques et un sens du relationnel que l’on ne nous transmet pas lors des études. Après celles-ci j’ai continué à travailler pour des studios et ai accompagné plusieurs projets en tant qu’ingénieur, compositeur ou réalisateur artistique. Après cela, j’ai décidé de me lancer dans l’entrepreneuriat et ai fondé <strong>WarpCore Audio</strong>.
+              Graduated of <strong>ISTS</strong> (Groupe ESRA) with the mention "Major de Promotion : Section Musique Enregistrement" in 2017, I have worked since my second year of study in several studios. These various experiences have enabled me to acquire a solid foundation of knowledge, techniques and a sense of relationships that we are not given during our studies. After these I continued working for studios and accompanied several projects as an engineer, composer or artistic director. After that, I decided to go into entrepreneurship and founded <strong>WarpCore Audio</strong>.
             </p>
-            <p>Vous pouvez découvrir mes compositions personnelles en vous rendant sur ma page <strong><a href="#" title="Soundcloud" target="_blank">Soundcloud</a></strong>.</p>
+            <p>You can discover my personal compositions by visiting my <strong><a href="#" title="Soundcloud" target="_blank">Soundcloud</a></strong> page.</p>
 
           </div>
 
         </div>
         <div class="about-location" id="location">
-          <h2>Nos lieux de travail</h2>
+          <h2>Our workplaces</h2>
           <ul>
             <li>
-              <h3>Studios Musicaux des Ulis</h3>
+              <h3>Muscial Studios of Ulis</h3>
               <p>MPT des Amonts - 91940 Les Ulis</p>
               <div class="location-content">
                 <div class="location-info">
                   <img src="../images/ulis.jpg" alt="Studio des Ulis">
-                  <a href="#" title="Matériel Ulis" id="ulis">Voir la liste du matériel disponible</a>
+                  <a href="#" title="Matériel Ulis" id="ulis">See the list of available material</a>
                   <div class="equipment">
-                    <h4>Liste du matériel disponible au studio des Ulis</h4>
+                    <h4>List of equipment available at Les Ulis studio</h4>
                     <ul>
-                      <li>Surface de contrôle et préamplis DIGIDESIGN CI24</li>
-                      <li>Préampli UNIVERSAL AUDIO 4-710D</li>
+                      <li>Control surface and preamps DIGIDESIGN CI24</li>
+                      <li>preamp UNIVERSAL AUDIO 4-710D</li>
                       <li>AKG C414 XLII & XLS</li>
                       <li>ELECTROVOICE RE20</li>
                       <li>NEUMANN TLM103</li>
@@ -69,9 +70,9 @@ include "include/header.php";
               <div class="location-content">
                 <div class="location-info">
                   <img src="../images/slider2.jpg" alt="Studio des Petites Ecuries">
-                  <a href="#" title="Matériel Petites Ecuries" id="ecuries">Voir la liste du matériel disponible</a>
+                  <a href="#" title="Matériel Petites Ecuries" id="ecuries">See the list of available material</a>
                   <div class="equipment">
-                    <h4>Liste du matériel disponible au studio des Petites Ecuries</h4>
+                    <h4>List of equipment available at Les Petites Ecuries studio</h4>
                     <ul>
                       <li>Console SSL XL-Desk</li>
                       <li>2 SSL 611 EQ</li>
@@ -94,19 +95,19 @@ include "include/header.php";
                       <li>2 SHURE SM57</li>
                       <li>FRACTAL AUDIO AXE FX-II</li>
                       <li>FRACTAL AUDIO MFC-101 Controller</li>
-                      <li>Ampli + Baffle MESA-BOOGIE Dual Rectifier</li>
-                      <li>Ampli LANEY CUB 12R</li>
-                      <li>Ampli PEAVEY Sessionbass</li>
-                      <li>Ampli HARTKE SYSTEMS HA2000</li>
+                      <li>amp + Baffle MESA-BOOGIE Dual Rectifier</li>
+                      <li>amp LANEY CUB 12R</li>
+                      <li>amp PEAVEY Sessionbass</li>
+                      <li>amp HARTKE SYSTEMS HA2000</li>
                       <li>Baffle WARWICK 4x10”</li>
                       <li>Baffle WARWICK 12”</li>
-                      <li>Batterie DW Performance Fusion20</li>
-                      <li>Basse WARWICK Thumb Bolt-On 5</li>
-                      <li>Guitare SUHR Modern 7 Custom</li>
-                      <li>Guitare ESP Horizon FR-II</li>
-                      <li>Guitare MUSICMAN JPX 7</li>
-                      <li>Guitare GIBSON Les Paul Traditional</li>
-                      <li>Guitare Acoustique YAMAHA APX-6A</li>
+                      <li>Drum DW Performance Fusion20</li>
+                      <li>Bass WARWICK Thumb Bolt-On 5</li>
+                      <li>Guitar SUHR Modern 7 Custom</li>
+                      <li>Guitar ESP Horizon FR-II</li>
+                      <li>Guitar MUSICMAN JPX 7</li>
+                      <li>Guitar GIBSON Les Paul Traditional</li>
+                      <li>Guitar Acoustique YAMAHA APX-6A</li>
                       <li>NATIVE INSTRUMENT KOMPLETE Kontrol S61</li>
                       <li>NATIVE INSTRUMENT MASCHINE Studio</li>
                       <li>NATIVE INSTRUMENT KOMPLETE Audio 6</li>
@@ -114,7 +115,7 @@ include "include/header.php";
                       <li>AVID PRO TOOLS 12</li>
                       <li>APPLE LOGIC PRO X</li>
                       <li>NATIVE INSTRUMENT KOMPLETE 10 & 11 ULTIMATE</li>
-                      <li>Enregistreur Live ZOOM H6 Handy Recorder</li>
+                      <li>Live Recorder ZOOM H6 Handy Recorder</li>
                     </ul>
                   </div>
                 </div>
@@ -124,8 +125,8 @@ include "include/header.php";
           </ul>
         </div>
         <div class="buttons">
-          <a class="button" href="professional.php" title="Devis professionnel">Demander un devis pour professionel</a>
-          <a class="button" href="particular.php" title="Devis particulier">Demander un devis pour particulier</a>
+          <a class="button" href="professional.php" title="Devis professionnel">Request a quote for professional</a>
+          <a class="button" href="particular.php" title="Devis particulier">Request a quote for private</a>
         </div>
       </div>
     </main>

@@ -15,13 +15,13 @@ include "include/header.php";
               We offer all kinds of musical services, from <em>writing</em> to <em>mastering</em>, as much for companies as for artists.
             </p>
             <p>
-              Vous pouvez nous <strong><a href="#services-anchor" title="Devis">contacter</a></strong> afin d’avoir un retour professionnel sur votre travail.
+              You can <strong><a href="#services-anchor" title="Devis">contact us</a></strong> to get professional feedback on your work.
             </p>
             <p>
-              Nous travaillons dans deux <strong><a href="about.php#location" title="Studios">studios</a></strong> situés à <strong>Paris</strong> et dans l'<strong>Essonne</strong>.
+              We work in two <strong><a href="about.php#location" title="Studios">studios</a></strong> located in <strong>Paris</strong> and in <strong>Essonne</strong>.
             </p>
             <p>
-              Nous proposons aussi des prestations live sur demande.
+              We also offer live services on request.
             </p>
           </div>
         </div>
@@ -56,28 +56,28 @@ include "include/header.php";
 
       </div>
       <div class="services">
-        <h2>Vous êtes</h2>
+        <h2>You are</h2>
         <div class="services-categories">
-          <p class="category-selected">Un professionnel</p>
-          <p>Un particulier</p>
+          <p class="category-selected">A professional</p>
+          <p>Private</p>
         </div>
         <div class="services-description">
           <div class="description-icon-people"></div>
           <div class="description-icon-solo"></div>
           <ul class="description-pro">
-            <li>Composition de musique publicitaire</li>
-            <li>Composition de musique de film institutionnel</li>
-            <li>Composition de virgule sonore/habillage</li>
-            <li>Enregistrement/Mixage/Mastering</li>
+            <li>Advertising music composition</li>
+            <li>Institutional film music composition</li>
+            <li>Jingle/dressing composition </li>
+            <li>Recording/Mix/Mastering</li>
           </ul>
           <ul class="description-solo">
-            <li>Mixage</li>
+            <li>Mix</li>
             <li>Mastering</li>
             <li>Composition</li>
             <li>Arrangement</li>
           </ul>
         </div>
-        <a id="services-link" href="professional.php" title="Vers page professionnel">Demander un devis</a>
+        <a id="services-link" href="professional.php" title="Vers page professionnel">Ask for a quote</a>
       </div>
       <div class="artist">
         <h2>WarpCore Audio</h2>
@@ -85,7 +85,7 @@ include "include/header.php";
         <div class="artist-presentation">
           <div class="quote" id="quote-left"></div>
           <div class="quote" id="quote-right"></div>
-          <p class="artist-description">Je suis ingénieur du son et compositeur, spécialisé dans la production musicale.</p>
+          <p class="artist-description">I am a sound engineer and composer, specialized in music production.</p>
           <ul class="logo-social">
             <li><a class="social-sc" href="#" title="Soundcloud"></a></li>
             <li><a class="social-fb" href="#" title="Facebook"></a></li>
@@ -100,14 +100,14 @@ include "include/header.php";
             </div>
           </div>
         </div>
-        <a href="about.php" title="En savoir plus" class="know-more">En apprendre plus</a>
+        <a href="about.php" title="En savoir plus" class="know-more">Learn more</a>
         <h4>Portfolio</h2>
-        <p class="portfolio-description">Quelques unes de nos réalisations</p>
+        <p class="portfolio-description">Some of our realizations</p>
         <div id="frame"></div>
-        <a class="yt-sub" href="https://www.youtube.com/channel/UCIxdBIc7hXWeFTzvMzwctnA?sub_confirmation=1" target="_blank" title="YouTube">Nous suivre sur YouTube</a>
+        <a class="yt-sub" href="https://www.youtube.com/channel/UCIxdBIc7hXWeFTzvMzwctnA?sub_confirmation=1" target="_blank" title="YouTube">Follow us on YouTube</a>
       </div>
       <div class="comments">
-        <h2>Ils parlent de nous !</h2>
+        <h2>They talk about us !</h2>
         <div class="comments-box">
           <div class="comments-fb"></div>
           <div class="comments-content">
@@ -122,7 +122,7 @@ include "include/header.php";
             <h3>Paul Grossberger</h3>
             <p>Travail efficace et rapide, toujours à l'écoute et prêt à donner de bons conseils. C'est la première fois que nous travaillons avec vous et surement pas la dernière ! Un grand merci !</p>
           </div>
-          <a href="https://www.facebook.com/pg/WarpCoreAudio/reviews/?ref=page_internal" target="_blank" title="Avis Facebook">Donnez votre avis !</a>
+          <a href="https://www.facebook.com/pg/WarpCoreAudio/reviews/?ref=page_internal" target="_blank" title="Avis Facebook">Give your opinion !</a>
         </div>
       </div>
     </main>
