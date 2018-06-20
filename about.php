@@ -124,7 +124,7 @@ include "include/header.php";
           </ul>
         </div>
         <div class="buttons">
-          <a class="button" href="professional.php" title="Devis professionnel">Demander un devis pour professionel</a>
+          <a class="button" href="professional.php" title="Devis professionnel">Demander un devis pour professionnel</a>
           <a class="button" href="particular.php" title="Devis particulier">Demander un devis pour particulier</a>
         </div>
       </div>

@@ -36,15 +36,15 @@
         <nav>
            <ul class="menu">
              <li>
-               <a href="index.php"> Accueil</a>
+               <a href="index.php"> Home</a>
                <div class="underline <?php if($current == 'home'){echo 'link-selected';}?>"></div>
              </li>
              <li>
-               <a href="professional.php"> Professionnels</a>
+               <a href="professional.php"> Professionnals</a>
                <div class="underline <?php if($current == 'professional'){echo 'link-selected';}?>"></div>
              </li>
-             <li> <a href="particular.php"> Particuliers  </a><div class="underline <?php if($current == 'particular'){echo 'link-selected';}?>"></div></li>
-             <li> <a href="about.php"> A propos </a><div class="underline <?php if($current == 'about'){echo 'link-selected';}?>"></div></li>
+             <li> <a href="particular.php"> Private  </a><div class="underline <?php if($current == 'particular'){echo 'link-selected';}?>"></div></li>
+             <li> <a href="about.php"> About Us </a><div class="underline <?php if($current == 'about'){echo 'link-selected';}?>"></div></li>
              <li> <a href="contact.php"> Contact </a><div class="underline <?php if($current == 'contact'){echo 'link-selected';}?>"></div></li>
            </ul>
            <ul class="language">
