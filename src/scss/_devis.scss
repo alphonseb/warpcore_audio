@@ -179,10 +179,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: 900px){
+      flex-direction: column;
+    }
     .services_type{
       display: flex;
       flex-direction: column;
       width: 50%;
+      @media screen and (max-width: 900px){
+        width: 100%;
+      }
       label{
         margin-bottom: 1.6rem;
         text-transform: uppercase;
@@ -205,13 +211,17 @@
       height: fit-content;
       padding: 1em;
       width: 70%;
+      @media screen and (max-width: 900px){
+        width: 100%;
+      }
     }
     .musical_sample_container{
       width : 40%;
       display: flex;
       flex-direction: column;
       @media screen and (max-width: 900px){
-        width: 50%;
+        width: 100%;
+        margin-top: 1rem;
       }
       p{
         margin-top: 0;

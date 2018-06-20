@@ -100,7 +100,7 @@ include "include/header.php";
               <div class="file_input">
                 <label for="file"></label>
                 <input accept=".wav, .mp3, .flac" id="file" type="file" name="sampleFile">
-                <p id="fileName">Choisissez un fichier</p>
+                <p id="fileName">Choisissez un fichier (mp3, wav, flac)</p>
               </div>
             </div>
           </div>

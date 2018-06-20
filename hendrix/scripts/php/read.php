@@ -1,3 +1,3 @@
 <?php
 header('Content-Type: audio/wav');
-readfile("../../../../../uploads/".$_GET['audio']);
+readfile("../../uploads/".$_GET['audio']);

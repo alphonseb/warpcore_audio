@@ -47,6 +47,7 @@ include "include/header.php";
         <h2>Confidentialité</h2>
         <p>
           Vos données personnelles sont confidentielles et ne seront en aucun cas communiquées à des tiers hormis pour la bonne exécution de la prestation.
+          WarpCore Audio s'engage à ne pas utiliser les fichiers sonores envoyés par les utilisateurs à des fins commerciales sans l'accord de ces derniers.
         </p>
         <h2>Propriété intellectuelle</h2>
         <p>
@@ -83,7 +84,7 @@ include "include/header.php";
         </p>
         <h2>Précautions d'usage</h2>
         <p>
-          Il vous incombe par conséquent de prendre les précautions d'usage nécessaires pour vous assurer que ce que vous choisissez d'utiliser ne soit pas entaché d'erreurs voire d'éléments de nature destructrice tels que virus, trojans, etc....
+          Il vous incombe par conséquent de prendre les précautions d'usage nécessaires pour vous assurer que ce que vous choisissez d'utiliser ne soit pas entaché d'erreurs voire d'éléments de nature destructrice tels que virus, trojans, etc.
         </p>
         <h2>Responsabilité</h2>
         <p>

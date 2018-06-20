@@ -3,6 +3,8 @@ $current = 'about';
 include "include/header.php";
 ?>
     <main>
+      <video src="../video/backgroundAnimated2.mp4" poster="../images/poster.jpg" loop muted autoplay>
+      </video>
       <div class="about-container">
         <h1>About WarpCore Audio</h1>
         <div class="about-history">
@@ -16,13 +18,12 @@ include "include/header.php";
               </div>
             </div>
             <p>
-              Born from a crossbreeding, I was immersed from a very young age in a strong musical eclecticism. Indeed, as my mother was a traditional Caribbean dancer and my father was a sound engineer with a reggae background, all I needed was the teaching of my sister, a hip-hop dance teacher, to forge my musical interest. Later I became interested in rock, then was guitarist and singer of a metal band for 6 years. My interest in jazz and scholarly music came later.
-
+              I am a sound engineer and composer specialized in music production. I graduated from <strong>ISTS</strong> (ESRA Group) with the mention "Valedictorian : Music and Recording", I worked from my second year of study in several studios. These various experiences allowed me to acquire a solid foundation of knowledge, techniques and a sense of relationships that we are not given during our studies. After graduating I continued to work for studios and accompanied several projects as an engineer, composer or artistic director. Later, I decided to start my own business by founding the micro-enterprise under the trade name <strong>WarpCore Audio</strong>.
             </p>
             <p>
-              Graduated of <strong>ISTS</strong> (Groupe ESRA) with the mention "Major de Promotion : Section Musique Enregistrement" in 2017, I have worked since my second year of study in several studios. These various experiences have enabled me to acquire a solid foundation of knowledge, techniques and a sense of relationships that we are not given during our studies. After these I continued working for studios and accompanied several projects as an engineer, composer or artistic director. After that, I decided to go into entrepreneurship and founded <strong>WarpCore Audio</strong>.
+              Coming from mixed origins, I was immersed from a very young age in a strong musical eclecticism. Indeed, as my mother was a traditional Caribbean dancer and my father was a sound engineer with a reggae background, all I needed was the teaching of my sister, a hip-hop dance teacher, to forge my musical interest. Later I became interested in rock by becoming guitarist and singer of a metal band during 6 years. My interest in jazz and scholarly music came later.
             </p>
-            <p>You can discover my personal compositions by visiting my <strong><a href="#" title="Soundcloud" target="_blank">Soundcloud</a></strong> page.</p>
+            <p>You can discover my personal compositions by visiting my <strong><a href="https://soundcloud.com/majin7" title="Soundcloud" target="_blank">Soundcloud</a></strong> page.</p>
 
           </div>
 
@@ -36,9 +37,9 @@ include "include/header.php";
               <div class="location-content">
                 <div class="location-info">
                   <img src="../images/ulis.jpg" alt="Studio des Ulis">
-                  <a href="#" title="Matériel Ulis" id="ulis">See the list of available material</a>
+                  <a href="#" title="Matériel Ulis" id="ulis">See the list of available gear</a>
                   <div class="equipment">
-                    <h4>List of equipment available at Les Ulis studio</h4>
+                    <h4>List of gear available at Les Ulis studio</h4>
                     <ul>
                       <li>Control surface and preamps DIGIDESIGN CI24</li>
                       <li>preamp UNIVERSAL AUDIO 4-710D</li>
@@ -58,7 +59,7 @@ include "include/header.php";
                     </ul>
                   </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d285.0000598201069!2d2.164384676483875!3d48.682452550348835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d5e63fc562a9%3A0xf5a9ff8c7c35935c!2sMPT+des+Amonts!5e0!3m2!1sfr!2sfr!4v1529172661451" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d285.0000598201069!2d2.164384676483875!3d48.682452550348835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d5e63fc562a9%3A0xf5a9ff8c7c35935c!2sMPT+des+Amonts!5e0!3m2!1sfr!2sfr!4v1529172661451" style="border:0" allowfullscreen></iframe>
 
 
               </div>
@@ -70,9 +71,9 @@ include "include/header.php";
               <div class="location-content">
                 <div class="location-info">
                   <img src="../images/slider2.jpg" alt="Studio des Petites Ecuries">
-                  <a href="#" title="Matériel Petites Ecuries" id="ecuries">See the list of available material</a>
+                  <a href="#" title="Matériel Petites Ecuries" id="ecuries">See the list of available gear</a>
                   <div class="equipment">
-                    <h4>List of equipment available at Les Petites Ecuries studio</h4>
+                    <h4>List of gear available at Les Petites Ecuries studio</h4>
                     <ul>
                       <li>Console SSL XL-Desk</li>
                       <li>2 SSL 611 EQ</li>
@@ -125,8 +126,8 @@ include "include/header.php";
           </ul>
         </div>
         <div class="buttons">
-          <a class="button" href="professional.php" title="Devis professionnel">Request a quote for professional</a>
-          <a class="button" href="particular.php" title="Devis particulier">Request a quote for private</a>
+          <a class="button" href="professional.php" title="Devis professionnel">Request a quote for a company</a>
+          <a class="button" href="particular.php" title="Devis particulier">Request a quote for an artist</a>
         </div>
       </div>
     </main>

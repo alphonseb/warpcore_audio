@@ -1,4 +1,4 @@
 AuthName "Secure content. Please login"
 AuthType Basic
-AuthUserFile "/home/alphonseqv/www/warpcore-audio/hendrix/.htpasswd"
+AuthUserFile "/home/warpcoreru/www/hendrix/.htpasswd"
 Require valid-user

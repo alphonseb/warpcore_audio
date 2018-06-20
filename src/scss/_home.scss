@@ -28,6 +28,8 @@ main .first-screen {
       top: -3.5rem;
       @media screen and (max-width: 900px){
         position: relative;
+        width: 95%;
+        margin: 0 auto;
       }
     }
     h2{
@@ -43,6 +45,8 @@ main .first-screen {
       @media screen and (max-width: 900px){
         position: static;
         text-align: center;
+        width: 95%;
+        margin: 0 auto;
       }
     }
     div.home-description{
@@ -107,6 +111,15 @@ main .first-screen {
       img:hover{
         filter: grayscale(0);
       }
+      span{
+        position: absolute;
+        color: $white;
+        top: 77%;
+        left: 15%;
+        @media screen and (max-width: 900px){
+          left: 3%;
+        }
+      }
     }
 
 
@@ -133,12 +146,6 @@ main .first-screen {
   height: 16vh;
 }
 .services {
-  // background: url(../images/wave.png);
-  // background-position: right;
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // -webkit-transition: background-position 0.3s ease-in;
-  // margin-top: 10rem;
   @media screen and (max-width: 900px){
     margin-top: 5rem;
   }

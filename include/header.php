@@ -2,7 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="WarpCore Audio est une entreprise spécialisée dans la production musicale, pour les entreprises et les artistes.">
     <title>Warpcore Audio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">

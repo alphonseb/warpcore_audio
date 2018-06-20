@@ -30,12 +30,13 @@ include "include/header.php";
         <div class="first-screen-right">
           <div class="slider-container clip-img">
             <div class="slider clip-img">
-              <img src="images/slider1.jpg" alt="Image du studio">
-              <img src="images/slider2.jpg" alt="">
-              <img src="images/slider3.jpg" alt="">
-              <img src="images/slider4.jpg" alt="">
-              <img src="images/slider5.jpg" alt="">
-              <img src="images/slider6.jpg" alt="">
+              <img src="images/slider1.jpg" alt="Table de mixage">
+              <img src="images/slider2.jpg" alt="Studio">
+              <img src="images/slider3.jpg" alt="Préampli">
+              <img src="images/slider4.jpg" alt="Battrie">
+              <img src="images/slider5.jpg" alt="Batterie">
+              <img src="images/slider6.jpg" alt="Consolde de mixage">
+              <span><em>Studio des Petites Ecuries</em></span>
             </div>
           </div>
           <div class="slider-bullet">
@@ -60,8 +61,8 @@ include "include/header.php";
       <div class="services">
         <h2>Vous êtes</h2>
         <div class="services-categories">
-          <p class="category-selected">Un professionnel</p>
-          <p>Un particulier</p>
+          <p class="category-selected">Une entreprise</p>
+          <p>Un artiste</p>
         </div>
         <div class="services-description">
           <div class="description-icon-people"></div>

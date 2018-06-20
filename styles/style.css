@@ -291,7 +291,9 @@ main .first-screen {
       top: -3.5rem; }
       @media screen and (max-width: 900px) {
         main .first-screen .first-screen-left h1 {
-          position: relative; } }
+          position: relative;
+          width: 95%;
+          margin: 0 auto; } }
     main .first-screen .first-screen-left h2 {
       color: #fff;
       font-size: 3rem;
@@ -305,7 +307,9 @@ main .first-screen {
       @media screen and (max-width: 900px) {
         main .first-screen .first-screen-left h2 {
           position: static;
-          text-align: center; } }
+          text-align: center;
+          width: 95%;
+          margin: 0 auto; } }
     main .first-screen .first-screen-left div.home-description {
       font-size: 1.6rem;
       line-height: 2.5rem;
@@ -361,6 +365,14 @@ main .first-screen {
             height: 100%; } }
       main .first-screen .first-screen-right .slider img:hover {
         filter: grayscale(0); }
+      main .first-screen .first-screen-right .slider span {
+        position: absolute;
+        color: #fff;
+        top: 77%;
+        left: 15%; }
+        @media screen and (max-width: 900px) {
+          main .first-screen .first-screen-right .slider span {
+            left: 3%; } }
     main .first-screen .first-screen-right .slider-bullet {
       width: 35%;
       margin: 2rem auto;
@@ -1101,10 +1113,16 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media screen and (max-width: 900px) {
+      .devis_main .form_bottom {
+        flex-direction: column; } }
     .devis_main .form_bottom .services_type {
       display: flex;
       flex-direction: column;
       width: 50%; }
+      @media screen and (max-width: 900px) {
+        .devis_main .form_bottom .services_type {
+          width: 100%; } }
       .devis_main .form_bottom .services_type label {
         margin-bottom: 1.6rem;
         text-transform: uppercase;
@@ -1124,13 +1142,17 @@ footer {
       height: fit-content;
       padding: 1em;
       width: 70%; }
+      @media screen and (max-width: 900px) {
+        .devis_main .form_bottom select {
+          width: 100%; } }
     .devis_main .form_bottom .musical_sample_container {
       width: 40%;
       display: flex;
       flex-direction: column; }
       @media screen and (max-width: 900px) {
         .devis_main .form_bottom .musical_sample_container {
-          width: 50%; } }
+          width: 100%;
+          margin-top: 1rem; } }
       .devis_main .form_bottom .musical_sample_container p {
         margin-top: 0;
         margin-bottom: 1.6rem;
@@ -1256,10 +1278,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   margin-top: 5rem;
-  color: #fff;
-  background: url(../images/wave.png);
-  background-repeat: no-repeat;
-  background-position: right; }
+  color: #fff; }
   .legal-container h1 {
     font-size: 3rem; }
   .legal-container a#back {

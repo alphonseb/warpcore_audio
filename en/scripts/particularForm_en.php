@@ -6,25 +6,25 @@ if (isset($_POST['submit'])) {
   $message = nl2br(htmlspecialchars($_POST['description']));
   $serviceType = $_POST['serviceType'];
 
-  $subject = "Demande de devis pour ".$firstName." ".$lastName." : ".$serviceType;
-  $mailSubjectClient ="Confirmation de votre message à Warpcore Audio";
+  $subject = "[EN] Demande de devis pour ".$firstName." ".$lastName." : ".$serviceType;
+  $mailSubjectClient ="Confirmation of your request for a(n) ".$serviceType." quote to WarpCore Audio";
 
   $header = "From: \"".$firstName." ".$lastName."\"<".$email.">\"\n";
   $header .= "Reply-To: ".$email."\n";
   $header .= "Content-Type: text/html; charset=\"utf-8\"";
 
-  $headerClient = "From: \"WarpCore Audio\"<nepasrepondre@warpcore-audio.fr>\"\n";
-  $headerClient .= "Reply-To: nepasrepondre@warpcore-audio.fr\n";
+  $headerClient = "From: \"WarpCore Audio\"<donotreply@warpcore-audio.fr>\"\n";
+  $headerClient .= "Reply-To: donotreply@warpcore-audio.fr\n";
   $headerClient .= "Content-Type: text/html; charset=\"utf-8\"";
 
   $mailContent.= "<p>".$message."</p>";
-  $mailContentClient = "<p>Ceci est un message automatisé. Veuillez ne pas répondre</p>";
-  $mailContentClient .= "<p>Nous confirmons que vous avez envoyé le message suivant à WarpCore Audio :</p>";
+  $mailContentClient = "<p>This is an automated message. Please do not answer.</p>";
+  $mailContentClient .= "<p>We are confirming that you just sent the following message to WarpCore Audio :</p>";
   $mailContentClient .= "<p>".$subject."</p><p>".$message."</p>";
-  $mailContentClient .= "<p>Merci d'avoir contacté WaprCore Audio.</p>";
+  $mailContentClient .= "<p>Thank you for contacting WarpCore Audio.</p>";
 
   if($lastName == NULL || $firstName == NULL || $email==NULL || $message==NULL){
-    header("Location: ../../particular.php?last=".$lastName."&first=".$firstName."&mail=".$email."&message=".$message."&type=".$serviceType."#anchor");
+    header("Location: ../particular.php?last=".$lastName."&first=".$firstName."&mail=".$email."&message=".$message."&type=".$serviceType."#anchor");
   }
   else if(!empty($_FILES['sampleFile']['name'])){
     $file = $_FILES['sampleFile'];
@@ -44,33 +44,33 @@ if (isset($_POST['submit'])) {
 
           $mailContent.= "<p>Le client a inclus un fichier audio : <a href='http://warpcore-audio.fr/hendrix/uploads/".$fileNameNew."' title='fichier'>voir le fichier</a></p>";
           if(mail('artistes@warpcore-audio.fr', $subject, $mailContent, $header) && move_uploaded_file($fileTmpName, $fileDestination) && mail($email,$mailSubjectClient,$mailContentClient,$headerClient)){
-            header("Location: ../../particular.php?uploadsuccess#bottom-anchor");
+            header("Location: ../particular.php?uploadsuccess#bottom-anchor");
           }
           else{
-            header("Location: ../../particular.php?uploadfailure#bottom-anchor");
+            header("Location: ../particular.php?uploadfailure#bottom-anchor");
           }
           exit();
         }
         else {
-          $error = "Fichier trop volumineux. La taille maximale est 50Mo.";
+          $error = "File too voluminous. Max size is 50MB.";
         }
       }
       else {
-        $error = "Erreur lors de la mise en ligne du fichier. Veuillez réessayer.";
+        $error = "There was an error uploading the file. Please try again.";
       }
     }
     else {
-      $error = "Seuls les fichiers audio sont autorisés";
+      $error = "Only audio files can be uploaded.";
     }
-    header("Location: ../../particular.php?error=".$error."#bottom-anchor");
+    header("Location: ../particular.php?error=".$error."#bottom-anchor");
   }
   else {
     $mailContent .= "<p>Le client n'a pas inclus de fichier audio.</p>";
     if (mail('artistes@warpcore-audio.fr',$subject, $mailContent, $header) && mail($email,$mailSubjectClient,$mailContentClient,$headerClient)) {
-      header("Location: ../../particular.php?mailsent#bottom-anchor");
+      header("Location: ../particular.php?mailsent#bottom-anchor");
     }
     else {
-      header("Location: ../../partiular.php?mailnotsent#bottom-anchor");
+      header("Location: ../partiular.php?mailnotsent#bottom-anchor");
     }
   }
 

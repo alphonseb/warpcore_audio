@@ -60,7 +60,7 @@ include "include/header.php";
                     </ul>
                   </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d285.0000598201069!2d2.164384676483875!3d48.682452550348835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d5e63fc562a9%3A0xf5a9ff8c7c35935c!2sMPT+des+Amonts!5e0!3m2!1sfr!2sfr!4v1529172661451" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d285.0000598201069!2d2.164384676483875!3d48.682452550348835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d5e63fc562a9%3A0xf5a9ff8c7c35935c!2sMPT+des+Amonts!5e0!3m2!1sfr!2sfr!4v1529172661451" style="border:0" allowfullscreen></iframe>
 
 
               </div>
@@ -121,14 +121,14 @@ include "include/header.php";
                     </ul>
                   </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.0737180438382!2d2.352023176583268!3d48.87253058908786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e13ead291d5%3A0x98ade56ab015ee72!2sCour+des+Petites+%C3%89curies%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1529263222292" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.0737180438382!2d2.352023176583268!3d48.87253058908786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e13ead291d5%3A0x98ade56ab015ee72!2sCour+des+Petites+%C3%89curies%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1529263222292" style="border:0" allowfullscreen></iframe>
               </div>
             </li>
           </ul>
         </div>
         <div class="buttons">
-          <a class="button" href="professional.php" title="Devis professionnel">Demander un devis pour professionnel</a>
-          <a class="button" href="particular.php" title="Devis particulier">Demander un devis pour particulier</a>
+          <a class="button" href="professional.php" title="Devis professionnel">Demander un devis pour entreprise</a>
+          <a class="button" href="particular.php" title="Devis particulier">Demander un devis pour artiste</a>
         </div>
       </div>
     </main>
