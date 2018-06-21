@@ -103,7 +103,7 @@ include "include/header.php";
             </div>
             <div id="bottom-anchor" class="form_bottom">
               <div class="services_type">
-                <label for="serviceType">Service required</label>
+                <label for="serviceType">Service required <span> *</span></label>
                 <select id="serviceType" required class="choice_list" name="serviceType">
                   <option value="">Choose a service</option>
                   <option>Studio Recording</option>
