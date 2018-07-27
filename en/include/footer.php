@@ -30,9 +30,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../scripts/js/app.js"></script>
-    <script src="../scripts/js/header.js"></script>
-    <script src="../scripts/js/hamburger"></script>
+    <script src="../dist/scripts/main.min.js"></script>
     <?php
     if ($current == 'home') {
       echo "<script src='../scripts/js/ytv.js'></script>";
