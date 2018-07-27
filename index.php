@@ -3,7 +3,7 @@ $current = 'home';
 include "include/header.php";
 ?>
     <main>
-      <video src="video/backgroundAnimated2.mp4" poster="images/poster.jpg" loop muted autoplay>
+      <video src="video/backgroundAnimated2.mp4" poster="dist/images/poster.jpg" loop muted autoplay>
       </video>
       <div class="first-screen">
         <div class="first-screen-left">
@@ -30,12 +30,12 @@ include "include/header.php";
         <div class="first-screen-right">
           <div class="slider-container clip-img">
             <div class="slider clip-img">
-              <img src="images/slider1.jpg" alt="Table de mixage">
-              <img src="images/slider2.jpg" alt="Studio">
-              <img src="images/slider3.jpg" alt="Préampli">
-              <img src="images/slider4.jpg" alt="Battrie">
-              <img src="images/slider5.jpg" alt="Batterie">
-              <img src="images/slider6.jpg" alt="Consolde de mixage">
+              <img src="dist/images/slider1.jpg" alt="Table de mixage">
+              <img src="dist/images/slider2.jpg" alt="Studio">
+              <img src="dist/images/slider3.jpg" alt="Préampli">
+              <img src="dist/images/slider4.jpg" alt="Battrie">
+              <img src="dist/images/slider5.jpg" alt="Batterie">
+              <img src="dist/images/slider6.jpg" alt="Consolde de mixage">
               <span><em>Studio des Petites Ecuries</em></span>
             </div>
           </div>
@@ -88,7 +88,7 @@ include "include/header.php";
         <div class="artist-img-border clip-artist-img">
           <div class="artist-img-container clip-artist-img">
             <div class="clip-artist-img">
-              <img src="images/profile-color.png" alt="Matthieu Hendrix">
+              <img src="dist/images/profile-color.png" alt="Matthieu Hendrix">
             </div>
           </div>
         </div>

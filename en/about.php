@@ -13,7 +13,7 @@ include "include/header.php";
             <div class="artist-img-border clip-artist-img">
               <div class="artist-img-container clip-artist-img">
                 <div class="clip-artist-img">
-                  <img src="../images/profile-color.png" alt="Matthieu Hendrix">
+                  <img src="../dist/images/profile-color.png" alt="Matthieu Hendrix">
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@ include "include/header.php";
               <p>MPT des Amonts - 91940 Les Ulis</p>
               <div class="location-content">
                 <div class="location-info">
-                  <img src="../images/ulis.jpg" alt="Studio des Ulis">
+                  <img src="../dist/images/ulis.jpg" alt="Studio des Ulis">
                   <a href="#" title="Matériel Ulis" id="ulis">See the list of available gear</a>
                   <div class="equipment">
                     <h4>List of gear available at Les Ulis studio</h4>
@@ -70,7 +70,7 @@ include "include/header.php";
               <p>29 rue des Petites Ecuries - 75010 Paris</p>
               <div class="location-content">
                 <div class="location-info">
-                  <img src="../images/slider2.jpg" alt="Studio des Petites Ecuries">
+                  <img src="../dist/images/slider2.jpg" alt="Studio des Petites Ecuries">
                   <a href="#" title="Matériel Petites Ecuries" id="ecuries">See the list of available gear</a>
                   <div class="equipment">
                     <h4>List of gear available at Les Petites Ecuries studio</h4>

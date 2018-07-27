@@ -6,7 +6,7 @@
     <meta name="description" content="WarpCore Audio est une entreprise opérant à Paris et en Essonne, spécialisée dans la production musicale, pour les entreprises et les artistes.">
     <title>Warpcore Audio</title>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="dist/css/app.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
     <link href="styles/ytv.css" type="text/css" rel="stylesheet" />
     <style>
