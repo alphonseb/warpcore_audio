@@ -486,7 +486,7 @@ main .first-screen {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 1000px;
+      height: 100%;
       max-width: 1000px;
       overflow: hidden; }
       @media screen and (max-width: 900px) {
@@ -1360,7 +1360,8 @@ footer {
               -ms-flex-direction: column;
                   flex-direction: column;
           width: 48%; }
-      .devis_main .quotation_form .text_zone input, .devis_main .quotation_form .text_zone textarea {
+      .devis_main .quotation_form .text_zone input,
+      .devis_main .quotation_form .text_zone textarea {
         background: none;
         color: #1A3441;
         border: solid 1px #1A3441;
@@ -1408,6 +1409,8 @@ footer {
           color: #FF7E7E; }
     .devis_main .form_bottom select {
       -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
       background: url(../images/arrow.png);
       background-repeat: no-repeat;
       background-position: right;
@@ -1458,8 +1461,8 @@ footer {
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
-          -webkit-transition: all .3s ease-in;
-          transition: all .3s ease-in; }
+          -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
         .devis_main .form_bottom .musical_sample_container .file_input label:hover {
           background: url(../images/upload-hover.png);
           background-size: contain;
@@ -1485,8 +1488,8 @@ footer {
     margin-top: 5rem;
     text-transform: uppercase;
     padding: 1.5rem 1rem;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-weight: 600;
     cursor: pointer; }
     @media screen and (max-width: 900px) {
