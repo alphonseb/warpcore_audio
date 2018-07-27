@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="WarpCore Audio is a Paris based company specialized in musical production, for companies and artists.">
     <title>Warpcore Audio</title>
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="../dist/images/favicon.ico">
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
     <link href="../styles/ytv.css" rel="stylesheet" />
