@@ -1,4 +1,0 @@
-AuthName "Secure content. Please login"
-AuthType Basic
-AuthUserFile "/home/warpcoreru/www/hendrix/.htpasswd"
-Require valid-user
