@@ -1,1 +1,8 @@
+.DS_Store
+.babelrc
+yarn.lock
+package.json
+package-lock.json
+/hendrix/.htaccess
+/hendrix/.htpasswd
 /node_modules
